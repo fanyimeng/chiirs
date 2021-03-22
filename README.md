@@ -2,7 +2,7 @@
 **C**ompact **H**ii **R**egions in **S**grB2
 
 
-##Review of RMS map
+## Review of RMS map
 
 - Original data.
     - 6 GHz: `rg_006.fits` and `dcbC_sc_1.8.image.tt0.pbcor.fits`, [feather](./script/feather.py) into `abcd_006_lpf_new.fits`. 
@@ -15,7 +15,7 @@
 	- Output: [rms_006.pdf](./plot/rms_006.pdf) and [rms_096.pdf](./plot/rms_096.pdf)
 
 
-##Ellipses collision
+## Ellipses collision
 
 - write a package to detect collision of ellipses
 - apply the ell_col to sextractor to give a mutual-mapping of 6 GHz and 96 GHz cores.
