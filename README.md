@@ -3,7 +3,10 @@
 
 ## Log
 
-**20210322**
+**Review of RMS map**
+
+In [./script/rms_map.py](./script/rms_map.py), using ''ndimage.generic_filter(im, rmsfunc, size=(100, 100))''.
+
 - write a package to detect collision of ellipses
 - apply the ell_col to sextractor to give a mutual-mapping of 6 GHz and 96 GHz cores.
 
