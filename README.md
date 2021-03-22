@@ -1,2 +1,2 @@
 # chiirs
-Compact Hii regions in SgrB2
+*C*ompact *H*ii *R*egions in *S*grB2
