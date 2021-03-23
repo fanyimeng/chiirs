@@ -120,20 +120,39 @@ the most massive region with ongoing high-mass star formation in the Galaxy. Dus
 
   The \hii regions in SgrB2 were targeted by various previous studies. \citep{Mehringer:1993aa} observed the entire SgrB2 with VLA in 20, 6, and 3.6\,cm bands and identified 15 \hii regions. The resolutions range from $\sim$20\arcsec to $\sim$3\arcsec from 20 to 3.6\,cm, which correspond to 0.8--0.12\,pc. The 15 \hii regions, except two unresolved ones, all have size $>2$\arcsec. Since that the 271 dust cores may contain high-mass stars newly formed \citep{Ginsburg:2018aa}, the associated \hii regions may be UCH{\sc ii} and HCH{\sc ii} regions, which typically have sizes from $\sim 0.01$\,pc to $\sim 0.1$\, pc \citep[see e.g.][]{Kurtz:2002aa,Gonzalez-Aviles:2005aa,Kurtz:2005aa,Breen:2010aa}. Such a resolution is not sufficient to resolve the UCH{\sc ii} and HCH{\sc ii} regions. \citet{Gaume:1990aa,Gaume:1995aa} observed SgrB2 at 7\,mm and 1.3\,cm and achieved resolutions of 0.065\arcsec and 0.25\arcsec, respectively. These high-resolution observations focus only on Sgr\,B2(N) and Sgr\,B2(M), which do not cover the envelope that the dust cores that are distributed throughout, especially SgrB2(DS) \citep[see e.g.][]{Ginsburg:2018aa,Meng:2019aa} that $\sim$80 of the cores reside. \citet{LaRosa:2000aa,Law:2008ab,Law:2008aa} have also observed the entire SgrB2 in cm wavelength but with resolutions not high enough to study UCH{\sc ii} and HCH{\sc ii} regions. 
 
-  In this paper, we present Very Large Array (VLA) observations of the entire SgrB2 in the frequency regime 4--8~GHz, with configurations A, BnC and D. Thus, this study reaches resolutions of $\sim 0.05$. In \moda{Sect.}~2 we describe the observations as well as the data reduction process. \moda{Sect.}~3 shows the results. \moda{In Sect.~4 we discuss the results. Finally, we summarize this paper in Sect.~6.}
+  In this paper, we present Very Large Array (VLA) observations of the entire SgrB2 in the frequency regime 4--8~GHz, with configurations A, BnC and D. Thus, this study reaches resolutions of $\sim 0.05$. For comparison, we also include analysis of the 3\,mm image \citep{Ginsburg:2018aa} as well as the newly acquired \ce{SiO}\,(5--4) data, both of which were observed with ALMA (the Atacama Large Millimeter/submillimeter Array). In \moda{Sect.}~2 we describe the observations as well as the data reduction process. \moda{Sect.}~3 shows the results. \moda{In Sect.~4 we discuss the results. Finally, we summarize this paper in Sect.~6.}
 
-  \section{Observations and data reduction} % (fold)
-  \label{sec:observations_and_data_reduction}
+\section{Observations and data reduction} % (fold)
+\label{sec:observations_and_data_reduction}
 
   We \moda{used} the VLA in \moda{its} A, CnB, and D configurations to observe the entire Sgr\,B2 complex in the frequency bands C (4--8~GHz) and X (8--12~GHz). The observations with the CnB and D configurations were described in \citep{Meng:2019aa}. The observations with the A configuration were conducted from October 1 to 12, 2016 (project 16B-031, PI: F.\  Meng). For both bands, we used 64 spectral windows with a bandwidth of 128~MHz each. Mosaic mode was used, with 10 and 18 pointings for each band, respectively. The primary beam of each pointing is 7.5\arcmin\ and 4.5\arcmin\ respectively. Quasar 3C286 was used as the flux and bandpass calibrator, the SED of which is $S_\nu = 5.059\pm0.021\ {\rm Jy} \times (S/8.435\ {\rm GHz})^{-0.46}$ from 0.5 to 50~GHz \citep{Perley:2013aa}.  The quasar J1820-2528, the flux of which is 1.3~Jy in the C and X bands, was used as phase calibrator. The calibration was done using the standard VLA pipelines provided by the NRAO\footnote{
         The National Radio Astronomy Observatory is a facility of the National Science Foundation operated under cooperative agreement by Associated Universities, Inc.}. 
 
-  Calibration and imaging were done in Common Astronomy Software Applications (CASA) 4.7.2 \citep{McMullin:2007aa}. The details of data processing of data from CnB and D configurations are described in \citep{Meng:2019aa}, which results in two images in C and X band, respectively. The A configuration data were originally taken every 2\,s. To shorten the time of processing, we applied \texttt{timebin} in CASA to the measurement sets, which averaged the data taken within 10\,s into one data point. \moda{All the pointings of the mosaic in each band were primary beam corrected and the mosaic was imaged using the CASA task \texttt{tclean}.} With a robust factor of 0, the images of the C and X bands have \moda{synthesized beams} of 0.62\arcsec$\times$0.28\arcsec, with a position angle ${\rm (PA)}$ of $7.27^\circ$ and 0.36\arcsec$\times$0.15\arcsec (${\rm PA}=3.12^\circ$), respectively. The PA is defined positive north to east. To suppress the spatial filtering effect of the A configuration image, we applied the \texttt{feather} algorithm to combine the images from A configuration and the images from CnB and D configuration. The combined images have resolutions identical to that of A configuration images, while are sensitive to spatial scales up to $\sim240$\arcsec and $\sim145$\arcsec in C and X Band, respectively. The sensitivities of the observations are described in Sect.~\ref{sec:results}.
+  Calibration and imaging were done in Common Astronomy Software Applications (CASA) 4.7.2 \citep{McMullin:2007aa}. The details of data processing of data from CnB and D configurations are described in \citep{Meng:2019aa}, which results in two images in C and X band, respectively. The A configuration data were originally taken every 2\,s. To shorten the time of processing, we applied \texttt{timebin} in CASA to the measurement sets, which averaged the data taken within 10\,s into one data point. \moda{All the pointings of the mosaic in each band were primary beam corrected and the mosaic was imaged using the CASA task \texttt{tclean}.} With a robust factor of 0, the images of the C and X bands have \moda{synthesized beams} of 0.62\arcsec$\times$0.28\arcsec, with a position angle ${\rm (PA)}$ of $7.27^\circ$ and 0.36\arcsec$\times$0.15\arcsec (${\rm PA}=3.12^\circ$), respectively. The PA is defined positive north to east. To suppress the spatial filtering effect of the A configuration image, we applied the \texttt{feather} algorithm to combine the images from A configuration and the images from CnB and D configuration. The combined images have resolutions identical to that of A configuration images, while are sensitive to spatial scales up to $\sim240$\arcsec and $\sim145$\arcsec in C and X Band, respectively. The sensitivities of the observations are described in Sect.~\ref{sec:results}. 
 
-  \section{Results} % (fold)
-  \label{sec:results}
+  Ancillary data include the 3\,mm continuum and \ce{SiO}\,(5--4) data. The 3\,mm continuum data covers frequency range from 89.5 too 103.3\,GHz. The image in 3\,mm has a resolution of 0.54\arcsec$\times$0.46\arcsec (${\rm PA}=68.31^\circ$). The observational details of the 3\,mm data are described by \citet{Ginsburg:2018aa}. The SiO~(5--4) emission was observed with ALMA (Project 18A-229, P.I. A. Ginsburg). For the details of the observation and data reduction, see Ginsburg et. al. (in prep.). The resolution is 0.35\arcsec $\times$ 0.24\arcsec, with P.A. of $-80^{\circ}$. The spectral resolution is 1.35~km~s$^{-1}$. The typical RMS of the image is 0.9~mJy/beam. The observation covers SgrB2(S) and the eastern part of SgrB2(DS). 
 
-  In this section, we present the image of SgrB2 in C band and the UCH{\sc ii} regions identified in it. We also compared between these ionized cores with dust cores idetified in 96~GHz. Statistics of the properties of these UCH{\sc ii} regions are shown.
+
+ \section{Results} % (fold)
+ \label{sec:results}
+
+  \begin{figure*}[ht]
+          \begin{center}
+          \includegraphics[width=0.45\textwidth]{./plot/abcdC_map.pdf}
+          \includegraphics[width=0.45\textwidth]{./plot/abcdX_map.pdf}\\     
+          \caption[Images in C and X Bands.]{Images in C and X Bands. Notable regions are marked.
+           Beam sizes are marked on the lower left corner of each panel, in format $(\theta_{\rm maj}, \theta_{\rm min}, {\rm PA})$. 
+           Each image has two profile cuts, in blue and red. The offset of each profile increase from left to right and from bottom to top. The profiles are below each image.
+           }
+          \label{f:abcdcxmap}
+          \end{center}
+  \end{figure*}
+
+  In this section, we present the image of SgrB2 in 6\,cm and the UCH{\sc ii} regions identified in it. We also compared between these ionized cores with dust cores idetified in 96~GHz. Statistics of the properties of these UCH{\sc ii} regions are shown. 
+
+  We show the images in C and X bands in Fig.~\ref{f:abcdcxmap}, in which the known regions `N', `M', `S', `AA', `DS', and `V' are denoted. The nomenclature of these regions follows \citet{Mehringer:1992aa,Mehringer:1993aa,Ginsburg:2018aa,Meng:2019aa}. Although that deep CLEAN and self calibration were preformed in data processing, the high dynamic range of the images ($\sim 10^3$) hinders the elimination of artifacts. As shown in Fig.~\ref{f:abcdcxmap} , the C band image displays multi-scale prominent signal all over SgrB2, while the X band image is highly contaminated by the artifacts that from which the real emission is hard to distinguished. Therefore, we do not take the X band image into account in the following analysis. The C band image is called `6\,cm image' in the following analysis. Due to the non-homogeneity of the artifacts over the map, we do not give an RMS (root-mean-square) value to represent the noise value of the 6\,cm image, but evaluate the spatial varying RMS. The procedures of generation the RMS maps are described in Sect.~\ref{sec:rms_maps}. As shown in Fig.~\ref{f:rmsmap_a}, the RMS of the 6\,cm image varies from $\sim$0.02\,mJy/beam to $\sim$0.2\,mJy/beam. The RMS of the 3\,mm map, as shown in Fig.~\ref{f:rmsmap_b}, ranges from $\sim$0.1\,mJy/beam to $\sim$0.4\,mJy/beam. 
+
+
   
   % section results (end)
 
@@ -141,6 +160,40 @@ the most massive region with ongoing high-mass star formation in the Galaxy. Dus
 \bibliographystyle{aa} % style aa.bst
 \bibliography{ref}
 
+\begin{appendix}
+
+\section{RMS maps} % (fold)
+\label{sec:rms_maps}
+
+  In this section we introduce the production of the RMS maps of the 6\,cm and 3\,mm data used in this paper.  Firstly, we masked out the image at where the signal is above a certain threshold to create a `masked image'. In this paper, the threshold for both of 6\,cm and 3\,mm images were 1\,mJy/beam. In SciPy \citep{2020SciPy-NMeth}, we applied the algorithm \texttt{ndimage.generic\_filter}, to the masked image. The filter function was defined as a standard deviation function. A parameter called \texttt{size} controls the subregion of the masked image that is given as input to the filter algorithm each time. For both of 6\,cm and 3\,mm images, \texttt{size} was set to 100\,pixels, which corresponds to 5\arcsec. Thus, an masked RMS map was generated, in which where the signal was above the threshold is empty.  To fill the masked regions, we used cubic interpolation over the whole image. In the interpolation, patches of the size of $100\times100$\,pixels (5\arcsec$\times$5\arcsec) were treated as one data point, which reduces the complexity of the computation. Thus we obtain rms maps as shown in Fig.~\ref{f:rmsmap_a} and \ref{f:rmsmap_b}
+
+
+  
+
+  \begin{figure}[ht]
+          \begin{center}
+          \includegraphics[width=0.45\textwidth]{./plot/abcd_006_rms.pdf}
+          % \includegraphics[width=0.45\textwidth]{./plot/096_rms.pdf}\\     
+          \caption[RMS map of 6\,cm image.]{RMS map of 6\,cm  image. The image has two profile cuts, in blue and red. The offset of each profile increase from left to right and from bottom to top. The profile is below each image.
+           }
+          \label{f:rmsmap_a}
+          \end{center}
+  \end{figure}
+
+  \begin{figure}[ht]
+          \begin{center}
+          % \includegraphics[width=0.45\textwidth]{./plot/abcd_006_rms.pdf}
+          \includegraphics[width=0.45\textwidth]{./plot/096_rms.pdf}     
+          \caption[RMS map of  3\,mm image.]{RMS map of 3\,mm image. The image has two profile cuts, in blue and red. The offset of each profile increase from left to right and from bottom to top. The profile is below each image.
+           }
+          \label{f:rmsmap_b}
+          \end{center}
+  \end{figure}
+
+
+
+% section rms_maps (end)
+\end{appendix}
 
 \end{document}
 
