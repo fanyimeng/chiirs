@@ -37,11 +37,13 @@ def ell_collide(ell1, ell2):
         rad_cc = (xct**2 / (g_ell_width)**2) + \
             (yct**2 / (g_ell_height)**2)
         return rad_cc
+
+    collide_degree = 0
     for i in range(36):
         x, y = ell_rad(ell2, i * 10.)
         if ell_in(ell1, x, y) < 1:
-            return 1
-    return 0
+            collide_degree = collide_degree + 1
+    return collide_degree
 
 
 fig = plt.figure(figsize=(8.0, 4.0))

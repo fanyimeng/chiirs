@@ -87,6 +87,10 @@
 \bibitem[{{Perley} \& {Butler}(2013)}]{Perley:2013aa}
 {Perley}, R.~A. \& {Butler}, B.~J. 2013, \apjs, 204, 19
 
+\bibitem[{{Rolffs} {et~al.}(2011){Rolffs}, {Schilke}, {Wyrowski}, {Dullemond},
+  {Menten}, {Thorwirth}, \& {Belloche}}]{Rolffs:2011aa}
+{Rolffs}, R., {Schilke}, P., {Wyrowski}, F., {et~al.} 2011, \aap, 529, A76
+
 \bibitem[{{S{\'a}nchez-Monge} {et~al.}(2013){S{\'a}nchez-Monge}, {Kurtz},
   {Palau}, {Estalella}, {Shepherd}, {Lizano}, {Franco}, \&
   {Garay}}]{Sanchez-Monge:2013ab}
@@ -104,14 +108,5 @@
   {Qin}, \& {Rolffs}}]{Schmiedeke:2016aa}
 {Schmiedeke}, A., {Schilke}, P., {M{\"o}ller}, T., {et~al.} 2016, \aap, 588,
   A143
-
-\bibitem[{Virtanen {et~al.}(2020)Virtanen, Gommers, Oliphant, Haberland, Reddy,
-  Cournapeau, Burovski, Peterson, Weckesser, Bright, {van der Walt}, Brett,
-  Wilson, Millman, Mayorov, Nelson, Jones, Kern, Larson, Carey, Polat, Feng,
-  Moore, {VanderPlas}, Laxalde, Perktold, Cimrman, Henriksen, Quintero, Harris,
-  Archibald, Ribeiro, Pedregosa, {van Mulbregt}, \& {SciPy 1.0
-  Contributors}}]{2020SciPy-NMeth}
-Virtanen, P., Gommers, R., Oliphant, T.~E., {et~al.} 2020, Nature Methods, 17,
-  261
 
 \end{thebibliography}

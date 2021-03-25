@@ -1,12 +1,12 @@
 # Fdb version 3
-["bibtex chiirs"] 1616523004 "chiirs.aux" "chiirs.bbl" "chiirs" 1616523006
+["bibtex chiirs"] 1616529201 "chiirs.aux" "chiirs.bbl" "chiirs" 1616529202
   "./aa.bst" 1473344910 32103 296074362bd3e822c5209e1570c1d28f ""
-  "chiirs.aux" 1616523006 5763 8f74e7b66b27c359986cbd47f24eecfd ""
-  "ref.bib" 1616521267 1372067 1bb17262a7edb0cffff7d1347e426681 ""
+  "chiirs.aux" 1616529202 5520 50150c666227d678f066dc22ca7082b9 ""
+  "ref.bib" 1616529064 1370877 96aaaa2484072e19a10ad3327b482231 ""
   (generated)
   "chiirs.blg"
   "chiirs.bbl"
-["pdflatex"] 1616523005 "chiirs.tex" "chiirs.pdf" "chiirs" 1616523006
+["pdflatex"] 1616529201 "chiirs.tex" "chiirs.pdf" "chiirs" 1616529202
   "/usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/base/8r.enc" 1480098666 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/local/texlive/2018/texmf-dist/fonts/map/fontname/texfonts.map" 1511824771 3332 103109f5612ad95229751940c61aada0 ""
   "/usr/local/texlive/2018/texmf-dist/fonts/tfm/jknappen/ec/ecrm1000.tfm" 1480098696 3584 adb004a0c8e7c46ee66cad73671f37b4 ""
@@ -180,16 +180,16 @@
   "/usr/local/texlive/2018/texmf-var/web2c/pdftex/pdflatex.fmt" 1543833134 4220280 1316af6d115bef09d2ab7e58172293b4 ""
   "/usr/local/texlive/2018/texmf.cnf" 1523934483 577 0b39adfd7c93507ff20c9c14c2f1a33f ""
   "aa.cls" 1473343756 65331 eca53c2909c3fbfe3da312189ff7faaf ""
-  "chiirs.aux" 1616523006 5763 8f74e7b66b27c359986cbd47f24eecfd ""
-  "chiirs.bbl" 1616523005 5213 166327f3216901050634d4702c22c4c9 "bibtex chiirs"
-  "chiirs.out" 1616523006 199 13f92e23b3e84f509ae3a5c1bb701fbe ""
-  "chiirs.tex" 1616523002 16969 2d77542afdb26f123df59e54dd16359a ""
+  "chiirs.aux" 1616529202 5520 50150c666227d678f066dc22ca7082b9 ""
+  "chiirs.bbl" 1616529201 4927 d31830e87743234e69a56c66beb42885 "bibtex chiirs"
+  "chiirs.out" 1616529202 199 13f92e23b3e84f509ae3a5c1bb701fbe ""
+  "chiirs.tex" 1616529195 17013 362f494cda952434d034cc283d35fef7 ""
   "plot/096_rms.pdf" 1616494894 615281 5ebab7ec4814cac8eb344839fefbf8d6 ""
   "plot/abcdC_map.pdf" 1616487729 1136783 7af0842f8c5797b3c122dbeeef90ffe3 ""
   "plot/abcdX_map.pdf" 1616487736 1351898 d6cbdaf22e3320c9a7ad9642b81bdb0f ""
   "plot/abcd_006_rms.pdf" 1616494887 547398 533110309c9842ef12b8bc3c69258f9c ""
   (generated)
-  "chiirs.log"
-  "chiirs.aux"
   "chiirs.pdf"
+  "chiirs.aux"
+  "chiirs.log"
   "chiirs.out"
