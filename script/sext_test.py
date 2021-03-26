@@ -29,7 +29,7 @@ def sext_find(filename, rmsfile, backgroundfile, outputname):
 
     import sewpy
 
-    sew = sewpy.SEW(params=["X_IMAGE", "Y_IMAGE", "FLUX_RADIUS", "FLUX_MAX", "FLUXERR_ISO", "FLAGS",
+    sew = sewpy.SEW(params=["X_IMAGE", "Y_IMAGE", "FLUX_RADIUS", "FLUX_MAX", "FLUX_ISO", "FLUXERR_ISO", "FLAGS",
                             "A_IMAGE",
                             "B_IMAGE",
                             "THETA_IMAGE"],
@@ -42,13 +42,14 @@ def sext_find(filename, rmsfile, backgroundfile, outputname):
                             "BACKPHOTO_THICK": 24,
                             "THRESH_TYPE": "RELATIVE",
                             "DEBLEND_MINCONT": 0.00001,
-                            "DEBLEND_NTHRESH": 32,
-                            "CHECKIMAGE_NAME": outputname + '_check_rms.fits',
-                            "CHECKIMAGE_TYPE": "BACKGROUND"})
+                            "DEBLEND_NTHRESH": 64,
+                            # "CHECKIMAGE_NAME": outputname + '_check_rms.fits',
+                            # "CHECKIMAGE_TYPE": "BACKGROUND"
+                            })
     sizefactor = 2.0
     fluxfactor = 4e3 * np.log(2.0) * header['CDELT2'] * header['CDELT1'] / (
         3.14159 * header['BMAJ'] * header['BMIN'])
-    fluxfactor = 1e3
+    # fluxfactor = 1e3
     fluxfactor = np.abs(fluxfactor)
     out = sew(filename)
     ot = out["table"]  # this is an astropy table.
@@ -58,7 +59,8 @@ def sext_find(filename, rmsfile, backgroundfile, outputname):
     b = ot["B_IMAGE"]
     theta = ot["THETA_IMAGE"]
     r = ot["FLUX_RADIUS"]
-    flx_iso = ot["FLUX_MAX"]
+    flx_max = ot["FLUX_MAX"]
+    flx_iso = ot["FLUX_ISO"]
     flx_err = ot["FLUXERR_ISO"]
     ra, dec = gc3.pixel2world(x, y)
     gc3.show_ellipses(x, y, width=a * sizefactor, height=b * sizefactor, angle=theta,
@@ -68,24 +70,30 @@ def sext_find(filename, rmsfile, backgroundfile, outputname):
     # rmshdu = fits.open('dustonly_rms_100_cubic.fits')
     rmshdu = fits.open(rmsfile)
     rms = rmshdu[0].data
+    bgdhdu = fits.open(backgroundfile)
+    bgd = bgdhdu[0].data
     newx = []
     newy = []
     newa = []
     newb = []
     newt = []
     newr = []
+    newflx_max = []
     newflx_iso = []
     newflx_err = []
     for i in range(len(x)):
         eccen = a[i] < 3 * b[i]
-        eccen = eccen and a[i] < 50 / 2.
-        if flx_iso[i] > 10. * rms[int(x[i]), int(y[i])] and eccen:
+        size = a[i] < 50 / 2.
+        aboverms = flx_max[i] > 10. * rms[int(x[i]), int(y[i])]
+        not_v = not (6230 < x[i] < 7000 and 2500 < y[i] < 3227)
+        if eccen and size and aboverms and not_v:
             newx.append(x[i])
             newy.append(y[i])
             newa.append(a[i])
             newb.append(b[i])
             newt.append(theta[i])
             newr.append(r[i])
+            newflx_max.append(flx_max[i])
             newflx_iso.append(flx_iso[i])
             newflx_err.append(flx_err[i])
     print(len(newx))
@@ -98,6 +106,7 @@ def sext_find(filename, rmsfile, backgroundfile, outputname):
     newb = np.array(newb)
     newt = np.array(newt)
     newr = np.array(newr)
+    newflx_max = np.array(newflx_max)
     newflx_iso = np.array(newflx_iso)
     newflx_err = np.array(newflx_err)
     gc3.show_ellipses(newx, newy, width=newa * sizefactor, height=newb * sizefactor, angle=newt,
@@ -112,9 +121,9 @@ def sext_find(filename, rmsfile, backgroundfile, outputname):
 #           '../data/abcd_006_lpf_new_rms_100_1e-3_cubic.fits', '006_sex_test')
 sext_find('../data/abcd_006_lpf_new.fits',
           '../data/abcd_006_lpf_new_rms_100_1e-3_cubic.fits',
-          '../',
+          '../data/006_sex_test_check.fits',
           '006_sex_test')
 sext_find('../data/rg_096.fits',
           '../data/rg_096_rms_100_1e-3_cubic.fits',
-          '../',
+          '../data/096_sex_test_check.fits',
           '096_sex_test')

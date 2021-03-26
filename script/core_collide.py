@@ -73,11 +73,11 @@ def collidelist(coresa, coresb, outputcsv='cores_006_coll.csv'):
 
 headerlist = ['cenx', 'ceny', 'ella', 'ellb',
               'ellt', 'ellr', 'flx_iso', 'flx_err']
-cores006 = pd.read_csv('006_sex.txt',
+cores006 = pd.read_csv('006_sex_test.txt',
                        delim_whitespace=True,
                        header=None,
                        names=headerlist)
-cores096 = pd.read_csv('096_sex.txt',
+cores096 = pd.read_csv('096_sex_test.txt',
                        delim_whitespace=True,
                        header=None,
                        names=headerlist)

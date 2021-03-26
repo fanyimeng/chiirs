@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.12.3)  23 MAR 2021 20:53
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.12.3)  26 MAR 2021 05:07
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2709,77 +2709,146 @@ Package hyperref Warning: Suppressing link with empty target on input line 122.
 
 
 ]
-<./plot/abcdC_map.pdf, id=117, 315.07541pt x 358.71703pt>
+<./plot/abcdC_map.pdf, id=129, 315.07541pt x 358.71703pt>
 File: ./plot/abcdC_map.pdf Graphic file (type pdf)
 <use ./plot/abcdC_map.pdf>
 Package pdftex.def Info: ./plot/abcdC_map.pdf  used on input line 141.
 (pdftex.def)             Requested size: 235.5872pt x 268.227pt.
-<./plot/abcdX_map.pdf, id=118, 315.07541pt x 358.71703pt>
+<./plot/abcdX_map.pdf, id=130, 315.07541pt x 358.71703pt>
 File: ./plot/abcdX_map.pdf Graphic file (type pdf)
 <use ./plot/abcdX_map.pdf>
 Package pdftex.def Info: ./plot/abcdX_map.pdf  used on input line 142.
 (pdftex.def)             Requested size: 235.5872pt x 268.227pt.
-
-(./chiirs.bbl
-
-Package hyperref Warning: Suppressing link with empty target on input line 96.
-
-[2])
-
-Package hyperref Warning: Suppressing link with empty target on input line 165.
+LaTeX Font Info:    Font shape `T1/txss/m/n' will be
+(Font)              scaled to size 9.49997pt on input line 155.
+LaTeX Font Info:    Font shape `T1/txss/m/it' in size <10> not available
+(Font)              Font shape `T1/txss/m/sl' tried instead on input line 155.
+LaTeX Font Info:    Font shape `T1/txss/m/sl' will be
+(Font)              scaled to size 9.49997pt on input line 155.
 
 
-[3
+Package hyperref Warning: Suppressing link with empty target on input line 170.
 
- <./plot/abcdC_map.pdf> <./plot/abcdX_map.pdf
+
+[2]
+<./plot/overall_cores_006.pdf, id=183, 561.8376pt x 570.93298pt>
+File: ./plot/overall_cores_006.pdf Graphic file (type pdf)
+<use ./plot/overall_cores_006.pdf>
+Package pdftex.def Info: ./plot/overall_cores_006.pdf  used on input line 197.
+(pdftex.def)             Requested size: 445.00429pt x 452.22562pt.
+<./plot/r-flx.pdf, id=184, 433.62pt x 433.62pt>
+File: ./plot/r-flx.pdf Graphic file (type pdf)
+<use ./plot/r-flx.pdf>
+Package pdftex.def Info: ./plot/r-flx.pdf  used on input line 207.
+(pdftex.def)             Requested size: 366.46988pt x 366.48793pt.
+<./plot/mhii.pdf, id=185, 289.08pt x 289.08pt>
+File: ./plot/mhii.pdf Graphic file (type pdf)
+<use ./plot/mhii.pdf>
+Package pdftex.def Info: ./plot/mhii.pdf  used on input line 216.
+(pdftex.def)             Requested size: 209.40907pt x 209.40779pt.
+<./plot/overall_cores_096.pdf, id=186, 561.8376pt x 570.93298pt>
+File: ./plot/overall_cores_096.pdf Graphic file (type pdf)
+<use ./plot/overall_cores_096.pdf>
+Package pdftex.def Info: ./plot/overall_cores_096.pdf  used on input line 227.
+(pdftex.def)             Requested size: 445.00429pt x 452.22562pt.
+<./plot/006-096-flx.pdf, id=187, 433.62pt x 433.62pt>
+File: ./plot/006-096-flx.pdf Graphic file (type pdf)
+<use ./plot/006-096-flx.pdf>
+Package pdftex.def Info: ./plot/006-096-flx.pdf  used on input line 237.
+(pdftex.def)             Requested size: 251.2925pt x 251.29466pt.
+<./plot/006-096-flx_2.pdf, id=188, 433.62pt x 433.62pt>
+File: ./plot/006-096-flx_2.pdf Graphic file (type pdf)
+<use ./plot/006-096-flx_2.pdf>
+Package pdftex.def Info: ./plot/006-096-flx_2.pdf  used on input line 238.
+(pdftex.def)             Requested size: 251.2925pt x 251.29466pt.
+ (./chiirs.bbl
+
+Package hyperref Warning: Suppressing link with empty target on input line 111.
+
+
+[3 <./plot/abcdC_map.pdf> <./plot/abcdX_map.pdf
 
 pdfTeX warning: pdflatex (file ./plot/abcdX_map.pdf): PDF inclusion: multiple p
 dfs with page group included in a single page
+>])
+
+Package hyperref Warning: Suppressing link with empty target on input line 259.
+
+
+[4
+
+ <./plot/overall_cores_006.pdf>]
+
+Package hyperref Warning: Suppressing link with empty target on input line 259.
+
+
+[5
+
+ <./plot/r-flx.pdf> <./plot/mhii.pdf
+
+pdfTeX warning: pdflatex (file ./plot/mhii.pdf): PDF inclusion: multiple pdfs w
+ith page group included in a single page
 >]
 
-Package natbib Warning: Citation `2020SciPy-NMeth' on page 4 undefined on input
- line 170.
+Package hyperref Warning: Suppressing link with empty target on input line 259.
 
-<./plot/abcd_006_rms.pdf, id=261, 309.31952pt x 358.71703pt>
+
+[6 <./plot/overall_cores_096.pdf>]
+
+Package hyperref Warning: Suppressing link with empty target on input line 259.
+
+
+[7 <./plot/006-096-flx.pdf> <./plot/006-096-flx_2.pdf
+
+pdfTeX warning: pdflatex (file ./plot/006-096-flx_2.pdf): PDF inclusion: multip
+le pdfs with page group included in a single page
+>]
+
+Package natbib Warning: Citation `2020SciPy-NMeth' on page 8 undefined on input
+ line 264.
+
+<./plot/abcd_006_rms.pdf, id=605, 309.31952pt x 358.71703pt>
 File: ./plot/abcd_006_rms.pdf Graphic file (type pdf)
 <use ./plot/abcd_006_rms.pdf>
-Package pdftex.def Info: ./plot/abcd_006_rms.pdf  used on input line 177.
+Package pdftex.def Info: ./plot/abcd_006_rms.pdf  used on input line 271.
 (pdftex.def)             Requested size: 235.5872pt x 273.21344pt.
-<./plot/096_rms.pdf, id=262, 309.31952pt x 358.71703pt>
+<./plot/096_rms.pdf, id=606, 309.31952pt x 358.71703pt>
 File: ./plot/096_rms.pdf Graphic file (type pdf)
 <use ./plot/096_rms.pdf>
-Package pdftex.def Info: ./plot/096_rms.pdf  used on input line 188.
+Package pdftex.def Info: ./plot/096_rms.pdf  used on input line 282.
 (pdftex.def)             Requested size: 235.5872pt x 273.21344pt.
 
 Package natbib Warning: There were undefined citations.
 
 
-Package hyperref Warning: Suppressing link with empty target on input line 200.
+Package hyperref Warning: Suppressing link with empty target on input line 297.
 
 
-[4
+[8
+
+
 
  <./plot/abcd_006_rms.pdf> <./plot/096_rms.pdf
 
 pdfTeX warning: pdflatex (file ./plot/096_rms.pdf): PDF inclusion: multiple pdf
 s with page group included in a single page
 >]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 200.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 200.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 297.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 297.
  (./chiirs.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 200.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 200.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 297.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 297.
 Package rerunfilecheck Info: File `chiirs.out' has not changed.
-(rerunfilecheck)             Checksum: 13F92E23B3E84F509AE3A5C1BB701FBE;199.
+(rerunfilecheck)             Checksum: D75E8F13D10BE5C2526F28F6DDB3A1FA;375.
  ) 
 Here is how much of TeX's memory you used:
- 23780 strings out of 492649
- 440160 string characters out of 6129622
- 574480 words of memory out of 5000000
- 27293 multiletter control sequences out of 15000+600000
- 640375 words of font info for 179 fonts, out of 8000000 for 9000
+ 23845 strings out of 492649
+ 441490 string characters out of 6129622
+ 573480 words of memory out of 5000000
+ 27334 multiletter control sequences out of 15000+600000
+ 645377 words of font info for 183 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 41i,11n,57p,10369b,1064s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 41i,12n,57p,10369b,1074s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
 exlive/2018/texmf-dist/fonts/type1/public/txfonts/rtcxr.pfb></usr/local/texlive
 /2018/texmf-dist/fonts/type1/public/txfonts/rtxmi.pfb></usr/local/texlive/2018/
@@ -2787,16 +2856,18 @@ texmf-dist/fonts/type1/public/txfonts/rtxr.pfb></usr/local/texlive/2018/texmf-d
 ist/fonts/type1/public/txfonts/rtxr.pfb></usr/local/texlive/2018/texmf-dist/fon
 ts/type1/public/txfonts/rtxsc.pfb></usr/local/texlive/2018/texmf-dist/fonts/typ
 e1/public/txfonts/t1xtt.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/pub
-lic/txfonts/txsy.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/urw/helvet
-ic/uhvb8a.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/urw/helvetic/uhvr
-8a.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></u
-sr/local/texlive/2018/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/t
-exlive/2018/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/201
-8/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on chiirs.pdf (4 pages, 3730363 bytes).
+lic/txfonts/txex.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/txf
+onts/txsy.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/txfonts/tx
+sya.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb
+></usr/local/texlive/2018/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/
+local/texlive/2018/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texl
+ive/2018/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2018/t
+exmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2018/texmf-dist/
+fonts/type1/urw/times/utmri8a.pfb>
+Output written on chiirs.pdf (8 pages, 10093630 bytes).
 PDF statistics:
- 419 PDF objects out of 1000 (max. 8388607)
- 229 compressed objects within 3 object streams
- 39 named destinations out of 1000 (max. 500000)
- 53 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 773 PDF objects out of 1000 (max. 8388607)
+ 351 compressed objects within 4 object streams
+ 55 named destinations out of 1000 (max. 500000)
+ 107 words of extra memory for PDF output out of 10000 (max. 10000000)
 

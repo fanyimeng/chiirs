@@ -36,30 +36,30 @@ def plotcores(ax, coresa, coresb, linewidth=1):
         within = coresa['ceny'][i] < ylim[1] and within
         if within:
             num = num + 1
-            if coresa['collide'][i] > 0:
+            if coresa['em'][i] > 1e7:
                 bnum = bnum + 1
                 e1 = patches.Ellipse((coresa['cenx'][i], coresa['ceny'][i]),
                                      coresa['ella'][i] *
                                      2, coresa['ellb'][i] * 2,
                                      angle=coresa['ellt'][i],
-                                     linewidth=1,
-                                     fill=False, zorder=3,
-                                     edgecolor=(1, 0.5, 0.0, 1.0),
+                                     linewidth=linewidth,
+                                     fill=False, zorder=30,
+                                     edgecolor=(1, 1, 1.0, 1.0),
                                      # facecolor=(1, 1, 0.0, 0.8),
-                                     path_effects=[PathEffects.withStroke(linewidth=linewidth * 1.3,
-                                                                          foreground="k")])
+                                     path_effects=[PathEffects.withStroke(linewidth=linewidth * 1.5,
+                                                                          foreground="b")])
                 ax.add_patch(e1)
             else:
                 e1 = patches.Ellipse((coresa['cenx'][i], coresa['ceny'][i]),
                                      coresa['ella'][i] *
                                      2, coresa['ellb'][i] * 2,
                                      angle=coresa['ellt'][i],
-                                     linewidth=0.5,
-                                     fill=False, zorder=3,
-                                     edgecolor=(1, 0.5, 0.0, 1.0),
+                                     linewidth=linewidth,
+                                     fill=False, zorder=30,
+                                     edgecolor=(0.5, 0.5, 1.0, 1.0),
                                      # facecolor=(1, 1, 0.0, 0.8),
-                                     path_effects=[PathEffects.withStroke(linewidth=linewidth * 1.3,
-                                                                          foreground="k")])
+                                     path_effects=[PathEffects.withStroke(linewidth=linewidth * 1.5,
+                                                                          foreground="b")])
 
                 ax.add_patch(e1)
 
@@ -73,12 +73,12 @@ def plotcores(ax, coresa, coresb, linewidth=1):
             e1 = patches.Ellipse((coresb['cenx'][i], coresb['ceny'][i]),
                                  coresb['ella'][i] * 2, coresb['ellb'][i] * 2,
                                  angle=coresb['ellt'][i],
-                                 linewidth=linewidth,
+                                 linewidth=linewidth / 2,
                                  fill=False, zorder=3,
-                                 edgecolor=(0.5, 0.5, 0.5, 1.0),
+                                 edgecolor=(0.3, 0.3, 0.3, 0.3),
                                  # facecolor=(1, 1, 0.0, 0.8),
-                                 path_effects=[PathEffects.withStroke(linewidth=linewidth * 1.3,
-                                                                      foreground="k")])
+                                 path_effects=[PathEffects.withStroke(linewidth=linewidth * 0.5,
+                                                                      foreground="w")])
 
             ax.add_patch(e1)
     return num, bnum
@@ -86,6 +86,9 @@ def plotcores(ax, coresa, coresb, linewidth=1):
 
 fitsfile = '../data/abcd_006_lpf_new.fits'
 maintext = 'SgrB2 @ 6 cm'
+textcolor = (0.5, 0.5, 0.5, 1)
+texta = ' Sources'
+typetext = " UCHii"
 
 plt.rcParams['figure.dpi'] = 75.
 plt.rcParams['savefig.dpi'] = 300.
@@ -126,9 +129,9 @@ ax0.set_ylim(zy1, zy2)
 
 im = ax0.imshow(hdu.data * 1e3,
                 transform=ax0.get_transform(mywcs),
-                vmin=-2,
-                vmax=30,
-                cmap=plt.cm.RdYlBu_r,
+                vmin=-0.1,
+                vmax=2,
+                cmap=plt.cm.Reds,
                 interpolation='nearest',
                 origin='lower',
                 norm=asinh_norm.AsinhNorm())
@@ -156,10 +159,10 @@ ax0.text((zx2 - zx1) * 0.05 + zx1,
          maintext,
          fontsize=11,
          ha='left',
-         color='white')
+         color=textcolor)
 
 
-coresa = pd.read_csv('cores_006_coll.csv')
+coresa = pd.read_csv('cores_006_em.csv')
 coresb = pd.read_csv('cores_096_coll.csv')
 
 print(list(coresa.columns.values))
@@ -167,79 +170,148 @@ corenum, t1corenum = plotcores(ax0, coresa, coresb, linewidth=0.5)
 
 ax0.text((zx2 - zx1) * 0.95 + zx1,
          (zy2 - zy1) * 0.10 + zy1,
-         str(corenum) + ' cores',
+         str(corenum) + texta,
          fontsize=9,
          ha='right',
-         color='white')
+         color=(0.5, 0.5, 1.0, 1.0))
 
 ax0.text((zx2 - zx1) * 0.95 + zx1,
-         (zy2 - zy1) * 0.05 + zy1,
-         str(t1corenum) + ' Type I cores',
+         (zy2 - zy1) * 0.03 + zy1,
+         str(t1corenum) + typetext,
          fontsize=9,
          ha='right',
-         color=(1, 1, 0.3, 0.8))
+         color=(1, 1, 1.0, 1.0),
+         path_effects=[PathEffects.withStroke(linewidth=1.3,
+                                              foreground="b")])
+
+beamstr = '$(%4.2f^{\\prime\\prime},\\ %4.2f^{\\prime\\prime},\\ %4.1f^{\\circ})$' % (hdu.header['BMAJ'] * 3600,
+                                                                                      hdu.header['BMIN'] *
+                                                                                      3600,
+                                                                                      hdu.header['BPA'])
+beamstr = '(%4.2f", %4.2f", %4.1f°)' % (hdu.header['BMAJ'] * 3600,
+                                        hdu.header['BMIN'] * 3600,
+                                        hdu.header['BPA'])
+ax0.text((zx2 - zx1) * 0.03 + zx1,
+         (zy2 - zy1) * 0.02 + zy1,
+         beamstr,
+         fontsize=9,
+         ha='left',
+         color=textcolor)
 
 
-# ================ SgrB2 M =================
-sgrb2m_coor = coordinates.SkyCoord("17:47:20.5",
-                                   "-28:23:06",
-                                   unit=(u.h, u.deg),
-                                   frame='fk5')
-sgrb2m_x, sgrb2m_y = mywcs.wcs_world2pix([[sgrb2m_coor.ra.deg,
-                                           sgrb2m_coor.dec.deg]],
-                                         0)[0]
-sgrb2m_txt_coor = coordinates.SkyCoord("17:47:23.0",
-                                       "-28:23:20",
+def region_anno(ax, physcoor, txtcoor, text):
+    sgrb2s_coor = coordinates.SkyCoord(physcoor[0],
+                                       physcoor[1],
                                        unit=(u.h, u.deg),
                                        frame='fk5')
-sgrb2m_txt_x, sgrb2m_txt_y = mywcs.wcs_world2pix([[sgrb2m_txt_coor.ra.deg,
-                                                   sgrb2m_txt_coor.dec.deg]],
-                                                 0)[0]
-anno = ax0.annotate('M', xy=(sgrb2m_x, sgrb2m_y),
-                    xytext=(sgrb2m_txt_x, sgrb2m_txt_y),
-                    color=(1, 1, 1, 1.0),
-                    arrowprops=dict(edgecolor=(1, 1, 1, 1.0),
-                                    arrowstyle='-', linewidth=1))
-# ================ SgrB2 N =================
-sgrb2n_coor = coordinates.SkyCoord("17:47:20.2",
-                                   "-28:22:21",
-                                   unit=(u.h, u.deg),
-                                   frame='fk5')
-sgrb2n_x, sgrb2n_y = mywcs.wcs_world2pix([[sgrb2n_coor.ra.deg,
-                                           sgrb2n_coor.dec.deg]],
-                                         0)[0]
-sgrb2n_txt_coor = coordinates.SkyCoord("17:47:23",
-                                       "-28:22:30",
-                                       unit=(u.h, u.deg),
-                                       frame='fk5')
-sgrb2n_txt_x, sgrb2n_txt_y = mywcs.wcs_world2pix([[sgrb2n_txt_coor.ra.deg,
-                                                   sgrb2n_txt_coor.dec.deg]],
-                                                 0)[0]
-anno = ax0.annotate('N', xy=(sgrb2n_x, sgrb2n_y),
-                    xytext=(sgrb2n_txt_x, sgrb2n_txt_y),
-                    color=(1, 1, 1, 1.0),
-                    arrowprops=dict(edgecolor=(1, 1, 1, 1.0),
-                                    arrowstyle='-', linewidth=1))
-# ================ SgrB2 S =================
-sgrb2s_coor = coordinates.SkyCoord("17:47:20.430",
-                                   "-28:23:45.06",
-                                   unit=(u.h, u.deg),
-                                   frame='fk5')
-sgrb2s_x, sgrb2s_y = mywcs.wcs_world2pix([[sgrb2s_coor.ra.deg,
-                                           sgrb2s_coor.dec.deg]],
-                                         0)[0]
-sgrb2s_txt_coor = coordinates.SkyCoord("17:47:23",
-                                       "-28:23:55",
-                                       unit=(u.h, u.deg),
-                                       frame='fk5')
-sgrb2s_txt_x, sgrb2s_txt_y = mywcs.wcs_world2pix([[sgrb2s_txt_coor.ra.deg,
-                                                   sgrb2s_txt_coor.dec.deg]],
-                                                 0)[0]
-anno = ax0.annotate('S', xy=(sgrb2s_x, sgrb2s_y),
-                    xytext=(sgrb2s_txt_x, sgrb2s_txt_y),
-                    color=(1, 1, 1, 1.0),
-                    arrowprops=dict(edgecolor=(1, 1, 1, 1.0),
-                                    arrowstyle='-', linewidth=1))
+    sgrb2s_x, sgrb2s_y = mywcs.wcs_world2pix([[sgrb2s_coor.ra.deg,
+                                               sgrb2s_coor.dec.deg]],
+                                             0)[0]
+    sgrb2s_txt_coor = coordinates.SkyCoord(txtcoor[0],
+                                           txtcoor[1],
+                                           unit=(u.h, u.deg),
+                                           frame='fk5')
+    sgrb2s_txt_x, sgrb2s_txt_y = mywcs.wcs_world2pix([[sgrb2s_txt_coor.ra.deg,
+                                                       sgrb2s_txt_coor.dec.deg]],
+                                                     0)[0]
+    anno = ax0.annotate(text, xy=(sgrb2s_x, sgrb2s_y),
+                        xytext=(sgrb2s_txt_x, sgrb2s_txt_y),
+                        color='w',
+                        arrowprops=dict(edgecolor='w',
+                                        arrowstyle='-', linewidth=0.8),
+                        path_effects=[PathEffects.withStroke(linewidth=2,
+                                                             foreground="k")])
+    anno.arrow_patch.set_path_effects([
+        PathEffects.Stroke(linewidth=2, foreground="k"),
+        PathEffects.Normal()])
+    return 0
+
+
+if 1:
+    region_anno(ax=ax0,
+                physcoor=["17:47:20.5", "-28:23:06"],
+                txtcoor=["17:47:24.0", "-28:23:10"],
+                text='M')
+    region_anno(ax=ax0,
+                physcoor=["17:47:20.2", "-28:22:21"],
+                txtcoor=["17:47:16.5", "-28:21:50"],
+                text='N')
+    region_anno(ax=ax0,
+                physcoor=["17:47:20.430", "-28:23:45.06"],
+                txtcoor=["17:47:17.5", "-28:23:55"],
+                text='S')
+    region_anno(ax=ax0,
+                physcoor=["17:47:21.0", "-28:25:10"],
+                txtcoor=["17:47:18", "-28:25:10"],
+                text='DS')
+    region_anno(ax=ax0,
+                physcoor=["17:47:19.3", "-28:24:38"],
+                txtcoor=["17:47:17", "-28:24:20"],
+                text='AA')
+    region_anno(ax=ax0,
+                physcoor=["17:47:13.0", "-28:24:40"],
+                txtcoor=["17:47:10", "-28:24:20"],
+                text='V')
+# # ================ SgrB2 M =================
+# sgrb2m_coor = coordinates.SkyCoord("17:47:20.5",
+#                                    "-28:23:06",
+#                                    unit=(u.h, u.deg),
+#                                    frame='fk5')
+# sgrb2m_x, sgrb2m_y = mywcs.wcs_world2pix([[sgrb2m_coor.ra.deg,
+#                                            sgrb2m_coor.dec.deg]],
+#                                          0)[0]
+# sgrb2m_txt_coor = coordinates.SkyCoord("17:47:23.0",
+#                                        "-28:23:20",
+#                                        unit=(u.h, u.deg),
+#                                        frame='fk5')
+# sgrb2m_txt_x, sgrb2m_txt_y = mywcs.wcs_world2pix([[sgrb2m_txt_coor.ra.deg,
+#                                                    sgrb2m_txt_coor.dec.deg]],
+#                                                  0)[0]
+# anno = ax0.annotate('M', xy=(sgrb2m_x, sgrb2m_y),
+#                     xytext=(sgrb2m_txt_x, sgrb2m_txt_y),
+#                     color=textcolor,
+#                     arrowprops=dict(edgecolor=textcolor,
+#                                     arrowstyle='-', linewidth=1))
+# # ================ SgrB2 N =================
+# sgrb2n_coor = coordinates.SkyCoord("17:47:20.2",
+#                                    "-28:22:21",
+#                                    unit=(u.h, u.deg),
+#                                    frame='fk5')
+# sgrb2n_x, sgrb2n_y = mywcs.wcs_world2pix([[sgrb2n_coor.ra.deg,
+#                                            sgrb2n_coor.dec.deg]],
+#                                          0)[0]
+# sgrb2n_txt_coor = coordinates.SkyCoord("17:47:23",
+#                                        "-28:22:30",
+#                                        unit=(u.h, u.deg),
+#                                        frame='fk5')
+# sgrb2n_txt_x, sgrb2n_txt_y = mywcs.wcs_world2pix([[sgrb2n_txt_coor.ra.deg,
+#                                                    sgrb2n_txt_coor.dec.deg]],
+#                                                  0)[0]
+# anno = ax0.annotate('N', xy=(sgrb2n_x, sgrb2n_y),
+#                     xytext=(sgrb2n_txt_x, sgrb2n_txt_y),
+#                     color=textcolor,
+#                     arrowprops=dict(edgecolor=textcolor,
+#                                     arrowstyle='-', linewidth=1))
+# # ================ SgrB2 S =================
+# sgrb2s_coor = coordinates.SkyCoord("17:47:20.430",
+#                                    "-28:23:45.06",
+#                                    unit=(u.h, u.deg),
+#                                    frame='fk5')
+# sgrb2s_x, sgrb2s_y = mywcs.wcs_world2pix([[sgrb2s_coor.ra.deg,
+#                                            sgrb2s_coor.dec.deg]],
+#                                          0)[0]
+# sgrb2s_txt_coor = coordinates.SkyCoord("17:47:23",
+#                                        "-28:23:55",
+#                                        unit=(u.h, u.deg),
+#                                        frame='fk5')
+# sgrb2s_txt_x, sgrb2s_txt_y = mywcs.wcs_world2pix([[sgrb2s_txt_coor.ra.deg,
+#                                                    sgrb2s_txt_coor.dec.deg]],
+#                                                  0)[0]
+# anno = ax0.annotate('S', xy=(sgrb2s_x, sgrb2s_y),
+#                     xytext=(sgrb2s_txt_x, sgrb2s_txt_y),
+#                     color=textcolor,
+#                     arrowprops=dict(edgecolor=textcolor,
+#                                     arrowstyle='-', linewidth=1))
 
 scalebarpos = coordinates.SkyCoord(
     "17:47:32", "-28:26:00", unit=(u.h, u.deg), frame='fk5')
@@ -248,7 +320,7 @@ scalebarlen = (2 * u.pc / distance).to(u.arcsec,
 
 make_scalebar(ax0, scalebarpos,
               length=scalebarlen,
-              color='#FFFFFF',
+              color=textcolor,
               label='50" 2 pc',
               text_offset=1.0 * u.arcsec,
               fontsize=8
@@ -295,7 +367,7 @@ def subplot(mygs=gs[0, 1],
              titletext,
              fontsize=9,
              ha='left',
-             color='white')
+             color=textcolor)
     return 0
 
 
@@ -314,12 +386,13 @@ ax1.set_ylim(zy1, zy2)
 
 ax1.imshow(hdu.data * 1e3,
            transform=ax1.get_transform(mywcs),
-           vmin=-2,
-           vmax=40,
-           cmap=plt.cm.RdYlBu_r,
+           vmin=-0.3,
+           vmax=6,
+           cmap=plt.cm.Reds,
            interpolation='nearest',
            origin='lower',
-           aspect='equal')
+           aspect='equal',
+           norm=asinh_norm.AsinhNorm())
 
 
 ax1.text((zx2 - zx1) * 0.05 + zx1,
@@ -327,24 +400,26 @@ ax1.text((zx2 - zx1) * 0.05 + zx1,
          "Sgr B2 (N)",
          fontsize=9,
          ha='left',
-         color='white')
+         color=textcolor)
 
 
 corenum, t1corenum = plotcores(ax1, coresa, coresb, linewidth=0.5)
 
-ax1.text((zx2 - zx1) * 0.97 + zx1,
-         (zy2 - zy1) * 0.08 + zy1,
-         str(corenum) + ' cores',
-         fontsize=8,
+ax1.text((zx2 - zx1) * 0.95 + zx1,
+         (zy2 - zy1) * 0.10 + zy1,
+         str(corenum) + texta,
+         fontsize=9,
          ha='right',
-         color='white')
+         color=(0.5, 0.5, 1.0, 1.0))
 
-ax1.text((zx2 - zx1) * 0.97 + zx1,
+ax1.text((zx2 - zx1) * 0.95 + zx1,
          (zy2 - zy1) * 0.03 + zy1,
-         str(t1corenum) + ' Type I cores',
-         fontsize=8,
+         str(t1corenum) + typetext,
+         fontsize=9,
          ha='right',
-         color=(1, 1, 0.3, 0.8))
+         color=(1, 1, 1.0, 1.0),
+         path_effects=[PathEffects.withStroke(linewidth=1.3,
+                                              foreground="b")])
 
 
 ax1.set_xticks([])
@@ -358,7 +433,7 @@ ax0.add_patch(patches.Rectangle((4780 - subsize, 5780 - subsize),
                                 subsize * 2, subsize * 2,
                                 fill=False,
                                 linestyle='--',
-                                linewidth=0.5,
+                                linewidth=1.2,
                                 edgecolor='#CCCCCC'))
 
 con = ConnectionPatch(xyA=(4780 - subsize, 5780 - subsize),
@@ -390,7 +465,7 @@ scalebarlen = (0.2 * u.pc / distance).to(u.arcsec,
 
 make_scalebar(ax1, scalebarpos,
               length=scalebarlen,
-              color='#FFFFFF',
+              color=textcolor,
               label='5" 0.2 pc',
               text_offset=1.0 * u.arcsec,
               fontsize=8
@@ -418,12 +493,13 @@ ax2.set_ylim(zy1, zy2)
 
 ax2.imshow(hdu.data * 1e3,
            transform=ax2.get_transform(mywcs),
-           vmin=-2,
-           vmax=40,
-           cmap=plt.cm.RdYlBu_r,
+           vmin=-0.3,
+           vmax=6,
+           cmap=plt.cm.Reds,
            interpolation='nearest',
            origin='lower',
-           aspect='equal')
+           aspect='equal',
+           norm=asinh_norm.AsinhNorm())
 
 
 ax2.text((zx2 - zx1) * 0.05 + zx1,
@@ -431,23 +507,25 @@ ax2.text((zx2 - zx1) * 0.05 + zx1,
          "Sgr B2 (M)",
          fontsize=9,
          ha='left',
-         color='white')
+         color=textcolor)
 
 corenum, t1corenum = plotcores(ax2, coresa, coresb, linewidth=0.5)
 
-ax2.text((zx2 - zx1) * 0.97 + zx1,
-         (zy2 - zy1) * 0.08 + zy1,
-         str(corenum) + ' cores',
-         fontsize=8,
+ax2.text((zx2 - zx1) * 0.95 + zx1,
+         (zy2 - zy1) * 0.10 + zy1,
+         str(corenum) + texta,
+         fontsize=9,
          ha='right',
-         color='white')
+         color=(0.5, 0.5, 1.0, 1.0))
 
-ax2.text((zx2 - zx1) * 0.97 + zx1,
+ax2.text((zx2 - zx1) * 0.95 + zx1,
          (zy2 - zy1) * 0.03 + zy1,
-         str(t1corenum) + ' Type I cores',
-         fontsize=8,
+         str(t1corenum) + typetext,
+         fontsize=9,
          ha='right',
-         color=(1, 1, 0.3, 0.8))
+         color=(1, 1, 1.0, 1.0),
+         path_effects=[PathEffects.withStroke(linewidth=1.3,
+                                              foreground="b")])
 
 
 ax2.set_xticks([])
@@ -461,7 +539,7 @@ ax0.add_patch(patches.Rectangle((4700 - subsize, 4860 - subsize),
                                 subsize * 2, subsize * 2,
                                 fill=False,
                                 linestyle='--',
-                                linewidth=0.5,
+                                linewidth=1.2,
                                 edgecolor='#CCCCCC'))
 
 con = ConnectionPatch(xyA=(4700 - subsize, 4860 - subsize),
@@ -493,7 +571,7 @@ scalebarlen = (0.2 * u.pc / distance).to(u.arcsec,
 
 make_scalebar(ax2, scalebarpos,
               length=scalebarlen,
-              color='#FFFFFF',
+              color=textcolor,
               label='5" 0.2 pc',
               text_offset=1.0 * u.arcsec,
               fontsize=8
@@ -525,12 +603,13 @@ patchceny = (zy1 + zy2) / 2
 
 ax3.imshow(hdu.data * 1e3,
            transform=ax3.get_transform(mywcs),
-           vmin=-2,
-           vmax=40,
-           cmap=plt.cm.RdYlBu_r,
+           vmin=-0.3,
+           vmax=6,
+           cmap=plt.cm.Reds,
            interpolation='nearest',
            origin='lower',
-           aspect='equal')
+           aspect='equal',
+           norm=asinh_norm.AsinhNorm())
 
 
 ax3.text((zx2 - zx1) * 0.05 + zx1,
@@ -538,23 +617,25 @@ ax3.text((zx2 - zx1) * 0.05 + zx1,
          "Sgr B2 (S)",
          fontsize=9,
          ha='left',
-         color='white')
+         color=textcolor)
 
 corenum, t1corenum = plotcores(ax3, coresa, coresb, linewidth=0.5)
 
-ax3.text((zx2 - zx1) * 0.97 + zx1,
-         (zy2 - zy1) * 0.08 + zy1,
-         str(corenum) + ' cores',
-         fontsize=8,
+ax3.text((zx2 - zx1) * 0.95 + zx1,
+         (zy2 - zy1) * 0.10 + zy1,
+         str(corenum) + texta,
+         fontsize=9,
          ha='right',
-         color='white')
+         color=(0.5, 0.5, 1.0, 1.0))
 
-ax3.text((zx2 - zx1) * 0.97 + zx1,
+ax3.text((zx2 - zx1) * 0.95 + zx1,
          (zy2 - zy1) * 0.03 + zy1,
-         str(t1corenum) + ' Type I cores',
-         fontsize=8,
+         str(t1corenum) + typetext,
+         fontsize=9,
          ha='right',
-         color=(1, 1, 0.3, 0.8))
+         color=(1, 1, 1.0, 1.0),
+         path_effects=[PathEffects.withStroke(linewidth=1.3,
+                                              foreground="b")])
 
 
 ax3.set_xticks([])
@@ -568,7 +649,7 @@ ax0.add_patch(patches.Rectangle((patchcenx - subsize, patchceny - subsize),
                                 subsize * 2, subsize * 2,
                                 fill=False,
                                 linestyle='--',
-                                linewidth=0.5,
+                                linewidth=1.2,
                                 edgecolor='#CCCCCC'))
 
 con = ConnectionPatch(xyA=(patchcenx - subsize, patchceny - subsize),
@@ -600,7 +681,7 @@ scalebarlen = (0.2 * u.pc / distance).to(u.arcsec,
 
 make_scalebar(ax3, scalebarpos,
               length=scalebarlen,
-              color='#FFFFFF',
+              color=textcolor,
               label='5" 0.2 pc',
               text_offset=1.0 * u.arcsec,
               fontsize=8
@@ -650,12 +731,13 @@ subsizey = np.abs(zy1 - zy2) / 2
 
 ax4.imshow(hdu.data * 1e3,
            transform=ax4.get_transform(mywcs),
-           vmin=-0.5,
-           vmax=10,
-           cmap=plt.cm.RdYlBu_r,
+           vmin=-0.1,
+           vmax=2,
+           cmap=plt.cm.Reds,
            interpolation='nearest',
            origin='lower',
-           aspect='equal')
+           aspect='equal',
+           norm=asinh_norm.AsinhNorm())
 
 
 ax4.text((zx2 - zx1) * 0.05 + zx1,
@@ -663,24 +745,25 @@ ax4.text((zx2 - zx1) * 0.05 + zx1,
          "Sgr B2 (DS)",
          fontsize=9,
          ha='left',
-         color='white')
+         color=textcolor)
 
 corenum, t1corenum = plotcores(ax4, coresa, coresb, linewidth=0.5)
 
-ax4.text((zx2 - zx1) * 0.97 + zx1,
-         (zy2 - zy1) * 0.08 + zy1,
-         str(corenum) + ' cores',
-         fontsize=8,
+ax4.text((zx2 - zx1) * 0.95 + zx1,
+         (zy2 - zy1) * 0.10 + zy1,
+         str(corenum) + texta,
+         fontsize=9,
          ha='right',
-         color='white')
+         color=(0.5, 0.5, 1.0, 1.0))
 
-ax4.text((zx2 - zx1) * 0.97 + zx1,
+ax4.text((zx2 - zx1) * 0.95 + zx1,
          (zy2 - zy1) * 0.03 + zy1,
-         str(t1corenum) + ' Type I cores',
-         fontsize=8,
+         str(t1corenum) + typetext,
+         fontsize=9,
          ha='right',
-         color=(1, 1, 0.3, 0.8))
-
+         color=(1, 1, 1.0, 1.0),
+         path_effects=[PathEffects.withStroke(linewidth=1.3,
+                                              foreground="b")])
 
 ax4.set_xticks([])
 ax4.set_yticks([])
@@ -693,7 +776,7 @@ ax0.add_patch(patches.Rectangle((patchcenx - subsizex, patchceny - subsizey),
                                 subsizex * 2, subsizey * 2,
                                 fill=False,
                                 linestyle='--',
-                                linewidth=0.5,
+                                linewidth=1.2,
                                 edgecolor='#CCCCCC'))
 
 con = ConnectionPatch(xyA=(patchcenx + subsizex, patchceny + subsizey),
@@ -725,7 +808,7 @@ scalebarlen = (0.4 * u.pc / distance).to(u.arcsec,
 
 make_scalebar(ax4, scalebarpos,
               length=scalebarlen,
-              color='#FFFFFF',
+              color=textcolor,
               label='10" 0.4 pc',
               text_offset=1.0 * u.arcsec,
               fontsize=8

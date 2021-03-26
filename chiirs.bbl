@@ -1,5 +1,8 @@
-\begin{thebibliography}{21}
+\begin{thebibliography}{22}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
+
+\bibitem[{{Bertin} \& {Arnouts}(1996)}]{Bertin:1996aa}
+{Bertin}, E. \& {Arnouts}, S. 1996, \aaps, 117, 393
 
 \bibitem[{{Breen} {et~al.}(2010){Breen}, {Ellingsen}, {Caswell}, \&
   {Lewis}}]{Breen:2010aa}

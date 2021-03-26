@@ -152,6 +152,100 @@ the most massive region with ongoing high-mass star formation in the Galaxy. Dus
 
   We show the images in C and X bands in Fig.~\ref{f:abcdcxmap}, in which the known large scale \hii regions `N', `M', `S', `AA', `DS', and `V' are denoted, following the nomenclature of \citet{Mehringer:1992aa,Mehringer:1993aa,Ginsburg:2018aa,Meng:2019aa}. Although that deep CLEAN and self calibration were preformed in data processing, the high dynamic range of the images ($\sim 10^3$) hinders the elimination of artifacts. As shown in Fig.~\ref{f:abcdcxmap}, the X band image is highly contaminated by the artifacts that from which the real emission is hard to distinguished. Therefore, we do not take the X band image into account in the following analysis. The C band image is called `6\,cm image' in the following analysis. Due to the non-homogeneity of the artifacts over the map, we do not give an RMS (root-mean-square) value to represent the noise value of the 6\,cm image, but evaluate the spatial varying RMS. The procedures of generation the RMS maps are described in Sect.~\ref{sec:rms_maps}. As shown in Fig.~\ref{f:rmsmap_a}, the RMS of the 6\,cm image varies from $\sim$0.02\,mJy/beam to $\sim$0.2\,mJy/beam. The RMS of the 3\,mm map, as shown in Fig.~\ref{f:rmsmap_b}, ranges from $\sim$0.1\,mJy/beam to $\sim$0.4\,mJy/beam. 
 
+  \subsection{UCH{\sc ii} regions} % (fold)
+  \label{sub:cores_in_vla}
+
+  The identification of sources in the 6\,cm image was automatically conducted with `SExtractor' \citep{Bertin:1996aa}. The details of source identification are described in Sect.~\ref{sec:core_identification}. The sources are fitted with ellipses which have three parameters, half of major axis ($a$), half of minor axis ($b$), and position angle ($\vartheta$). The position angle ($\vartheta$) is defined as from east to north.  To select only candidates of UCH{\sc ii} regions , we constrain $a\leq$0.1\arcsec and $a\leq3b$. The former criterion is based on that the typical sizes of UCH{\sc ii} regions are less than 0.1\arcsec \citep[see e.g.][]{Kurtz:2002aa,Kurtz:2005aa}. The later criterion is to avoid mis-identifying of segments of filaments as UCH{\sc ii} regions. 
+  %In this paper, we do not specifically stress on HCH{\sc ii} but only call all the identified UCH{\sc ii} regions and HCH{\sc ii} regions as `UCH{\sc ii} regions'.
+
+  In total, we identified 219 sources in 6\,cm image, see Fig.~\ref{f:coresoverallvla}. The `isophotal flux' ($S_{\rm 6cm}$) are calculated, which is the flux of the area that has flux density all above the threshold in SExtractor. Defining the radius of a core as $R = \sqrt{ab}$, we plot $S_{\rm 6cm}$ versus $R$ of the 219 sources in Fig.~\ref{f:r-flx}. As shown in Fig.~\ref{f:r-flx}, most of the sources have $R$ between 5 and 30\,pc, and $S_{\rm 6cm}$ between 0.1 and 300\,mJy. The optical depth of free-free emission can be estimated as:
+  \begin{equation}
+    \tau = 441 
+    \left(\frac{\nu}{\rm GHz}\right)^{-2}
+    \left(\frac{T_{\rm e}}{\rm K}\right)^{-1} 
+    \left(\frac{\theta_{a}\theta_{b}}{\rm arcsec^2}\right)^{-1}
+    \frac{S_\nu}{\rm mJy},
+  \end{equation}
+  in which $\nu$ is the frequency, here we use 6\,GHz. $T_{\rm e}$ is the electron temperature, based on the typical values in \hii regions \cite[see e.g.][]{Mehringer:1993aa}, we use $10^4$\,K. The angular counterparts of $a$ and $b$ are denoted as $\theta_{a}$ and $\theta_{b}$, respectively. From Fig.~\ref{f:r-flx}, we can see that all the cores have $\tau<10^{-2}$ and vast majority have $\tau<10^{-3}$. Therefore, we assume that the free-free emission from these 219 cores are all optically thin. Under the optically thin assumption, we calculate the  emission measure (EM) of all the sources as:
+  \begin{equation}
+    {\rm EM} = 5.36\times10^3 
+    \left(\frac{\nu}{\rm GHz}\right)^{0.1} 
+    \left(\frac{T_{\rm e}}{\rm K}\right)^{0.35} 
+    \left(\frac{\theta_{a}\theta_{b}}{\rm arcsec^2}\right)^{-1}
+    \frac{S_{\rm 6cm}}{ \rm mJy}.
+  \end{equation}
+  As shown in Fig.~\ref{f:r-flx}, most of the sources have EM ranging from $10^6$ to $10^8$\,pc\,cm$^{-6}$. About half of the sources have EM larger than $10^7$\,pc\,cm$^{-6}$. Knowing EM and $a$, $b$, we derive the volume density of electrons $n = \sqrt{{\rm EM} / ab}$. Most of the sources have $n$ around $10^4$\,cm$^{-3}$. 
+
+  According to the criterion of UCH{\sc ii} regions \citep[see e.g.][]{Kurtz:2005aa}, UCH{\sc ii} regions should have EM$\gtrsim10^7$\,pc\,cm$^{-6}$, $n\gtrsim10^4$\,cm$^{-3}$, and $R\lesssim0.1$\,pc. Thus, we select the sources with EM$\gtrsim10^7$, which also fulfills the later two criteria, as UCH{\sc ii} regions (see blue points in Fig.~\ref{f:r-flx}). In total, we identified 101 UCH{\sc ii} regions, which are plotted as white ellipses in Fig.~\ref{f:coresoverallvla}. The spatial distribution of the UCH{\sc ii} regions is not homogeneous. In M and N, 48 and 38 UCH{\sc ii} regions are identified, respectively. While in S we identified only two UCH{\sc ii} regions and in DS none. 
+
+  We also compare the mass of ionized gas ($M_\mathrm{H{ii}}$) of all the sources with that of the UCH{\sc ii}regions. The $M_\mathrm{H{ii}}$ can be calculated as:
+  \begin{equation}
+  \begin{aligned}
+    {M_\mathrm{H{ii}}} =& 5.15\times10^{-12} 
+    \left(\frac{\nu}{\rm GHz}\right)^{0.5} 
+    \left(\frac{T_{\rm e}}{\rm K}\right)^{0.175} 
+    \left(\frac{D}{\rm pc}\right)^{2.5} \\
+    &\times\left(\frac{\theta_{a}\theta_{b}}{\rm arcsec^2}\right)^{0.75}
+    \left(\frac{S_{\rm 6cm}}{ \rm mJy}\right)^{0.5}.
+    \end{aligned}
+  \end{equation}
+  As shown in Fig.~\ref{f:mhii}, the 219 sources have $M_\mathrm{H{ii}}$ ranging from $\sim 4\times10^{-3}\,M_{\odot}$ to $\sim 2\,M_{\odot}$. The 101 UCH{\sc ii} regions have $M_\mathrm{H{ii}}$ ranging from $\sim 1\times10^{-2}\,M_{\odot}$ to $\sim 2\,M_{\odot}$. The average $M_\mathrm{H{ii}}$ of the 101 UCH{\sc ii} regions ($0.4\,M_{\odot}$) is twice of that of all the 219 cores ($0.2\,M_{\odot}$). 
+
+
+  \begin{figure*}[ht]
+          \begin{center}
+          \includegraphics[width=0.85\textwidth]{./plot/overall_cores_006.pdf}
+          \caption[Cores in 6\,cm image]{Sources and UC\hii regions identified in 6\,cm image, which are marked as blue and white ellipses, respectively, corresponding to the elliptical parameters fitted by SExtractor. Light gray ellipses indicates the cores identified in the 3\,mm image. Notable regions are marked.
+           Beam sizes are marked on the lower left corner of each panel, in format $(\theta_{\rm maj}, \theta_{\rm min}, {\rm PA})$. 
+           }
+          \label{f:coresoverallvla}
+          \end{center}
+  \end{figure*}
+
+  \begin{figure*}[ht]
+          \begin{center}
+          \includegraphics[width=0.7\textwidth]{./plot/r-flx.pdf}
+          \caption[Relationship between flux and R of 6cm sources.]{Relationship between $S_{\rm 6cm}$ and $R$ of 6cm sources. Red lines indicates various EM. Light blue dashed lines indicates different $n$. Gray dashed lines indicates $\tau$.
+           }
+          \label{f:r-flx}
+          \end{center}
+  \end{figure*}
+
+  \begin{figure}[ht]
+          \begin{center}
+          \includegraphics[width=0.4\textwidth]{./plot/mhii.pdf}
+          \caption[Distribution of $M_\mathrm{H{ii}}$]{Distribution of mass of ionized gas ($M_\mathrm{H{ii}}$) of all the sources (gray) and UC\hii regions (blue). Average value of each distribution are marked in correspondent colors.
+           }
+          \label{f:mhii}
+          \end{center}
+  \end{figure}
+
+ \subsection{Dust Cores} % (fold)
+ \label{sub:dust_cores}
+  \begin{figure*}[ht]
+          \begin{center}
+          \includegraphics[width=0.85\textwidth]{./plot/overall_cores_096.pdf}
+          \caption[Cores in 6\,cm image]{3mm cores.
+           }
+          \label{f:coresoverallalma}
+          \end{center}
+  \end{figure*}
+
+
+  \begin{figure*}[ht]
+          \begin{center}
+          \includegraphics[width=0.48\textwidth]{./plot/006-096-flx.pdf}
+          \includegraphics[width=0.48\textwidth]{./plot/006-096-flx_2.pdf}
+          \caption[Relationship between flux and R of 6cm sources.]{Flux comparison between 6\,cm and 3\,mm
+           }
+          \label{f:vla-alma}
+          \end{center}
+  \end{figure*}
+
+ 
+ % subsection dust_cores (end)
+
+  % subsection cores_in_6_cm (end)
 
 
 
@@ -193,7 +287,10 @@ the most massive region with ongoing high-mass star formation in the Galaxy. Dus
   \end{figure}
 
 
+\section{Core identification} % (fold)
+\label{sec:core_identification}
 
+% section core_identification (end)
 % section rms_maps (end)
 \end{appendix}
 

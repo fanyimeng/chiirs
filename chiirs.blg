@@ -5,45 +5,45 @@ The style file: aa.bst
 Database file #1: ref.bib
 Warning--I didn't find a database entry for "2020SciPy-NMeth"
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
-You've used 21 entries,
+You've used 22 entries,
             3039 wiz_defined-function locations,
-            833 strings with 10156 characters,
-and the built_in function-call counts, 12810 in all, are:
-= -- 1014
-> -- 1253
-< -- 7
-+ -- 417
-- -- 395
-* -- 1155
-:= -- 2368
-add.period$ -- 21
-call.type$ -- 21
-change.case$ -- 213
-chr.to.int$ -- 20
-cite$ -- 21
-duplicate$ -- 417
-empty$ -- 585
-format.name$ -- 453
-if$ -- 2516
+            841 strings with 10276 characters,
+and the built_in function-call counts, 13216 in all, are:
+= -- 1051
+> -- 1275
+< -- 8
++ -- 424
+- -- 401
+* -- 1185
+:= -- 2441
+add.period$ -- 22
+call.type$ -- 22
+change.case$ -- 219
+chr.to.int$ -- 21
+cite$ -- 22
+duplicate$ -- 436
+empty$ -- 611
+format.name$ -- 464
+if$ -- 2598
 int.to.chr$ -- 2
 int.to.str$ -- 1
-missing$ -- 18
-newline$ -- 67
-num.names$ -- 87
-pop$ -- 222
+missing$ -- 19
+newline$ -- 70
+num.names$ -- 91
+pop$ -- 229
 preamble$ -- 1
-purify$ -- 213
+purify$ -- 219
 quote$ -- 0
-skip$ -- 355
+skip$ -- 372
 stack$ -- 0
-substring$ -- 449
+substring$ -- 470
 swap$ -- 26
 text.length$ -- 3
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 189
+type$ -- 198
 warning$ -- 0
-while$ -- 88
+while$ -- 92
 width$ -- 0
-write$ -- 213
+write$ -- 223
 (There was 1 warning)
