@@ -1,5 +1,5 @@
 # chiirs
-**C**ompact **H**ii **R**egions in **S**grB2
+**C**ompact **<span style="font-variant:small-caps;">Hii</span>** **R**egions in **S**grB2
 
 
 A Paper Manuscript in Progress
