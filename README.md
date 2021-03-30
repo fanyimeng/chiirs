@@ -4,6 +4,6 @@
 
 A Paper Manuscript in Progress
 
-- All data, in FITS format, are in [data](./data/)
-- All plots, in .pdf format, are in [plot](./plot/)
-- All ASCII files (tables, region files, etc.) are in [script](./script)
+- Data, in FITS format, are in [data](./data/)
+- Plots, in .pdf format, are in [plot](./plot/)
+- ASCII files (tables, region files, etc.) are in [script](./script)
