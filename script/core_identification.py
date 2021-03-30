@@ -185,7 +185,7 @@ def sext_find(dataFile,
                       color='gray',
                       size='small')
 
-        fig.savefig('%s.pdf' % outputName, dpi=900)
+        fig.savefig('../plot/%s.pdf' % outputName, dpi=900)
 
     return len(ot['X_IMAGE']), len(outputDf['X_IMAGE'])
 
