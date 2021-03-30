@@ -1,12 +1,12 @@
 # Fdb version 3
-["bibtex chiirs"] 1616731652 "chiirs.aux" "chiirs.bbl" "chiirs" 1616731654
+["bibtex chiirs"] 1617132568 "chiirs.aux" "chiirs.bbl" "chiirs" 1617132570
   "./aa.bst" 1473344910 32103 296074362bd3e822c5209e1570c1d28f ""
-  "chiirs.aux" 1616731654 7269 e67302f679fbab1e5db4246010d6400d ""
-  "ref.bib" 1616684938 1371524 3304bbd8767ce9f1bcddfa1a6d250b81 ""
+  "chiirs.aux" 1617132570 7269 e67302f679fbab1e5db4246010d6400d ""
+  "ref.bib" 1617108103 1374873 62218482183a03a509bd52db16fcdfd6 ""
   (generated)
-  "chiirs.bbl"
   "chiirs.blg"
-["pdflatex"] 1616731653 "chiirs.tex" "chiirs.pdf" "chiirs" 1616731654
+  "chiirs.bbl"
+["pdflatex"] 1617132569 "chiirs.tex" "chiirs.pdf" "chiirs" 1617132570
   "/usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/base/8r.enc" 1480098666 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/local/texlive/2018/texmf-dist/fonts/map/fontname/texfonts.map" 1511824771 3332 103109f5612ad95229751940c61aada0 ""
   "/usr/local/texlive/2018/texmf-dist/fonts/tfm/jknappen/ec/ecrm1000.tfm" 1480098696 3584 adb004a0c8e7c46ee66cad73671f37b4 ""
@@ -182,10 +182,10 @@
   "/usr/local/texlive/2018/texmf-var/web2c/pdftex/pdflatex.fmt" 1543833134 4220280 1316af6d115bef09d2ab7e58172293b4 ""
   "/usr/local/texlive/2018/texmf.cnf" 1523934483 577 0b39adfd7c93507ff20c9c14c2f1a33f ""
   "aa.cls" 1473343756 65331 eca53c2909c3fbfe3da312189ff7faaf ""
-  "chiirs.aux" 1616731654 7269 e67302f679fbab1e5db4246010d6400d ""
-  "chiirs.bbl" 1616731653 5035 1c17dd83d1b8ffacab78d7f6438922b6 "bibtex chiirs"
-  "chiirs.out" 1616731654 375 d75e8f13d10be5c2526f28f6ddb3a1fa ""
-  "chiirs.tex" 1616731650 24056 acd8477687d5569902efa2392c7312e6 ""
+  "chiirs.aux" 1617132570 7269 e67302f679fbab1e5db4246010d6400d ""
+  "chiirs.bbl" 1617132569 5035 1c17dd83d1b8ffacab78d7f6438922b6 "bibtex chiirs"
+  "chiirs.out" 1617132570 375 d75e8f13d10be5c2526f28f6ddb3a1fa ""
+  "chiirs.tex" 1617132568 24053 13dffdd8fd363bd418a6dfc8f9e98e9b ""
   "plot/006-096-flx.pdf" 1616730072 43595 24a0f9eadd64df8d7945f5174deb1928 ""
   "plot/006-096-flx_2.pdf" 1616731482 27614 2d4bf95f91e0dc48031fda126ea3ae86 ""
   "plot/096_rms.pdf" 1616494894 615281 5ebab7ec4814cac8eb344839fefbf8d6 ""
@@ -197,7 +197,7 @@
   "plot/overall_cores_096.pdf" 1616730273 3566265 a386bb064da6111cec67d6e0e0cf86ab ""
   "plot/r-flx.pdf" 1616719926 50206 23f3c9309cb844e079c3ccc863d1fbc6 ""
   (generated)
-  "chiirs.aux"
   "chiirs.pdf"
-  "chiirs.log"
   "chiirs.out"
+  "chiirs.log"
+  "chiirs.aux"
