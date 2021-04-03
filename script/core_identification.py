@@ -5,6 +5,7 @@ import sewpy
 import aplpy as aplpy
 import pandas as pd
 import shapely.geometry as geo
+from tqdm import tqdm
 
 
 def polygon_reader(regfile):
@@ -89,7 +90,7 @@ def sext_find(dataFile,
                             'THRESH_TYPE': 'RELATIVE',
                             'DEBLEND_MINCONT': 0.00001,
                             'DEBLEND_NTHRESH': 64,
-                            'CHECKIMAGE_NAME': outputName + '_check_rms.fits',
+                            'CHECKIMAGE_NAME': '../data/%s_check_rms.fits' % (outputName),
                             'CHECKIMAGE_TYPE': 'BACKGROUND_RMS'})
     ot = sew(dataFile)['table']
 
@@ -106,7 +107,7 @@ def sext_find(dataFile,
     fluxFactor = 4. * np.log(2.0) *\
         header['CDELT2'] * header['CDELT1'] /\
         (np.pi * header['BMAJ'] * header['BMIN'])
-    # fluxFactor = np.abs(fluxFactor * 1e3)  # convert Jy to mJy.
+    fluxFactor = np.abs(fluxFactor * 1e3)  # convert Jy to mJy.
 
     '''create masks to filter out seudocores. All the masks are indicating
     the GOOD cores.
@@ -151,7 +152,7 @@ def sext_find(dataFile,
     outputDf = pd.DataFrame.from_dict(outputParameters, orient='columns')
     outputDf['FLUX_ISO'] = outputDf['FLUX_ISO'] * fluxFactor
     outputDf['FLUXERR_ISO'] = outputDf['FLUXERR_ISO'] * fluxFactor
-    outputDf.to_csv('%s.csv' % outputName)
+    outputDf.to_csv('%s.csv' % outputName, index=False)
 
     if plotImage:
         fig = plt.figure()
@@ -190,6 +191,98 @@ def sext_find(dataFile,
     return len(ot['X_IMAGE']), len(outputDf['X_IMAGE'])
 
 
+def get_010_flux_peak(data_010_file='',
+                      data_006_file='',
+                      rms_010_file='',
+                      rms_006_file='',
+                      table='',
+                      output='',
+                      label=''
+                      ):
+    data_010 = fits.open(data_010_file)[0].data.T
+    data_006 = fits.open(data_006_file)[0].data.T
+    rms_010 = fits.open(rms_010_file)[0].data.T
+    rms_006 = fits.open(rms_006_file)[0].data.T
+    df = pd.read_csv(table)
+    f_peak_006 = []
+    f_peak_010 = []
+    e_peak_006 = []
+    e_peak_010 = []
+    for core_num in range(df.shape[0]):
+        f_peak_006.append(data_006[int(df['XPEAK_IMAGE'][core_num]),
+                                   int(df['YPEAK_IMAGE'][core_num])])
+        f_peak_010.append(data_010[int(df['XPEAK_IMAGE'][core_num]),
+                                   int(df['YPEAK_IMAGE'][core_num])])
+        e_peak_006.append(rms_006[int(df['XPEAK_IMAGE'][core_num]),
+                                  int(df['YPEAK_IMAGE'][core_num])])
+        e_peak_010.append(rms_010[int(df['XPEAK_IMAGE'][core_num]),
+                                  int(df['YPEAK_IMAGE'][core_num])])
+    df['FLX_PEAK%s_006' % (label)] = np.array(f_peak_006) * 1e3
+    df['FLX_PEAK%s_010' % (label)] = np.array(f_peak_010) * 1e3
+    df['ERR_PEAK%s_006' % (label)] = np.array(e_peak_006) * 1e3
+    df['ERR_PEAK%s_010' % (label)] = np.array(e_peak_010) * 1e3
+    df.to_csv(table, index=False)
+    return 0
+
+
+def get_010_flux_ell(data_010_file='',
+                     data_006_file='',
+                     rms_010_file='',
+                     rms_006_file='',
+                     table='',
+                     output='',
+                     label=''):
+    data_010 = fits.open(data_010_file)[0].data
+    data_006 = fits.open(data_006_file)[0].data
+    # data_010[data_010 < 0] = 0
+    # data_006[data_006 < 0] = 0
+    rms_010 = fits.open(rms_010_file)[0].data
+    rms_006 = fits.open(rms_006_file)[0].data
+    x1d = np.arange(0, data_006.shape[0])
+    y1d = np.arange(0, data_006.shape[1])
+    x2d = x1d[np.newaxis, :]
+    y2d = y1d[:, np.newaxis]
+    header_010 = fits.open(data_010_file)[0].header
+    header_006 = fits.open(data_006_file)[0].header
+    ang = 90 - header_006['BPA']
+    beam_a = header_006['BMAJ'] * 3600. / 0.05
+    beam_b = header_006['BMIN'] * 3600. / 0.05
+    flxf006 = 4e3 * np.log(2.0) * header_006['CDELT2'] * header_006['CDELT1'] / (
+        3.14159 * header_006['BMAJ'] * header_006['BMIN'])
+    flxf010 = 4e3 * np.log(2.0) * header_010['CDELT2'] * header_010['CDELT1'] / (
+        3.14159 * header_010['BMAJ'] * header_010['BMIN'])
+    flxf006 = np.abs(flxf006)
+    flxf010 = np.abs(flxf010)
+
+    df = pd.read_csv(table)
+    f_peak_006 = []
+    f_peak_010 = []
+    e_peak_006 = []
+    e_peak_010 = []
+    for core_num in tqdm(range(df.shape[0])):
+        # mask = ((((x2d - int(df['XPEAK_IMAGE'][core_num])) * np.cos(np.radians(ang)) -
+        #           (y2d - int(df['YPEAK_IMAGE'][core_num])) * np.sin(np.radians(ang))) /
+        #          beam_a)**2 +
+        #         (((x2d - int(df['XPEAK_IMAGE'][core_num])) * np.sin(np.radians(ang)) -
+        #           (y2d - int(df['YPEAK_IMAGE'][core_num])) * np.cos(np.radians(ang))) /
+        #          beam_b)**2
+        #         ) < 1
+        mask = ((x2d - int(df['XPEAK_IMAGE'][core_num]))**2 +
+                (y2d - int(df['YPEAK_IMAGE'][core_num]))**2 < (0.83 / 0.05)**2)
+
+        f_peak_006.append(data_006[mask].sum() * flxf006)
+        f_peak_010.append(data_010[mask].sum() * flxf010)
+        # e_peak_006.append(np.sqrt((rms_006[mask]**2).sum()) * flxf006)
+        # e_peak_010.append(np.sqrt((rms_010[mask]**2).sum()) * flxf010)
+        e_peak_006.append((rms_006[mask]).sum() * flxf006)
+        e_peak_010.append((rms_010[mask]).sum() * flxf010)
+    df['FLX_PEAK%s_006' % (label)] = f_peak_006
+    df['FLX_PEAK%s_010' % (label)] = f_peak_010
+    df['ERR_PEAK%s_006' % (label)] = e_peak_006
+    df['ERR_PEAK%s_010' % (label)] = e_peak_010
+    df.to_csv(table, index=False)
+    return 0
+
 
 # df = pd.read_csv('cores006.csv')
 # for i in range(df.shape[0]):
@@ -198,10 +291,45 @@ def sext_find(dataFile,
 #         if point.within(poly):
 #             i = i+1
 #             print("in poly")
-print(sext_find(dataFile='../data/abcd_006_lpf_new.fits',
-                rmsFile='../data/abcd_006_lpf_new_rms_100_1e-3_cubic.fits',
-                regFile='large_hii_regions.reg',
-                outputName='cores006',
-                plotImage=True,
-                excludeReg=True)
-      )
+# print(sext_find(dataFile='../data/abcd_006_lpf_new.fits',
+#                 rmsFile='../data/abcd_006_lpf_new_rms_100_1e-3_cubic.fits',
+#                 regFile='large_hii_regions.reg',
+#                 outputName='cores006',
+#                 plotImage=True,
+#                 excludeReg=True)
+#       )
+# print(sext_find(dataFile='../data/sm_abcd_010_lpf_new.fits',
+#                 rmsFile='../data/abcd_006_lpf_new_rms_100_1e-3_cubic.fits',
+#                 regFile='large_hii_regions.reg',
+#                 outputName='sm_cores010',
+#                 plotImage=True,
+#                 excludeReg=True)
+#       )
+
+
+get_010_flux_ell(data_006_file='../data/sm_abcd_006_lpf_new.fits',
+                 data_010_file='../data/sm_abcd_010_lpf_new.fits',
+                 rms_006_file='../data/sm_cores006_check_rms.fits',
+                 rms_010_file='../data/sm_cores010_check_rms.fits',
+                 table='cores006.csv',
+                 label='3SIGMA')
+get_010_flux_peak(data_006_file='../data/sm_abcd_006_lpf_new.fits',
+                  data_010_file='../data/sm_abcd_010_lpf_new.fits',
+                  rms_006_file='../data/sm_cores006_check_rms.fits',
+                  rms_010_file='../data/sm_cores010_check_rms.fits',
+                  table='cores006.csv',
+                  label='1PIX')
+
+
+# print(sext_find(dataFile='../data/abcd_010_lpf_new.fits',
+#                 rmsFile='../data/abcd_006_lpf_new_rms_100_1e-3_cubic.fits',
+#                 regFile='large_hii_regions.reg',
+#                 outputName='cores010',
+#                 plotImage=True,
+#                 excludeReg=True))
+
+# get_010_flux_beam(data_006_file='../data/abcd_006_lpf_new.fits',
+#                   data_010_file='../data/abcd_010_lpf_new.fits',
+#                   rms_006_file='../data/cores006_check_rms.fits',
+#                   rms_010_file='../data/cores010_check_rms.fits',
+#                   table='cores006.csv')

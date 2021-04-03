@@ -1,4 +1,4 @@
-\begin{thebibliography}{22}
+\begin{thebibliography}{26}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 
 \bibitem[{{Bertin} \& {Arnouts}(1996)}]{Bertin:1996aa}
@@ -34,10 +34,41 @@
   {Schmiedeke}, {Walker}, \& {Wilner}}]{Ginsburg:2018aa}
 {Ginsburg}, A., {Bally}, J., {Barnes}, A., {et~al.} 2018, \apj, 853, 171
 
+\bibitem[{{Ginsburg} {et~al.}(2016){Ginsburg}, {Goss}, {Goddi},
+  {Galv{\'a}n-Madrid}, {Dale}, {Bally}, {Battersby}, {Youngblood}, {Sankrit},
+  {Smith}, {Darling}, {Kruijssen}, \& {Liu}}]{Ginsburg:2016ab}
+{Ginsburg}, A., {Goss}, W.~M., {Goddi}, C., {et~al.} 2016, \aap, 595, A27
+
+\bibitem[{{Goldsmith} {et~al.}(1990){Goldsmith}, {Lis}, {Hills}, \&
+  {Lasenby}}]{Goldsmith:1990aa}
+{Goldsmith}, P.~F., {Lis}, D.~C., {Hills}, R., \& {Lasenby}, J. 1990, \apj,
+  350, 186
+
 \bibitem[{{Gonz{\'a}lez-Avil{\'e}s} {et~al.}(2005){Gonz{\'a}lez-Avil{\'e}s},
   {Lizano}, \& {Raga}}]{Gonzalez-Aviles:2005aa}
 {Gonz{\'a}lez-Avil{\'e}s}, M., {Lizano}, S., \& {Raga}, A.~C. 2005, \apj, 621,
   359
+
+\bibitem[{{Gravity Collaboration} {et~al.}(2018){Gravity Collaboration},
+  {Abuter}, {Amorim}, {Anugu}, {Baub{\"o}ck}, {Benisty}, {Berger}, {Blind},
+  {Bonnet}, {Brandner}, {Buron}, {Collin}, {Chapron}, {Cl{\'e}net}, {Coud{\'e}
+  Du Foresto}, {de Zeeuw}, {Deen}, {Delplancke-Str{\"o}bele}, {Dembet},
+  {Dexter}, {Duvert}, {Eckart}, {Eisenhauer}, {Finger}, {F{\"o}rster
+  Schreiber}, {F{\'e}dou}, {Garcia}, {Garcia Lopez}, {Gao}, {Gendron},
+  {Genzel}, {Gillessen}, {Gordo}, {Habibi}, {Haubois}, {Haug}, {Hau{\ss}mann},
+  {Henning}, {Hippler}, {Horrobin}, {Hubert}, {Hubin}, {Jimenez Rosales},
+  {Jochum}, {Jocou}, {Kaufer}, {Kellner}, {Kendrew}, {Kervella}, {Kok},
+  {Kulas}, {Lacour}, {Lapeyr{\`e}re}, {Lazareff}, {Le Bouquin}, {L{\'e}na},
+  {Lippa}, {Lenzen}, {M{\'e}rand}, {M{\"u}ler}, {Neumann}, {Ott}, {Palanca},
+  {Paumard}, {Pasquini}, {Perraut}, {Perrin}, {Pfuhl}, {Plewa}, {Rabien},
+  {Ram{\'{\i}}rez}, {Ramos}, {Rau}, {Rodr{\'{\i}}guez-Coira}, {Rohloff},
+  {Rousset}, {Sanchez-Bermudez}, {Scheithauer}, {Sch{\"o}ller}, {Schuler},
+  {Spyromilio}, {Straub}, {Straubmeier}, {Sturm}, {Tacconi}, {Tristram},
+  {Vincent}, {von Fellenberg}, {Wank}, {Waisberg}, {Widmann}, {Wieprecht},
+  {Wiest}, {Wiezorrek}, {Woillez}, {Yazici}, {Ziegler}, \&
+  {Zins}}]{Gravity-Collaboration:2018aa}
+{Gravity Collaboration}, {Abuter}, R., {Amorim}, A., {et~al.} 2018, \aap, 615,
+  L15
 
 \bibitem[{{Kurtz}(2002)}]{Kurtz:2002aa}
 {Kurtz}, S. 2002, in Astronomical Society of the Pacific Conference Series,
@@ -89,6 +120,11 @@
 
 \bibitem[{{Perley} \& {Butler}(2013)}]{Perley:2013aa}
 {Perley}, R.~A. \& {Butler}, B.~J. 2013, \apjs, 204, 19
+
+\bibitem[{{Reid} {et~al.}(2014){Reid}, {Menten}, {Brunthaler}, {Zheng}, {Dame},
+  {Xu}, {Wu}, {Zhang}, {Sanna}, {Sato}, {Hachisuka}, {Choi}, {Immer},
+  {Moscadelli}, {Rygl}, \& {Bartkiewicz}}]{Reid:2014aa}
+{Reid}, M.~J., {Menten}, K.~M., {Brunthaler}, A., {et~al.} 2014, \apj, 783, 130
 
 \bibitem[{{Rolffs} {et~al.}(2011){Rolffs}, {Schilke}, {Wyrowski}, {Dullemond},
   {Menten}, {Thorwirth}, \& {Belloche}}]{Rolffs:2011aa}

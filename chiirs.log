@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.12.3)  30 MAR 2021 21:29
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.12.3)  3 APR 2021 02:31
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1302,49 +1302,49 @@ File: siunitx-version-1.cfg 2017/11/26 v2.7k siunitx: Version 1 settings
 (./chiirs.aux)
 \openout1 = `chiirs.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/txmi/m/it on input line 68.
-LaTeX Font Info:    Try loading font information for OML+txmi on input line 68.
+LaTeX Font Info:    Checking defaults for OML/txmi/m/it on input line 69.
+LaTeX Font Info:    Try loading font information for OML+txmi on input line 69.
 
  (/usr/local/texlive/2018/texmf-dist/tex/latex/txfonts/omltxmi.fd
 File: omltxmi.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    ... okay on input line 68.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 68.
-LaTeX Font Info:    ... okay on input line 68.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 68.
-LaTeX Font Info:    ... okay on input line 68.
-LaTeX Font Info:    Checking defaults for OMS/txsy/m/n on input line 68.
-LaTeX Font Info:    Try loading font information for OMS+txsy on input line 68.
+LaTeX Font Info:    ... okay on input line 69.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 69.
+LaTeX Font Info:    ... okay on input line 69.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 69.
+LaTeX Font Info:    ... okay on input line 69.
+LaTeX Font Info:    Checking defaults for OMS/txsy/m/n on input line 69.
+LaTeX Font Info:    Try loading font information for OMS+txsy on input line 69.
 
  (/usr/local/texlive/2018/texmf-dist/tex/latex/txfonts/omstxsy.fd
 File: omstxsy.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    ... okay on input line 68.
-LaTeX Font Info:    Checking defaults for OMX/txex/m/n on input line 68.
-LaTeX Font Info:    Try loading font information for OMX+txex on input line 68.
+LaTeX Font Info:    ... okay on input line 69.
+LaTeX Font Info:    Checking defaults for OMX/txex/m/n on input line 69.
+LaTeX Font Info:    Try loading font information for OMX+txex on input line 69.
 
 
 (/usr/local/texlive/2018/texmf-dist/tex/latex/txfonts/omxtxex.fd
 File: omxtxex.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    ... okay on input line 68.
-LaTeX Font Info:    Checking defaults for U/txexa/m/n on input line 68.
-LaTeX Font Info:    Try loading font information for U+txexa on input line 68.
+LaTeX Font Info:    ... okay on input line 69.
+LaTeX Font Info:    Checking defaults for U/txexa/m/n on input line 69.
+LaTeX Font Info:    Try loading font information for U+txexa on input line 69.
 
 (/usr/local/texlive/2018/texmf-dist/tex/latex/txfonts/utxexa.fd
 File: utxexa.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    ... okay on input line 68.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 68.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 68.
+LaTeX Font Info:    ... okay on input line 69.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 69.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 69.
 
 (/usr/local/texlive/2018/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 68.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 68.
-LaTeX Font Info:    ... okay on input line 68.
-LaTeX Font Info:    Try loading font information for T1+txr on input line 68.
+LaTeX Font Info:    ... okay on input line 69.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 69.
+LaTeX Font Info:    ... okay on input line 69.
+LaTeX Font Info:    Try loading font information for T1+txr on input line 69.
 
 (/usr/local/texlive/2018/texmf-dist/tex/latex/txfonts/t1txr.fd
 File: t1txr.fd 2000/12/15 v3.1
@@ -1415,7 +1415,7 @@ e
 \c@mv@tabular=\count344
 \c@mv@boldtabular=\count345
 \AtBeginShipoutBox=\box91
-Package hyperref Info: Link coloring ON on input line 68.
+Package hyperref Info: Link coloring ON on input line 69.
 
 (/usr/local/texlive/2018/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
@@ -1425,9 +1425,9 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count346
 )
-LaTeX Info: Redefining \ref on input line 68.
-LaTeX Info: Redefining \pageref on input line 68.
-LaTeX Info: Redefining \nameref on input line 68.
+LaTeX Info: Redefining \ref on input line 69.
+LaTeX Info: Redefining \pageref on input line 69.
+LaTeX Info: Redefining \nameref on input line 69.
 
 (./chiirs.out) (./chiirs.out)
 \@outlinefile=\write3
@@ -1436,7 +1436,7 @@ LaTeX Info: Redefining \nameref on input line 68.
 .................................................
 . chemgreek info: "mapping-activated"
 . 
-. Activating mapping `default' on line 68.
+. Activating mapping `default' on line 69.
 .................................................
 
 (/usr/local/texlive/2018/texmf-dist/tex/latex/translator/translator-basic-dicti
@@ -1449,1322 +1449,1329 @@ File: siunitx-abbreviations.cfg 2017/11/26 v2.7k siunitx: Abbreviated units
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \of with sig. '' on line 68.
+. Defining command \of with sig. '' on line 69.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \highlight with sig. '' on line 68.
+. Defining command \highlight with sig. '' on line 69.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \per with sig. '' on line 68.
+. Defining command \per with sig. '' on line 69.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \raiseto with sig. '' on line 68.
+. Defining command \raiseto with sig. '' on line 69.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \tothe with sig. '' on line 68.
+. Defining command \tothe with sig. '' on line 69.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \kilogram with sig. '' on line 68.
+. Defining command \kilogram with sig. '' on line 69.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \metre with sig. '' on line 68.
+. Defining command \metre with sig. '' on line 69.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \meter with sig. '' on line 68.
+. Defining command \meter with sig. '' on line 69.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \mole with sig. '' on line 68.
+. Defining command \mole with sig. '' on line 69.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \second with sig. '' on line 68.
+. Defining command \second with sig. '' on line 69.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \ampere with sig. '' on line 68.
+. Defining command \ampere with sig. '' on line 69.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \kelvin with sig. '' on line 68.
+. Defining command \kelvin with sig. '' on line 69.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \candela with sig. '' on line 68.
+. Defining command \candela with sig. '' on line 69.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \gram with sig. '' on line 68.
+. Defining command \gram with sig. '' on line 69.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \yocto with sig. '' on line 68.
+. Defining command \yocto with sig. '' on line 69.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \zepto with sig. '' on line 68.
+. Defining command \zepto with sig. '' on line 69.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \atto with sig. '' on line 68.
+. Defining command \atto with sig. '' on line 69.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \femto with sig. '' on line 68.
+. Defining command \femto with sig. '' on line 69.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \pico with sig. '' on line 68.
+. Defining command \pico with sig. '' on line 69.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \nano with sig. '' on line 68.
+. Defining command \nano with sig. '' on line 69.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \micro with sig. '' on line 68.
+. Defining command \micro with sig. '' on line 69.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \milli with sig. '' on line 68.
+. Defining command \milli with sig. '' on line 69.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \centi with sig. '' on line 68.
+. Defining command \centi with sig. '' on line 69.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \deci with sig. '' on line 68.
+. Defining command \deci with sig. '' on line 69.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \deca with sig. '' on line 68.
+. Defining command \deca with sig. '' on line 69.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \deka with sig. '' on line 68.
+. Defining command \deka with sig. '' on line 69.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \hecto with sig. '' on line 68.
+. Defining command \hecto with sig. '' on line 69.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \kilo with sig. '' on line 68.
+. Defining command \kilo with sig. '' on line 69.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \mega with sig. '' on line 68.
+. Defining command \mega with sig. '' on line 69.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \giga with sig. '' on line 68.
+. Defining command \giga with sig. '' on line 69.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \tera with sig. '' on line 68.
+. Defining command \tera with sig. '' on line 69.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \peta with sig. '' on line 68.
+. Defining command \peta with sig. '' on line 69.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \exa with sig. '' on line 68.
+. Defining command \exa with sig. '' on line 69.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \zetta with sig. '' on line 68.
+. Defining command \zetta with sig. '' on line 69.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \yotta with sig. '' on line 68.
+. Defining command \yotta with sig. '' on line 69.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \becquerel with sig. '' on line 68.
+. Defining command \becquerel with sig. '' on line 69.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \celsius with sig. '' on line 68.
+. Defining command \celsius with sig. '' on line 69.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \degreeCelsius with sig. '' on line 68.
+. Defining command \degreeCelsius with sig. '' on line 69.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \coulomb with sig. '' on line 68.
+. Defining command \coulomb with sig. '' on line 69.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \farad with sig. '' on line 68.
+. Defining command \farad with sig. '' on line 69.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \gray with sig. '' on line 68.
+. Defining command \gray with sig. '' on line 69.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \hertz with sig. '' on line 68.
+. Defining command \hertz with sig. '' on line 69.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \henry with sig. '' on line 68.
+. Defining command \henry with sig. '' on line 69.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \joule with sig. '' on line 68.
+. Defining command \joule with sig. '' on line 69.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \katal with sig. '' on line 68.
+. Defining command \katal with sig. '' on line 69.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \lumen with sig. '' on line 68.
+. Defining command \lumen with sig. '' on line 69.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \lux with sig. '' on line 68.
+. Defining command \lux with sig. '' on line 69.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \newton with sig. '' on line 68.
+. Defining command \newton with sig. '' on line 69.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \ohm with sig. '' on line 68.
+. Defining command \ohm with sig. '' on line 69.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \pascal with sig. '' on line 68.
+. Defining command \pascal with sig. '' on line 69.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \radian with sig. '' on line 68.
+. Defining command \radian with sig. '' on line 69.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \siemens with sig. '' on line 68.
+. Defining command \siemens with sig. '' on line 69.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \sievert with sig. '' on line 68.
+. Defining command \sievert with sig. '' on line 69.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \steradian with sig. '' on line 68.
+. Defining command \steradian with sig. '' on line 69.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \tesla with sig. '' on line 68.
+. Defining command \tesla with sig. '' on line 69.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \volt with sig. '' on line 68.
+. Defining command \volt with sig. '' on line 69.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \watt with sig. '' on line 68.
+. Defining command \watt with sig. '' on line 69.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \weber with sig. '' on line 68.
+. Defining command \weber with sig. '' on line 69.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \arcminute with sig. '' on line 68.
+. Defining command \arcminute with sig. '' on line 69.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \arcsecond with sig. '' on line 68.
+. Defining command \arcsecond with sig. '' on line 69.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \degree with sig. '' on line 68.
+. Defining command \degree with sig. '' on line 69.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \hectare with sig. '' on line 68.
+. Defining command \hectare with sig. '' on line 69.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \hour with sig. '' on line 68.
+. Defining command \hour with sig. '' on line 69.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \litre with sig. '' on line 68.
+. Defining command \litre with sig. '' on line 69.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \liter with sig. '' on line 68.
+. Defining command \liter with sig. '' on line 69.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \minute with sig. '' on line 68.
+. Defining command \minute with sig. '' on line 69.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \percent with sig. '' on line 68.
+. Defining command \percent with sig. '' on line 69.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \tonne with sig. '' on line 68.
+. Defining command \tonne with sig. '' on line 69.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \astronomicalunit with sig. '' on line 68.
+. Defining command \astronomicalunit with sig. '' on line 69.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \atomicmassunit with sig. '' on line 68.
+. Defining command \atomicmassunit with sig. '' on line 69.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \electronvolt with sig. '' on line 68.
+. Defining command \electronvolt with sig. '' on line 69.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \dalton with sig. '' on line 68.
+. Defining command \dalton with sig. '' on line 69.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \clight with sig. '' on line 68.
+. Defining command \clight with sig. '' on line 69.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \electronmass with sig. '' on line 68.
+. Defining command \electronmass with sig. '' on line 69.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \planckbar with sig. '' on line 68.
+. Defining command \planckbar with sig. '' on line 69.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \elementarycharge with sig. '' on line 68.
+. Defining command \elementarycharge with sig. '' on line 69.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \bohr with sig. '' on line 68.
+. Defining command \bohr with sig. '' on line 69.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \hartree with sig. '' on line 68.
+. Defining command \hartree with sig. '' on line 69.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \angstrom with sig. '' on line 68.
+. Defining command \angstrom with sig. '' on line 69.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \barn with sig. '' on line 68.
+. Defining command \barn with sig. '' on line 69.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \bel with sig. '' on line 68.
+. Defining command \bel with sig. '' on line 69.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \decibel with sig. '' on line 68.
+. Defining command \decibel with sig. '' on line 69.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \knot with sig. '' on line 68.
+. Defining command \knot with sig. '' on line 69.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \mmHg with sig. '' on line 68.
+. Defining command \mmHg with sig. '' on line 69.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \nauticalmile with sig. '' on line 68.
+. Defining command \nauticalmile with sig. '' on line 69.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \neper with sig. '' on line 68.
+. Defining command \neper with sig. '' on line 69.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \squared with sig. '' on line 68.
+. Defining command \squared with sig. '' on line 69.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \cubic with sig. '' on line 68.
+. Defining command \cubic with sig. '' on line 69.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \cubed with sig. '' on line 68.
+. Defining command \cubed with sig. '' on line 69.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \Square with sig. '' on line 68.
+. Defining command \Square with sig. '' on line 69.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \ssquare with sig. '' on line 68.
+. Defining command \ssquare with sig. '' on line 69.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \BAR with sig. '' on line 68.
+. Defining command \BAR with sig. '' on line 69.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \bbar with sig. '' on line 68.
+. Defining command \bbar with sig. '' on line 69.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \Day with sig. '' on line 68.
+. Defining command \Day with sig. '' on line 69.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \dday with sig. '' on line 68.
+. Defining command \dday with sig. '' on line 69.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \Gray with sig. '' on line 68.
+. Defining command \Gray with sig. '' on line 69.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \ggray with sig. '' on line 68.
+. Defining command \ggray with sig. '' on line 69.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \atomicmass with sig. '' on line 68.
+. Defining command \atomicmass with sig. '' on line 69.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \are with sig. '' on line 68.
+. Defining command \are with sig. '' on line 69.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \curie with sig. '' on line 68.
+. Defining command \curie with sig. '' on line 69.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \gal with sig. '' on line 68.
+. Defining command \gal with sig. '' on line 69.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \millibar with sig. '' on line 68.
+. Defining command \millibar with sig. '' on line 69.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \rad with sig. '' on line 68.
+. Defining command \rad with sig. '' on line 69.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \rem with sig. '' on line 68.
+. Defining command \rem with sig. '' on line 69.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \roentgen with sig. '' on line 68.
+. Defining command \roentgen with sig. '' on line 69.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \micA with sig. '' on line 68.
+. Defining command \micA with sig. '' on line 69.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \micmol with sig. '' on line 68.
+. Defining command \micmol with sig. '' on line 69.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \micl with sig. '' on line 68.
+. Defining command \micl with sig. '' on line 69.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \micL with sig. '' on line 68.
+. Defining command \micL with sig. '' on line 69.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \nanog with sig. '' on line 68.
+. Defining command \nanog with sig. '' on line 69.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \micg with sig. '' on line 68.
+. Defining command \micg with sig. '' on line 69.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \picm with sig. '' on line 68.
+. Defining command \picm with sig. '' on line 69.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \micm with sig. '' on line 68.
+. Defining command \micm with sig. '' on line 69.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \Sec with sig. '' on line 68.
+. Defining command \Sec with sig. '' on line 69.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \mics with sig. '' on line 68.
+. Defining command \mics with sig. '' on line 69.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \cmc with sig. '' on line 68.
+. Defining command \cmc with sig. '' on line 69.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \dmc with sig. '' on line 68.
+. Defining command \dmc with sig. '' on line 69.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \cms with sig. '' on line 68.
+. Defining command \cms with sig. '' on line 69.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \centimetrecubed with sig. '' on line 68.
+. Defining command \centimetrecubed with sig. '' on line 69.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \centimetresquared with sig. '' on line 68.
+. Defining command \centimetresquared with sig. '' on line 69.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \cubiccentimetre with sig. '' on line 68.
+. Defining command \cubiccentimetre with sig. '' on line 69.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \cubicdecimetre with sig. '' on line 68.
+. Defining command \cubicdecimetre with sig. '' on line 69.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \squarecentimetre with sig. '' on line 68.
+. Defining command \squarecentimetre with sig. '' on line 69.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \squaremetre with sig. '' on line 68.
+. Defining command \squaremetre with sig. '' on line 69.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \squarekilometre with sig. '' on line 68.
+. Defining command \squarekilometre with sig. '' on line 69.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \parsec with sig. '' on line 68.
+. Defining command \parsec with sig. '' on line 69.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \lightyear with sig. '' on line 68.
+. Defining command \lightyear with sig. '' on line 69.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \gmol with sig. '' on line 68.
+. Defining command \gmol with sig. '' on line 69.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \kgmol with sig. '' on line 68.
+. Defining command \kgmol with sig. '' on line 69.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \lbmol with sig. '' on line 68.
+. Defining command \lbmol with sig. '' on line 69.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \molar with sig. '' on line 68.
+. Defining command \molar with sig. '' on line 69.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \Molar with sig. '' on line 68.
+. Defining command \Molar with sig. '' on line 69.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \torr with sig. '' on line 68.
+. Defining command \torr with sig. '' on line 69.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \gon with sig. '' on line 68.
+. Defining command \gon with sig. '' on line 69.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \micron with sig. '' on line 68.
+. Defining command \micron with sig. '' on line 69.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \mrad with sig. '' on line 68.
+. Defining command \mrad with sig. '' on line 69.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \gauss with sig. '' on line 68.
+. Defining command \gauss with sig. '' on line 69.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \eVperc with sig. '' on line 68.
+. Defining command \eVperc with sig. '' on line 69.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \nanobarn with sig. '' on line 68.
+. Defining command \nanobarn with sig. '' on line 69.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \picobarn with sig. '' on line 68.
+. Defining command \picobarn with sig. '' on line 69.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \femtobarn with sig. '' on line 68.
+. Defining command \femtobarn with sig. '' on line 69.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \attobarn with sig. '' on line 68.
+. Defining command \attobarn with sig. '' on line 69.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \zeptobarn with sig. '' on line 68.
+. Defining command \zeptobarn with sig. '' on line 69.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \yoctobarn with sig. '' on line 68.
+. Defining command \yoctobarn with sig. '' on line 69.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \nb with sig. '' on line 68.
+. Defining command \nb with sig. '' on line 69.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \pb with sig. '' on line 68.
+. Defining command \pb with sig. '' on line 69.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \fb with sig. '' on line 68.
+. Defining command \fb with sig. '' on line 69.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \ab with sig. '' on line 68.
+. Defining command \ab with sig. '' on line 69.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \zb with sig. '' on line 68.
+. Defining command \zb with sig. '' on line 69.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \yb with sig. '' on line 68.
+. Defining command \yb with sig. '' on line 69.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \A with sig. '' on line 68.
+. Defining command \A with sig. '' on line 69.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \pA with sig. '' on line 68.
+. Defining command \pA with sig. '' on line 69.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \nA with sig. '' on line 68.
+. Defining command \nA with sig. '' on line 69.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \uA with sig. '' on line 68.
+. Defining command \uA with sig. '' on line 69.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \mA with sig. '' on line 68.
+. Defining command \mA with sig. '' on line 69.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \kA with sig. '' on line 68.
+. Defining command \kA with sig. '' on line 69.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \Hz with sig. '' on line 68.
+. Defining command \Hz with sig. '' on line 69.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \mHz with sig. '' on line 68.
+. Defining command \mHz with sig. '' on line 69.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \kHz with sig. '' on line 68.
+. Defining command \kHz with sig. '' on line 69.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \MHz with sig. '' on line 68.
+. Defining command \MHz with sig. '' on line 69.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \GHz with sig. '' on line 68.
+. Defining command \GHz with sig. '' on line 69.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \THz with sig. '' on line 68.
+. Defining command \THz with sig. '' on line 69.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \mol with sig. '' on line 68.
+. Defining command \mol with sig. '' on line 69.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \fmol with sig. '' on line 68.
+. Defining command \fmol with sig. '' on line 69.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \pmol with sig. '' on line 68.
+. Defining command \pmol with sig. '' on line 69.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \nmol with sig. '' on line 68.
+. Defining command \nmol with sig. '' on line 69.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \umol with sig. '' on line 68.
+. Defining command \umol with sig. '' on line 69.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \mmol with sig. '' on line 68.
+. Defining command \mmol with sig. '' on line 69.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \kmol with sig. '' on line 68.
+. Defining command \kmol with sig. '' on line 69.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \V with sig. '' on line 68.
+. Defining command \V with sig. '' on line 69.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \pV with sig. '' on line 68.
+. Defining command \pV with sig. '' on line 69.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \nV with sig. '' on line 68.
+. Defining command \nV with sig. '' on line 69.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \uV with sig. '' on line 68.
+. Defining command \uV with sig. '' on line 69.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \mV with sig. '' on line 68.
+. Defining command \mV with sig. '' on line 69.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \kV with sig. '' on line 68.
+. Defining command \kV with sig. '' on line 69.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \ml with sig. '' on line 68.
+. Defining command \ml with sig. '' on line 69.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \hL with sig. '' on line 68.
+. Defining command \hL with sig. '' on line 69.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \mL with sig. '' on line 68.
+. Defining command \mL with sig. '' on line 69.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \uL with sig. '' on line 68.
+. Defining command \uL with sig. '' on line 69.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \fg with sig. '' on line 68.
+. Defining command \fg with sig. '' on line 69.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \pg with sig. '' on line 68.
+. Defining command \pg with sig. '' on line 69.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \ug with sig. '' on line 68.
+. Defining command \ug with sig. '' on line 69.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \mg with sig. '' on line 68.
+. Defining command \mg with sig. '' on line 69.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \g with sig. '' on line 68.
+. Defining command \g with sig. '' on line 69.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \kg with sig. '' on line 68.
+. Defining command \kg with sig. '' on line 69.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \amu with sig. '' on line 68.
+. Defining command \amu with sig. '' on line 69.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \W with sig. '' on line 68.
+. Defining command \W with sig. '' on line 69.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \uW with sig. '' on line 68.
+. Defining command \uW with sig. '' on line 69.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \mW with sig. '' on line 68.
+. Defining command \mW with sig. '' on line 69.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \kW with sig. '' on line 68.
+. Defining command \kW with sig. '' on line 69.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \MW with sig. '' on line 68.
+. Defining command \MW with sig. '' on line 69.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \GW with sig. '' on line 68.
+. Defining command \GW with sig. '' on line 69.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \J with sig. '' on line 68.
+. Defining command \J with sig. '' on line 69.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \uJ with sig. '' on line 68.
+. Defining command \uJ with sig. '' on line 69.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \mJ with sig. '' on line 68.
+. Defining command \mJ with sig. '' on line 69.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \kJ with sig. '' on line 68.
+. Defining command \kJ with sig. '' on line 69.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \eV with sig. '' on line 68.
+. Defining command \eV with sig. '' on line 69.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \meV with sig. '' on line 68.
+. Defining command \meV with sig. '' on line 69.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \keV with sig. '' on line 68.
+. Defining command \keV with sig. '' on line 69.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \MeV with sig. '' on line 68.
+. Defining command \MeV with sig. '' on line 69.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \GeV with sig. '' on line 68.
+. Defining command \GeV with sig. '' on line 69.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \TeV with sig. '' on line 68.
+. Defining command \TeV with sig. '' on line 69.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \kWh with sig. '' on line 68.
+. Defining command \kWh with sig. '' on line 69.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \m with sig. '' on line 68.
+. Defining command \m with sig. '' on line 69.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \nm with sig. '' on line 68.
+. Defining command \nm with sig. '' on line 69.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \um with sig. '' on line 68.
+. Defining command \um with sig. '' on line 69.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \mm with sig. '' on line 68.
+. Defining command \mm with sig. '' on line 69.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \cm with sig. '' on line 68.
+. Defining command \cm with sig. '' on line 69.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \dm with sig. '' on line 68.
+. Defining command \dm with sig. '' on line 69.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \km with sig. '' on line 68.
+. Defining command \km with sig. '' on line 69.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \K with sig. '' on line 68.
+. Defining command \K with sig. '' on line 69.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \dB with sig. '' on line 68.
+. Defining command \dB with sig. '' on line 69.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \F with sig. '' on line 68.
+. Defining command \F with sig. '' on line 69.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \fF with sig. '' on line 68.
+. Defining command \fF with sig. '' on line 69.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \pF with sig. '' on line 68.
+. Defining command \pF with sig. '' on line 69.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \N with sig. '' on line 68.
+. Defining command \N with sig. '' on line 69.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \mN with sig. '' on line 68.
+. Defining command \mN with sig. '' on line 69.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \kN with sig. '' on line 68.
+. Defining command \kN with sig. '' on line 69.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \MN with sig. '' on line 68.
+. Defining command \MN with sig. '' on line 69.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \Pa with sig. '' on line 68.
+. Defining command \Pa with sig. '' on line 69.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \kPa with sig. '' on line 68.
+. Defining command \kPa with sig. '' on line 69.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \MPa with sig. '' on line 68.
+. Defining command \MPa with sig. '' on line 69.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \GPa with sig. '' on line 68.
+. Defining command \GPa with sig. '' on line 69.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \mohm with sig. '' on line 68.
+. Defining command \mohm with sig. '' on line 69.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \kohm with sig. '' on line 68.
+. Defining command \kohm with sig. '' on line 69.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \Mohm with sig. '' on line 68.
+. Defining command \Mohm with sig. '' on line 69.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \s with sig. '' on line 68.
+. Defining command \s with sig. '' on line 69.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \as with sig. '' on line 68.
+. Defining command \as with sig. '' on line 69.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \ps with sig. '' on line 68.
+. Defining command \ps with sig. '' on line 69.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \ns with sig. '' on line 68.
+. Defining command \ns with sig. '' on line 69.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \us with sig. '' on line 68.
+. Defining command \us with sig. '' on line 69.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \ms with sig. '' on line 68.
+. Defining command \ms with sig. '' on line 69.
 .................................................
-LaTeX Font Info:    Try loading font information for OT1+txr on input line 68.
+LaTeX Font Info:    Try loading font information for OT1+txr on input line 69.
  (/usr/local/texlive/2018/texmf-dist/tex/latex/txfonts/ot1txr.fd
 File: ot1txr.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    Try loading font information for U+txsya on input line 68.
+LaTeX Font Info:    Try loading font information for U+txsya on input line 69.
 
 (/usr/local/texlive/2018/texmf-dist/tex/latex/txfonts/utxsya.fd
 File: utxsya.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    Try loading font information for U+txsyb on input line 68.
+LaTeX Font Info:    Try loading font information for U+txsyb on input line 69.
 
 (/usr/local/texlive/2018/texmf-dist/tex/latex/txfonts/utxsyb.fd
 File: utxsyb.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    Try loading font information for U+txmia on input line 68.
+LaTeX Font Info:    Try loading font information for U+txmia on input line 69.
 
 (/usr/local/texlive/2018/texmf-dist/tex/latex/txfonts/utxmia.fd
 File: utxmia.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    Try loading font information for U+txsyc on input line 68.
+LaTeX Font Info:    Try loading font information for U+txsyc on input line 69.
 
 (/usr/local/texlive/2018/texmf-dist/tex/latex/txfonts/utxsyc.fd
 File: utxsyc.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    Try loading font information for OT1+txss on input line 68.
+LaTeX Font Info:    Try loading font information for OT1+txss on input line 69.
 
 
 (/usr/local/texlive/2018/texmf-dist/tex/latex/txfonts/ot1txss.fd
 File: ot1txss.fd 2000/12/15 v3.1
 )
 LaTeX Font Info:    Font shape `OT1/txss/m/n' will be
-(Font)              scaled to size 9.49997pt on input line 68.
+(Font)              scaled to size 9.49997pt on input line 69.
 LaTeX Font Info:    Font shape `OT1/txss/m/n' will be
-(Font)              scaled to size 6.64998pt on input line 68.
+(Font)              scaled to size 6.64998pt on input line 69.
 LaTeX Font Info:    Font shape `OT1/txss/m/n' will be
-(Font)              scaled to size 4.74998pt on input line 68.
-LaTeX Font Info:    Try loading font information for OT1+txtt on input line 68.
+(Font)              scaled to size 4.74998pt on input line 69.
+LaTeX Font Info:    Try loading font information for OT1+txtt on input line 69.
 
 
 (/usr/local/texlive/2018/texmf-dist/tex/latex/txfonts/ot1txtt.fd
 File: ot1txtt.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    Try loading font information for TS1+txr on input line 113.
+LaTeX Font Info:    Try loading font information for TS1+txr on input line 114.
 
 
 (/usr/local/texlive/2018/texmf-dist/tex/latex/txfonts/ts1txr.fd
 File: ts1txr.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    Try loading font information for T1+txss on input line 113.
+LaTeX Font Info:    Try loading font information for T1+txss on input line 114.
 
 
 (/usr/local/texlive/2018/texmf-dist/tex/latex/txfonts/t1txss.fd
 File: t1txss.fd 2000/12/15 v3.1
 )
 LaTeX Font Info:    Font shape `T1/txss/m/n' will be
-(Font)              scaled to size 16.41594pt on input line 113.
+(Font)              scaled to size 16.41594pt on input line 114.
 LaTeX Font Info:    Font shape `T1/txss/bx/n' will be
-(Font)              scaled to size 16.41594pt on input line 113.
+(Font)              scaled to size 16.41594pt on input line 114.
 LaTeX Font Info:    Font shape `T1/txss/m/n' will be
-(Font)              scaled to size 13.67995pt on input line 113.
+(Font)              scaled to size 13.67995pt on input line 114.
 LaTeX Font Info:    Font shape `T1/txss/bx/n' will be
-(Font)              scaled to size 13.67995pt on input line 113.
+(Font)              scaled to size 13.67995pt on input line 114.
 LaTeX Font Info:    Font shape `OT1/txss/m/n' will be
-(Font)              scaled to size 10.40245pt on input line 113.
+(Font)              scaled to size 10.40245pt on input line 114.
 LaTeX Font Info:    Font shape `OT1/txss/m/n' will be
-(Font)              scaled to size 7.59998pt on input line 113.
+(Font)              scaled to size 7.59998pt on input line 114.
 LaTeX Font Info:    Font shape `OT1/txss/m/n' will be
-(Font)              scaled to size 5.69998pt on input line 113.
+(Font)              scaled to size 5.69998pt on input line 114.
 LaTeX Font Info:    Font shape `OT1/txss/m/n' will be
-(Font)              scaled to size 8.54997pt on input line 113.
-LaTeX Font Info:    Try loading font information for T1+txtt on input line 113.
+(Font)              scaled to size 8.54997pt on input line 114.
+LaTeX Font Info:    Try loading font information for T1+txtt on input line 114.
 
 
 (/usr/local/texlive/2018/texmf-dist/tex/latex/txfonts/t1txtt.fd
 File: t1txtt.fd 2000/12/15 v3.1
 )
 LaTeX Font Info:    Font shape `T1/txss/m/n' will be
-(Font)              scaled to size 8.54997pt on input line 113.
+(Font)              scaled to size 8.54997pt on input line 114.
 LaTeX Font Info:    Font shape `T1/txss/bx/n' will be
-(Font)              scaled to size 8.54997pt on input line 113.
+(Font)              scaled to size 8.54997pt on input line 114.
 LaTeX Font Info:    Font shape `T1/txss/m/it' in size <9> not available
-(Font)              Font shape `T1/txss/m/sl' tried instead on input line 113.
+(Font)              Font shape `T1/txss/m/sl' tried instead on input line 114.
 LaTeX Font Info:    Font shape `T1/txss/m/sl' will be
-(Font)              scaled to size 8.54997pt on input line 113.
+(Font)              scaled to size 8.54997pt on input line 114.
 LaTeX Font Info:    Font shape `T1/txss/m/n' will be
-(Font)              scaled to size 10.40245pt on input line 114.
+(Font)              scaled to size 10.40245pt on input line 115.
 LaTeX Font Info:    Font shape `T1/txss/bx/n' will be
-(Font)              scaled to size 10.40245pt on input line 114.
-
-Underfull \vbox (badness 8019) has occurred while \output is active []
-
+(Font)              scaled to size 10.40245pt on input line 115.
 
 Underfull \vbox (badness 6641) has occurred while \output is active []
 
 
 
-Package hyperref Warning: Suppressing link with empty target on input line 122.
+Package hyperref Warning: Suppressing link with empty target on input line 146.
 
 
 [1{/usr/local/texlive/2018/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
 
 
 ]
-<./plot/abcdC_map.pdf, id=129, 315.07541pt x 358.71703pt>
+<./plot/abcdC_map.pdf, id=156, 315.07541pt x 358.71703pt>
 File: ./plot/abcdC_map.pdf Graphic file (type pdf)
 <use ./plot/abcdC_map.pdf>
-Package pdftex.def Info: ./plot/abcdC_map.pdf  used on input line 141.
+Package pdftex.def Info: ./plot/abcdC_map.pdf  used on input line 194.
 (pdftex.def)             Requested size: 235.5872pt x 268.227pt.
-<./plot/abcdX_map.pdf, id=130, 315.07541pt x 358.71703pt>
+<./plot/abcdX_map.pdf, id=157, 315.07541pt x 358.71703pt>
 File: ./plot/abcdX_map.pdf Graphic file (type pdf)
 <use ./plot/abcdX_map.pdf>
-Package pdftex.def Info: ./plot/abcdX_map.pdf  used on input line 142.
+Package pdftex.def Info: ./plot/abcdX_map.pdf  used on input line 195.
 (pdftex.def)             Requested size: 235.5872pt x 268.227pt.
 LaTeX Font Info:    Font shape `T1/txss/m/n' will be
-(Font)              scaled to size 9.49997pt on input line 155.
+(Font)              scaled to size 9.49997pt on input line 208.
 LaTeX Font Info:    Font shape `T1/txss/m/it' in size <10> not available
-(Font)              Font shape `T1/txss/m/sl' tried instead on input line 155.
+(Font)              Font shape `T1/txss/m/sl' tried instead on input line 208.
 LaTeX Font Info:    Font shape `T1/txss/m/sl' will be
-(Font)              scaled to size 9.49997pt on input line 155.
+(Font)              scaled to size 9.49997pt on input line 208.
 
 
-Package hyperref Warning: Suppressing link with empty target on input line 170.
+Package hyperref Warning: Suppressing link with empty target on input line 212.
 
 
 [2]
-<./plot/overall_cores_006.pdf, id=183, 561.8376pt x 570.93298pt>
-File: ./plot/overall_cores_006.pdf Graphic file (type pdf)
-<use ./plot/overall_cores_006.pdf>
-Package pdftex.def Info: ./plot/overall_cores_006.pdf  used on input line 197.
+<./plot/cores_006.pdf, id=198, 561.8376pt x 570.93298pt>
+File: ./plot/cores_006.pdf Graphic file (type pdf)
+<use ./plot/cores_006.pdf>
+Package pdftex.def Info: ./plot/cores_006.pdf  used on input line 215.
 (pdftex.def)             Requested size: 445.00429pt x 452.22562pt.
-<./plot/r-flx.pdf, id=184, 433.62pt x 433.62pt>
-File: ./plot/r-flx.pdf Graphic file (type pdf)
-<use ./plot/r-flx.pdf>
-Package pdftex.def Info: ./plot/r-flx.pdf  used on input line 207.
-(pdftex.def)             Requested size: 366.46988pt x 366.48793pt.
-<./plot/mhii.pdf, id=185, 289.08pt x 289.08pt>
-File: ./plot/mhii.pdf Graphic file (type pdf)
-<use ./plot/mhii.pdf>
-Package pdftex.def Info: ./plot/mhii.pdf  used on input line 216.
+
+
+LaTeX Warning: Reference `f:r-flx' on page 3 undefined on input line 224.
+
+
+LaTeX Warning: Reference `f:r-flx' on page 3 undefined on input line 224.
+
+
+LaTeX Warning: Reference `f:r-flx' on page 3 undefined on input line 232.
+
+
+LaTeX Warning: Reference `f:r-flx' on page 3 undefined on input line 240.
+
+
+LaTeX Warning: Reference `f:r-flx' on page 3 undefined on input line 242.
+
+<./plot/em_dist.pdf, id=206, 289.08pt x 289.08pt>
+File: ./plot/em_dist.pdf Graphic file (type pdf)
+<use ./plot/em_dist.pdf>
+Package pdftex.def Info: ./plot/em_dist.pdf  used on input line 263.
 (pdftex.def)             Requested size: 209.40907pt x 209.40779pt.
-<./plot/overall_cores_096.pdf, id=186, 561.8376pt x 570.93298pt>
+<./plot/overall_cores_096.pdf, id=207, 561.8376pt x 570.93298pt>
 File: ./plot/overall_cores_096.pdf Graphic file (type pdf)
 <use ./plot/overall_cores_096.pdf>
-Package pdftex.def Info: ./plot/overall_cores_096.pdf  used on input line 227.
+Package pdftex.def Info: ./plot/overall_cores_096.pdf  used on input line 276.
 (pdftex.def)             Requested size: 445.00429pt x 452.22562pt.
-<./plot/006-096-flx.pdf, id=187, 433.62pt x 433.62pt>
+<./plot/006-096-flx.pdf, id=208, 433.62pt x 433.62pt>
 File: ./plot/006-096-flx.pdf Graphic file (type pdf)
 <use ./plot/006-096-flx.pdf>
-Package pdftex.def Info: ./plot/006-096-flx.pdf  used on input line 237.
+Package pdftex.def Info: ./plot/006-096-flx.pdf  used on input line 286.
 (pdftex.def)             Requested size: 251.2925pt x 251.29466pt.
-<./plot/006-096-flx_2.pdf, id=188, 433.62pt x 433.62pt>
+<./plot/006-096-flx_2.pdf, id=209, 433.62pt x 433.62pt>
 File: ./plot/006-096-flx_2.pdf Graphic file (type pdf)
 <use ./plot/006-096-flx_2.pdf>
-Package pdftex.def Info: ./plot/006-096-flx_2.pdf  used on input line 238.
+Package pdftex.def Info: ./plot/006-096-flx_2.pdf  used on input line 287.
 (pdftex.def)             Requested size: 251.2925pt x 251.29466pt.
- (./chiirs.bbl
+(./chiirs.bbl
 
-Package hyperref Warning: Suppressing link with empty target on input line 111.
-
+Package hyperref Warning: Suppressing link with empty target on input line 29.
 
 [3 <./plot/abcdC_map.pdf> <./plot/abcdX_map.pdf
 
@@ -2772,30 +2779,24 @@ pdfTeX warning: pdflatex (file ./plot/abcdX_map.pdf): PDF inclusion: multiple p
 dfs with page group included in a single page
 >])
 
-Package hyperref Warning: Suppressing link with empty target on input line 259.
+Package hyperref Warning: Suppressing link with empty target on input line 310.
 
 
-[4
+[4 <./plot/cores_006.pdf>]
 
- <./plot/overall_cores_006.pdf>]
-
-Package hyperref Warning: Suppressing link with empty target on input line 259.
+Package hyperref Warning: Suppressing link with empty target on input line 310.
 
 
 [5
 
- <./plot/r-flx.pdf> <./plot/mhii.pdf
+ <./plot/em_dist.pdf>]
 
-pdfTeX warning: pdflatex (file ./plot/mhii.pdf): PDF inclusion: multiple pdfs w
-ith page group included in a single page
->]
-
-Package hyperref Warning: Suppressing link with empty target on input line 259.
+Package hyperref Warning: Suppressing link with empty target on input line 310.
 
 
 [6 <./plot/overall_cores_096.pdf>]
 
-Package hyperref Warning: Suppressing link with empty target on input line 259.
+Package hyperref Warning: Suppressing link with empty target on input line 310.
 
 
 [7 <./plot/006-096-flx.pdf> <./plot/006-096-flx_2.pdf
@@ -2805,50 +2806,72 @@ le pdfs with page group included in a single page
 >]
 
 Package natbib Warning: Citation `2020SciPy-NMeth' on page 8 undefined on input
- line 264.
+ line 315.
 
-<./plot/abcd_006_rms.pdf, id=605, 309.31952pt x 358.71703pt>
+<./plot/abcd_006_rms.pdf, id=583, 309.31952pt x 358.71703pt>
 File: ./plot/abcd_006_rms.pdf Graphic file (type pdf)
 <use ./plot/abcd_006_rms.pdf>
-Package pdftex.def Info: ./plot/abcd_006_rms.pdf  used on input line 271.
-(pdftex.def)             Requested size: 235.5872pt x 273.21344pt.
-<./plot/096_rms.pdf, id=606, 309.31952pt x 358.71703pt>
+Package pdftex.def Info: ./plot/abcd_006_rms.pdf  used on input line 322.
+(pdftex.def)             Requested size: 209.40907pt x 242.85152pt.
+<./plot/010_rms.pdf, id=584, 309.31952pt x 358.71703pt>
+File: ./plot/010_rms.pdf Graphic file (type pdf)
+<use ./plot/010_rms.pdf>
+Package pdftex.def Info: ./plot/010_rms.pdf  used on input line 331.
+(pdftex.def)             Requested size: 209.40907pt x 242.85152pt.
+<./plot/096_rms.pdf, id=585, 309.31952pt x 358.71703pt>
 File: ./plot/096_rms.pdf Graphic file (type pdf)
 <use ./plot/096_rms.pdf>
-Package pdftex.def Info: ./plot/096_rms.pdf  used on input line 282.
-(pdftex.def)             Requested size: 235.5872pt x 273.21344pt.
+Package pdftex.def Info: ./plot/096_rms.pdf  used on input line 340.
+(pdftex.def)             Requested size: 209.40907pt x 242.85152pt.
+(./corepara.tex)
+Underfull \hbox (badness 10000) in paragraph at lines 397--399
+
+ []
+
 
 Package natbib Warning: There were undefined citations.
 
 
-Package hyperref Warning: Suppressing link with empty target on input line 297.
+Package hyperref Warning: Suppressing link with empty target on input line 409.
 
 
 [8
 
 
+ <./plot/abcd_006_rms.pdf> <./plot/010_rms.pdf
 
- <./plot/abcd_006_rms.pdf> <./plot/096_rms.pdf
+pdfTeX warning: pdflatex (file ./plot/010_rms.pdf): PDF inclusion: multiple pdf
+s with page group included in a single page
+> <./plot/096_rms.pdf
 
 pdfTeX warning: pdflatex (file ./plot/096_rms.pdf): PDF inclusion: multiple pdf
 s with page group included in a single page
 >]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 297.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 297.
+
+Package hyperref Warning: Suppressing link with empty target on input line 409.
+
+
+[9]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 409.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 409.
  (./chiirs.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 297.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 297.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 409.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 409.
 Package rerunfilecheck Info: File `chiirs.out' has not changed.
-(rerunfilecheck)             Checksum: D75E8F13D10BE5C2526F28F6DDB3A1FA;375.
+(rerunfilecheck)             Checksum: 13DEFF256EE1C6D92611CC3D5BC35EA6;497.
+
+
+LaTeX Warning: There were undefined references.
+
  ) 
 Here is how much of TeX's memory you used:
- 23845 strings out of 492649
- 441490 string characters out of 6129622
- 573480 words of memory out of 5000000
- 27334 multiletter control sequences out of 15000+600000
- 645377 words of font info for 183 fonts, out of 8000000 for 9000
+ 23880 strings out of 492649
+ 442099 string characters out of 6129622
+ 592480 words of memory out of 5000000
+ 27353 multiletter control sequences out of 15000+600000
+ 648069 words of font info for 187 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 41i,12n,57p,10369b,1074s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 41i,11n,57p,10369b,1044s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
 exlive/2018/texmf-dist/fonts/type1/public/txfonts/rtcxr.pfb></usr/local/texlive
 /2018/texmf-dist/fonts/type1/public/txfonts/rtxmi.pfb></usr/local/texlive/2018/
@@ -2864,10 +2887,10 @@ local/texlive/2018/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texl
 ive/2018/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2018/t
 exmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2018/texmf-dist/
 fonts/type1/urw/times/utmri8a.pfb>
-Output written on chiirs.pdf (8 pages, 10093607 bytes).
+Output written on chiirs.pdf (9 pages, 11434383 bytes).
 PDF statistics:
- 773 PDF objects out of 1000 (max. 8388607)
- 351 compressed objects within 4 object streams
- 55 named destinations out of 1000 (max. 500000)
- 107 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 807 PDF objects out of 1000 (max. 8388607)
+ 375 compressed objects within 4 object streams
+ 64 named destinations out of 1000 (max. 500000)
+ 123 words of extra memory for PDF output out of 10000 (max. 10000000)
 
