@@ -22,7 +22,7 @@ def deconvolve(star, psf):
 
 
 df = pd.read_csv('../../script/cores006.csv')
-corenum = 24
+corenum = 47
 
 data = fits.open('../sm_abcd_006_lpf_new.fits')[0].data.T
 subimage = data[int(df['XPEAK_IMAGE'][corenum]) - 50:int(df['XPEAK_IMAGE'][corenum]) + 50,
