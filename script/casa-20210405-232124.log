@@ -1,0 +1,38 @@
+2021-04-05 23:21:27	INFO	::casa	
+2021-04-05 23:21:27	INFO	::casa	CASA Version 5.4.0-68  
+2021-04-05 23:21:28	INFO	importfits::::	
+2021-04-05 23:21:28	INFO	importfits::::+	##########################################
+2021-04-05 23:21:28	INFO	importfits::::+	##### Begin Task: importfits         #####
+2021-04-05 23:21:28	INFO	importfits::::	importfits(fitsimage="../data/022.4.fits",imagename="../data/022.4im",whichrep=0,whichhdu=-1,zeroblanks=True,
+2021-04-05 23:21:28	INFO	importfits::::+	        overwrite=False,defaultaxes=False,defaultaxesvalues=[],beam=[])
+2021-04-05 23:21:28	INFO	importfits::::ImageFITSConverter	Processing HDU 0
+2021-04-05 23:21:28	INFO	importfits::ImageFITSConverterImpl::FITSToImage 	Created image of shape [2048, 2048, 1, 1]
+2021-04-05 23:21:28	INFO	importfits::ImageFITSConverterImpl::FITSToImage 	Copy FITS file to '/Users/meng/Dropbox/astro/chiirs/data/022.4im' All pixels fit in memory (4194304 pixels).
+2021-04-05 23:21:28	INFO	importfits::ImageFITSConverterImpl::FITSToImage 	Storing mask with name 'mask0'
+2021-04-05 23:21:28	INFO	importfits::::	##### End Task: importfits           #####
+2021-04-05 23:21:28	INFO	importfits::::+	##########################################
+2021-04-05 23:21:29	INFO	imregrid::::	
+2021-04-05 23:21:29	INFO	imregrid::::+	##########################################
+2021-04-05 23:21:29	INFO	imregrid::::+	##### Begin Task: imregrid           #####
+2021-04-05 23:21:29	INFO	imregrid::::	imregrid(imagename="../data/022.4im",template="../data/rg_096.im",output="../data/rg_022.4.im",asvelocity=True,axes=[-1],
+2021-04-05 23:21:29	INFO	imregrid::::+	        shape=[-1],interpolation="linear",decimate=10,replicate=False,overwrite=False)
+2021-04-05 23:21:29	INFO	imregrid::CasacRegionManager::fromBCS	No directional region specified. Using full positional plane.
+2021-04-05 23:21:29	INFO	imregrid::CasacRegionManager::fromBCS	Using all spectral channels.
+2021-04-05 23:21:29	INFO	imregrid::CasacRegionManager::fromBCS	Using polarizations ALL
+2021-04-05 23:21:29	INFO	imregrid::ImageMaskAttacher::makeMask	Created and initialized mask `mask0'
+2021-04-05 23:21:29	INFO	imregrid::ImageRegrid::_checkAxes 	The Stokes axis cannot be regridded - removing from list
+2021-04-05 23:21:46	INFO	imregrid::SubImageFactory::createImage	Creating image '../data/rg_022.4.im' of shape [9600, 9600, 1, 1]
+2021-04-05 23:21:46	INFO	imregrid::ImageMaskAttacher::makeMask	Created mask `mask0'
+2021-04-05 23:21:47	INFO	imregrid::::	##### End Task: imregrid             #####
+2021-04-05 23:21:47	INFO	imregrid::::+	##########################################
+2021-04-05 23:21:47	INFO	exportfits::::	
+2021-04-05 23:21:47	INFO	exportfits::::+	##########################################
+2021-04-05 23:21:47	INFO	exportfits::::+	##### Begin Task: exportfits         #####
+2021-04-05 23:21:47	INFO	exportfits::::	exportfits(imagename="../data/rg_022.4.im",fitsimage="../data/rg_022.4.fits",velocity=False,optical=False,bitpix=-32,
+2021-04-05 23:21:47	INFO	exportfits::::+	        minpix=0,maxpix=-1,overwrite=False,dropstokes=False,stokeslast=True,
+2021-04-05 23:21:47	INFO	exportfits::::+	        history=True,dropdeg=True)
+2021-04-05 23:21:47	INFO	exportfits::ImageFactory::toFITS	Applying mask of name 'mask0'
+2021-04-05 23:21:47	INFO	exportfits::ImageRegion::fromRecord	Selected bounding box : 
+2021-04-05 23:21:47	INFO	exportfits::ImageRegion::fromRecord+	    [0, 0, 0, 0] to [9599, 9599, 0, 0]  (17:47:37.948, -28.27.06.925, 2.23375e+10Hz, I to 17:47:01.579, -28.19.06.975, 2.23375e+10Hz, I)
+2021-04-05 23:21:48	INFO	exportfits::::	##### End Task: exportfits           #####
+2021-04-05 23:21:48	INFO	exportfits::::+	##########################################

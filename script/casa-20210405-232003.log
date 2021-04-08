@@ -1,0 +1,23 @@
+2021-04-05 23:20:08	INFO	::casa	
+2021-04-05 23:20:08	INFO	::casa	CASA Version 5.4.0-68  
+2021-04-05 23:20:10	INFO	importfits::::	
+2021-04-05 23:20:10	INFO	importfits::::+	##########################################
+2021-04-05 23:20:10	INFO	importfits::::+	##### Begin Task: importfits         #####
+2021-04-05 23:20:10	INFO	importfits::::	importfits(fitsimage="../data/022.4.fits",imagename="../data/022.4im",whichrep=0,whichhdu=-1,zeroblanks=True,
+2021-04-05 23:20:10	INFO	importfits::::+	        overwrite=False,defaultaxes=False,defaultaxesvalues=[],beam=[])
+2021-04-05 23:20:10	INFO	importfits::::ImageFITSConverter	Processing HDU 0
+2021-04-05 23:20:10	INFO	importfits::ImageFITSConverterImpl::FITSToImage 	Created image of shape [2048, 2048, 1, 1]
+2021-04-05 23:20:10	INFO	importfits::ImageFITSConverterImpl::FITSToImage 	Copy FITS file to '/Users/meng/Dropbox/astro/chiirs/data/022.4im' All pixels fit in memory (4194304 pixels).
+2021-04-05 23:20:10	INFO	importfits::ImageFITSConverterImpl::FITSToImage 	Storing mask with name 'mask0'
+2021-04-05 23:20:10	INFO	importfits::::	##### End Task: importfits           #####
+2021-04-05 23:20:10	INFO	importfits::::+	##########################################
+2021-04-05 23:20:10	INFO	imregrid::::	
+2021-04-05 23:20:10	INFO	imregrid::::+	##########################################
+2021-04-05 23:20:10	INFO	imregrid::::+	##### Begin Task: imregrid           #####
+2021-04-05 23:20:10	INFO	imregrid::::	imregrid(imagename="../data/022.4im",template="../data/rg_096.im",output="../data/rg_022.4.im",asvelocity=True,axes=[-1],
+2021-04-05 23:20:10	INFO	imregrid::::+	        shape=[-1],interpolation="linear",decimate=10,replicate=False,overwrite=False)
+2021-04-05 23:20:10	SEVERE	imregrid::::	Error: Cannot read template image ../data/rg_096.im
+2021-04-05 23:20:10	SEVERE	imregrid::::	An error occurred running task imregrid.
+2021-04-05 23:20:10	INFO	exportfits::utils::verify	Verifying arguments....File existence checking failed for imagename ../data/rg_022.4.im
+2021-04-05 23:20:10	WARN	exportfits::utils::verify	Argument imagename failed to verify.
+2021-04-05 23:20:10	SEVERE	exportfits::::	An error occurred running task exportfits.

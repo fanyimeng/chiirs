@@ -1064,29 +1064,14 @@ body .markdown-body
 .highlight .il{color:#009999}
 .highlight .gc{color:#999;background-color:#EAF2F5}
 </style><title>README</title></head><body><article class="markdown-body"><h1 id="chiirs">chiirs<a class="headerlink" href="#chiirs" title="Permanent link"></a></h1>
-<p><strong>C</strong>ompact <strong>H</strong>ii <strong>R</strong>egions in <strong>S</strong>grB2</p>
-<h2 id="review-of-rms-map">Review of RMS map<a class="headerlink" href="#review-of-rms-map" title="Permanent link"></a></h2>
+<p><strong>C</strong>ompact <strong>Hii</strong> <strong>R</strong>egions in <strong>S</strong>grB2</p>
 <ul>
-<li>Original data.<ul>
-<li>6 GHz: <code>rg_006.fits</code> and <code>dcbC_sc_1.8.image.tt0.pbcor.fits</code>, <a href="/Users/meng/Dropbox/astro/chiirs/script/feather.py">feather</a> into <code>abcd_006_lpf_new.fits</code>. </li>
-<li>96 GHz: <code>rm_096.fits</code>.</li>
+<li>Data, in FITS format, are in <a href="/Users/meng/Dropbox/astro/chiirs/data">data</a></li>
+<li>Plots, in .pdf format, are in <a href="/Users/meng/Dropbox/astro/chiirs/plot">plot</a></li>
+<li>ASCII files (tables, region files, etc.) are in <a href="/Users/meng/Dropbox/astro/chiirs/script">script</a></li>
 </ul>
-</li>
-<li>In <a href="/Users/meng/Dropbox/astro/chiirs/rms_map.py">./script/rms_map.py</a>. Following masking, using <code>ndimage.generic_filter(im, rmsfunc, size=(100, 100))</code> to apply a rms filter to the image. The <code>rmsfunc</code> is <code>np.std(x)</code>.<ul>
-<li>Output: <code>*_rms_100_1e-3.fits</code>. <code>1e-3</code> is the masking level.</li>
-</ul>
-</li>
-<li>To fill in the masked-out-pixels, use <a href="/Users/meng/Dropbox/astro/chiirs/script/fill_sample.py">fill_sample.py</a>. Firstly, the full-resolution images (9600^2 px) here should be resampled into 1/100^2 resolution. Then utilize <code>scipy.interpolate.griddata((x1, y1),...,method='cubic')</code> to interpolate cubically to fill in the masked hollow regions in the images. <ul>
-<li>Output: <code>*_rms_100_1e-3_cubic.fits</code></li>
-</ul>
-</li>
-<li>Plot the rmsmap using <a href="/Users/meng/Dropbox/astro/chiirs/script/rmsplot.py">rmsplot.py</a> <code>&lt;--</code> <a href="/Users/meng/Dropbox/astro/chiirs/script/techlib.py">techlib.py</a>.<ul>
-<li>Output: <a href="/Users/meng/Dropbox/astro/chiirs/plot/rms_006.pdf">rms_006.pdf</a> and <a href="/Users/meng/Dropbox/astro/chiirs/plot/rms_096.pdf">rms_096.pdf</a></li>
-</ul>
-</li>
-</ul>
-<h2 id="ellipses-collision">Ellipses collision<a class="headerlink" href="#ellipses-collision" title="Permanent link"></a></h2>
+<h3 id="nomenclature-of-python-script">Nomenclature of Python Script<a class="headerlink" href="#nomenclature-of-python-script" title="Permanent link"></a></h3>
 <ul>
-<li>write a package to detect collision of ellipses</li>
-<li>apply the ell_col to sextractor to give a mutual-mapping of 6 GHz and 96 GHz cores.</li>
+<li>[description]-[input_format]_[output_format].py</li>
+<li>[description]-[format1]+[output_format2].py</li>
 </ul></article></body></html>

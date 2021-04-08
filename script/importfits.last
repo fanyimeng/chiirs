@@ -1,0 +1,11 @@
+taskname           = "importfits"
+fitsimage          =  "../data/022.4.fits"
+imagename          =  "../data/022.4im"
+whichrep           =  0
+whichhdu           =  -1
+zeroblanks         =  True
+overwrite          =  False
+defaultaxes        =  False
+defaultaxesvalues    =  []
+beam               =  []
+#importfits(fitsimage="../data/022.4.fits",imagename="../data/022.4im",whichrep=0,whichhdu=-1,zeroblanks=True,overwrite=False,defaultaxes=False,defaultaxesvalues=[],beam=[])

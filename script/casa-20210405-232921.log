@@ -1,0 +1,165 @@
+2021-04-05 23:29:24	INFO	::casa	
+2021-04-05 23:29:24	INFO	::casa	CASA Version 5.4.0-68  
+2021-04-05 23:29:44	INFO	default::::	 #######  Setting values to default for task: imsmooth  #######
+2021-04-05 23:30:08	INFO	default::::	 #######  Setting values to default for task: importfits  #######
+2021-04-05 23:30:56	INFO	importfits::::	
+2021-04-05 23:30:56	INFO	importfits::::+	##########################################
+2021-04-05 23:30:56	INFO	importfits::::+	##### Begin Task: importfits         #####
+2021-04-05 23:30:56	INFO	importfits::::	importfits(fitsimage="../data/rg_022.4.fits",imagename="../data/rg_022.4.im",whichrep=0,whichhdu=-1,zeroblanks=True,
+2021-04-05 23:30:56	INFO	importfits::::+	        overwrite=False,defaultaxes=False,defaultaxesvalues=[],beam=[])
+2021-04-05 23:30:56	SEVERE	importfits::::	*** Error ***Output image exists already and you did not set overwrite to True.
+2021-04-05 23:30:56	SEVERE	importfits::::	An error occurred running task importfits.
+2021-04-05 23:31:11	INFO	importfits::::	
+2021-04-05 23:31:11	INFO	importfits::::+	##########################################
+2021-04-05 23:31:11	INFO	importfits::::+	##### Begin Task: importfits         #####
+2021-04-05 23:31:11	INFO	importfits::::	importfits(fitsimage="../data/rg_022.4.fits",imagename="../data/rg_022.4.im",whichrep=0,whichhdu=-1,zeroblanks=True,
+2021-04-05 23:31:11	INFO	importfits::::+	        overwrite=True,defaultaxes=False,defaultaxesvalues=[],beam=[])
+2021-04-05 23:31:11	INFO	importfits::::ImageFITSConverter	Processing HDU 0
+2021-04-05 23:31:12	INFO	importfits::FITSCoordinateUtil::fromFITSHeader	passing empty or nonexistant spectral Coordinate axis
+2021-04-05 23:31:12	INFO	importfits::ImageFITSConverterImpl::FITSToImage 	Created image of shape [9600, 9600]
+2021-04-05 23:31:12	INFO	importfits::ImageFITSConverterImpl::FITSToImage 	Copy FITS file to '/Users/meng/Dropbox/astro/chiirs/data/rg_022.4.im' All pixels fit in memory (92160000 pixels).
+2021-04-05 23:31:13	INFO	importfits::ImageFITSConverterImpl::FITSToImage 	Storing mask with name 'mask0'
+2021-04-05 23:31:13	INFO	importfits::::	##### End Task: importfits           #####
+2021-04-05 23:31:13	INFO	importfits::::+	##########################################
+2021-04-05 23:31:30	INFO	default::::	 #######  Setting values to default for task: imsmooth  #######
+2021-04-05 23:32:29	INFO	imsmooth::::	
+2021-04-05 23:32:29	INFO	imsmooth::::+	##########################################
+2021-04-05 23:32:29	INFO	imsmooth::::+	##### Begin Task: imsmooth           #####
+2021-04-05 23:32:29	INFO	imsmooth::::	imsmooth(imagename="../data/rg_022.4.im",kernel="gauss",major="0.65arcsec",minor="0.65arcsec",pa="0deg",
+2021-04-05 23:32:29	INFO	imsmooth::::+	        targetres=True,kimage="",scale=-1.0,region="",box="",
+2021-04-05 23:32:29	INFO	imsmooth::::+	        chans="",stokes="",mask="",outfile="",stretch=False,
+2021-04-05 23:32:29	INFO	imsmooth::::+	        overwrite=False,beam="")
+2021-04-05 23:32:29	WARN	imsmooth::::	The outfile paramter is empty, consequently the smoothed image will be
+2021-04-05 23:32:29	WARN	imsmooth::::+	saved on disk in file, imsmooth_results.im
+2021-04-05 23:32:29	INFO	CasacRegionManager::fromBCS	No directional region specified. Using full positional plane.
+2021-04-05 23:32:30	SEVERE	image::_convolve2d (file ../../tools/images/image_cmpt.cc, line 1112)	Exception Reported: Unable to reach target resolution of major: 0.65 arcsec, minor: 0.65 arcsec, pa: 0 deg Input image beam major: 970.38 arcsec, minor: 839.016 arcsec, pa: 67.982 deg is (nearly) identical to or larger than the output beam size at File: ../../../darwin/include/casacode/imageanalysis/ImageAnalysis/Image2DConvolver.tcc, line: 104
+2021-04-05 23:32:30	SEVERE	imsmooth::::	Exception: Unable to reach target resolution of major: 0.65 arcsec, minor: 0.65 arcsec, pa: 0 deg Input image beam major: 970.38 arcsec, minor: 839.016 arcsec, pa: 67.982 deg is (nearly) identical to or larger than the output beam size at File: ../../../darwin/include/casacode/imageanalysis/ImageAnalysis/Image2DConvolver.tcc, line: 104
+2021-04-05 23:32:30	SEVERE	imsmooth::::	An error occurred running task imsmooth.
+2021-04-05 23:35:36	INFO	importfits::::	
+2021-04-05 23:35:36	INFO	importfits::::+	##########################################
+2021-04-05 23:35:36	INFO	importfits::::+	##### Begin Task: importfits         #####
+2021-04-05 23:35:36	INFO	importfits::::	importfits(fitsimage="../data/022.4.fits",imagename="../data/022.4im",whichrep=0,whichhdu=-1,zeroblanks=True,
+2021-04-05 23:35:36	INFO	importfits::::+	        overwrite=False,defaultaxes=False,defaultaxesvalues=[],beam=[])
+2021-04-05 23:35:36	INFO	importfits::::ImageFITSConverter	Processing HDU 0
+2021-04-05 23:35:36	INFO	importfits::ImageFITSConverterImpl::FITSToImage 	Created image of shape [2048, 2048, 1, 1]
+2021-04-05 23:35:36	INFO	importfits::ImageFITSConverterImpl::FITSToImage 	Copy FITS file to '/Users/meng/Dropbox/astro/chiirs/data/022.4im' All pixels fit in memory (4194304 pixels).
+2021-04-05 23:35:36	INFO	importfits::ImageFITSConverterImpl::FITSToImage 	Storing mask with name 'mask0'
+2021-04-05 23:35:36	INFO	importfits::::	##### End Task: importfits           #####
+2021-04-05 23:35:36	INFO	importfits::::+	##########################################
+2021-04-05 23:35:36	INFO	imregrid::::	
+2021-04-05 23:35:36	INFO	imregrid::::+	##########################################
+2021-04-05 23:35:36	INFO	imregrid::::+	##### Begin Task: imregrid           #####
+2021-04-05 23:35:36	INFO	imregrid::::	imregrid(imagename="../data/022.4im",template="../data/rg_096.im",output="../data/rg_022.4.im",asvelocity=True,axes=[-1],
+2021-04-05 23:35:36	INFO	imregrid::::+	        shape=[-1],interpolation="linear",decimate=10,replicate=False,overwrite=False)
+2021-04-05 23:35:36	INFO	imregrid::CasacRegionManager::fromBCS	No directional region specified. Using full positional plane.
+2021-04-05 23:35:36	INFO	imregrid::CasacRegionManager::fromBCS	Using all spectral channels.
+2021-04-05 23:35:36	INFO	imregrid::CasacRegionManager::fromBCS	Using polarizations ALL
+2021-04-05 23:35:36	INFO	imregrid::ImageMaskAttacher::makeMask	Created and initialized mask `mask0'
+2021-04-05 23:35:36	INFO	imregrid::ImageRegrid::_checkAxes 	The Stokes axis cannot be regridded - removing from list
+2021-04-05 23:35:52	INFO	imregrid::SubImageFactory::createImage	Creating image '../data/rg_022.4.im' of shape [9600, 9600, 1, 1]
+2021-04-05 23:35:52	INFO	imregrid::ImageMaskAttacher::makeMask	Created mask `mask0'
+2021-04-05 23:35:53	INFO	imregrid::::	##### End Task: imregrid             #####
+2021-04-05 23:35:53	INFO	imregrid::::+	##########################################
+2021-04-05 23:35:53	INFO	exportfits::::	
+2021-04-05 23:35:53	INFO	exportfits::::+	##########################################
+2021-04-05 23:35:53	INFO	exportfits::::+	##### Begin Task: exportfits         #####
+2021-04-05 23:35:53	INFO	exportfits::::	exportfits(imagename="../data/rg_022.4.im",fitsimage="../data/rg_022.4.fits",velocity=False,optical=False,bitpix=-32,
+2021-04-05 23:35:53	INFO	exportfits::::+	        minpix=0,maxpix=-1,overwrite=False,dropstokes=False,stokeslast=True,
+2021-04-05 23:35:53	INFO	exportfits::::+	        history=True,dropdeg=True)
+2021-04-05 23:35:53	INFO	exportfits::ImageFactory::toFITS	Applying mask of name 'mask0'
+2021-04-05 23:35:53	INFO	exportfits::ImageRegion::fromRecord	Selected bounding box : 
+2021-04-05 23:35:53	INFO	exportfits::ImageRegion::fromRecord+	    [0, 0, 0, 0] to [9599, 9599, 0, 0]  (17:47:37.948, -28.27.06.925, 2.23375e+10Hz, I to 17:47:01.579, -28.19.06.975, 2.23375e+10Hz, I)
+2021-04-05 23:35:54	INFO	exportfits::::	##### End Task: exportfits           #####
+2021-04-05 23:35:54	INFO	exportfits::::+	##########################################
+2021-04-05 23:36:26	INFO	imsmooth::::	
+2021-04-05 23:36:26	INFO	imsmooth::::+	##########################################
+2021-04-05 23:36:26	INFO	imsmooth::::+	##### Begin Task: imsmooth           #####
+2021-04-05 23:36:26	INFO	imsmooth::::	imsmooth(imagename="../data/rg_022.4.fits",kernel="gauss",major="0.65arcsec",minor="0.65arcsec",pa="0deg",
+2021-04-05 23:36:26	INFO	imsmooth::::+	        targetres=True,kimage="",scale=-1.0,region="",box="",
+2021-04-05 23:36:26	INFO	imsmooth::::+	        chans="",stokes="",mask="",outfile="sm_../data/rg_022.4.im",stretch=False,
+2021-04-05 23:36:26	INFO	imsmooth::::+	        overwrite=False,beam="")
+2021-04-05 23:36:26	INFO	imsmooth::FITSCoordinateUtil::fromFITSHeader	passing empty or nonexistant spectral Coordinate axis
+2021-04-05 23:36:26	INFO	imsmooth::CasacRegionManager::fromBCS	No directional region specified. Using full positional plane.
+2021-04-05 23:36:26	INFO	imsmooth::FITSCoordinateUtil::fromFITSHeader	passing empty or nonexistant spectral Coordinate axis
+2021-04-05 23:36:26	SEVERE	imsmooth::ImageInputProcessor::_process	Requested output image sm_../data/rg_022.4.im cannot be created so will not be written
+2021-04-05 23:36:26	SEVERE	imsmooth::image::_convolve2d (file ../../tools/images/image_cmpt.cc, line 1112)	Exception Reported: 2021-04-05 23:36:26	SEVERE	imsmooth::ImageInputProcessor::_process	Requested output image sm_../data/rg_022.4.im cannot be created so will not be written
+2021-04-05 23:36:26	SEVERE	imsmooth::::	Exception: 2021-04-05 23:36:26	SEVERE	imsmooth::ImageInputProcessor::_process	Requested output image sm_../data/rg_022.4.im cannot be created so will not be written
+2021-04-05 23:36:26	SEVERE	imsmooth::::	An error occurred running task imsmooth.
+2021-04-05 23:36:26	INFO	exportfits::utils::verify	Verifying arguments....File existence checking failed for imagename sm_../data/rg_022.4.im
+2021-04-05 23:36:26	WARN	exportfits::utils::verify	Argument imagename failed to verify.
+2021-04-05 23:36:26	SEVERE	exportfits::::	An error occurred running task exportfits.
+2021-04-05 23:38:06	INFO	imsmooth::::	
+2021-04-05 23:38:06	INFO	imsmooth::::+	##########################################
+2021-04-05 23:38:06	INFO	imsmooth::::+	##### Begin Task: imsmooth           #####
+2021-04-05 23:38:06	INFO	imsmooth::::	imsmooth(imagename="../data/rg_022.4.fits",kernel="gauss",major="0.65arcsec",minor="0.65arcsec",pa="0deg",
+2021-04-05 23:38:06	INFO	imsmooth::::+	        targetres=True,kimage="",scale=-1.0,region="",box="",
+2021-04-05 23:38:06	INFO	imsmooth::::+	        chans="",stokes="",mask="",outfile="../data/sm_rg_022.4.im",stretch=False,
+2021-04-05 23:38:06	INFO	imsmooth::::+	        overwrite=False,beam="")
+2021-04-05 23:38:07	INFO	imsmooth::FITSCoordinateUtil::fromFITSHeader	passing empty or nonexistant spectral Coordinate axis
+2021-04-05 23:38:07	INFO	imsmooth::CasacRegionManager::fromBCS	No directional region specified. Using full positional plane.
+2021-04-05 23:38:07	INFO	imsmooth::FITSCoordinateUtil::fromFITSHeader	passing empty or nonexistant spectral Coordinate axis
+2021-04-05 23:38:07	INFO	imsmooth::Image2DConvolver<T>::_doSingleBeam	Convolving image that has a beam of major: 0.27 arcsec, minor: 0.23 arcsec, pa: 70 deg with a Gaussian of major: 0.607947 arcsec, minor: 0.59127 arcsec, pa: -20 deg to reach a target resolution of major: 0.65 arcsec, minor: 0.65 arcsec, pa: 0 deg
+2021-04-05 23:38:07	INFO	imsmooth::Image2DConvolver::_dealWithRestoringBeam	You are convolving the sky
+2021-04-05 23:38:07	INFO	imsmooth::Image2DConvolver::_dealWithRestoringBeam	Scaling pixel values by inverse of area of convolution kernel in pixels (0.00613796) times the ratio of the beam areas (6.80354) = 0.0417599
+2021-04-05 23:38:11	INFO	imsmooth::Image2DConvolver::_dealWithRestoringBeam	Created mask `mask0'
+2021-04-05 23:38:24	INFO	imsmooth::Image2DConvolver::_dealWithRestoringBeam	Original /Users/meng/Dropbox/astro/chiirs/data/rg_022.4.fits resolution major: 0.27 arcsec, minor: 0.23 arcsec, pa: 70 deg
+2021-04-05 23:38:24	INFO	imsmooth::Image2DConvolver::_dealWithRestoringBeam	Output ../data/sm_rg_022.4.im resolution major: 0.65 arcsec, minor: 0.65 arcsec, pa: 0 deg
+2021-04-05 23:38:24	INFO	imsmooth::SubImageFactory::createImage	Creating image '../data/sm_rg_022.4.im' of shape [9600, 9600]
+2021-04-05 23:38:24	INFO	imsmooth::ImageMaskAttacher::makeMask	Created mask `mask0'
+2021-04-05 23:38:24	INFO	imsmooth::::	##### End Task: imsmooth             #####
+2021-04-05 23:38:24	INFO	imsmooth::::+	##########################################
+2021-04-05 23:38:24	INFO	exportfits::::	
+2021-04-05 23:38:24	INFO	exportfits::::+	##########################################
+2021-04-05 23:38:24	INFO	exportfits::::+	##### Begin Task: exportfits         #####
+2021-04-05 23:38:24	INFO	exportfits::::	exportfits(imagename="../data/sm_rg_022.4.im",fitsimage="../data/sm_rg_022.4.fits",velocity=False,optical=False,bitpix=-32,
+2021-04-05 23:38:24	INFO	exportfits::::+	        minpix=0,maxpix=-1,overwrite=False,dropstokes=False,stokeslast=True,
+2021-04-05 23:38:24	INFO	exportfits::::+	        history=True,dropdeg=True)
+2021-04-05 23:38:24	INFO	exportfits::ImageFactory::toFITS	Applying mask of name 'mask0'
+2021-04-05 23:38:24	INFO	exportfits::ImageRegion::fromRecord	Selected bounding box : 
+2021-04-05 23:38:24	INFO	exportfits::ImageRegion::fromRecord+	    [0, 0] to [9599, 9599]  (17:47:37.948, -28.27.06.925 to 17:47:01.579, -28.19.06.975)
+2021-04-05 23:38:26	INFO	exportfits::::	##### End Task: exportfits           #####
+2021-04-05 23:38:26	INFO	exportfits::::+	##########################################
+2021-04-06 01:13:10	INFO	imsmooth::::	
+2021-04-06 01:13:10	INFO	imsmooth::::+	##########################################
+2021-04-06 01:13:10	INFO	imsmooth::::+	##### Begin Task: imsmooth           #####
+2021-04-06 01:13:10	INFO	imsmooth::::	imsmooth(imagename="../data/DCB_sm_rg_006.fits",kernel="gauss",major="2.724arcsec",minor="2.523arcsec",pa="-81.685deg",
+2021-04-06 01:13:10	INFO	imsmooth::::+	        targetres=True,kimage="",scale=-1.0,region="",box="",
+2021-04-06 01:13:10	INFO	imsmooth::::+	        chans="",stokes="",mask="",outfile="../data/sm_DCB_sm_rg_006.im",stretch=False,
+2021-04-06 01:13:10	INFO	imsmooth::::+	        overwrite=False,beam="")
+2021-04-06 01:13:10	INFO	imsmooth::FITSCoordinateUtil::fromFITSHeader	passing empty or nonexistant spectral Coordinate axis
+2021-04-06 01:13:10	INFO	imsmooth::CasacRegionManager::fromBCS	No directional region specified. Using full positional plane.
+2021-04-06 01:13:10	INFO	imsmooth::FITSCoordinateUtil::fromFITSHeader	passing empty or nonexistant spectral Coordinate axis
+2021-04-06 01:13:11	SEVERE	imsmooth::image::_convolve2d (file ../../tools/images/image_cmpt.cc, line 1112)	Exception Reported: Unable to reach target resolution of major: 2.724 arcsec, minor: 2.523 arcsec, pa: -81.685 deg Input image beam major: 2.72354 arcsec, minor: 2.52344 arcsec, pa: -81.6849 deg is (nearly) identical to or larger than the output beam size at File: ../../../darwin/include/casacode/imageanalysis/ImageAnalysis/Image2DConvolver.tcc, line: 104
+2021-04-06 01:13:11	SEVERE	imsmooth::::	Exception: Unable to reach target resolution of major: 2.724 arcsec, minor: 2.523 arcsec, pa: -81.685 deg Input image beam major: 2.72354 arcsec, minor: 2.52344 arcsec, pa: -81.6849 deg is (nearly) identical to or larger than the output beam size at File: ../../../darwin/include/casacode/imageanalysis/ImageAnalysis/Image2DConvolver.tcc, line: 104
+2021-04-06 01:13:11	SEVERE	imsmooth::::	An error occurred running task imsmooth.
+2021-04-06 01:13:11	INFO	exportfits::utils::verify	Verifying arguments....File existence checking failed for imagename ../data/sm_DCB_sm_rg_006.im
+2021-04-06 01:13:11	WARN	exportfits::utils::verify	Argument imagename failed to verify.
+2021-04-06 01:13:11	SEVERE	exportfits::::	An error occurred running task exportfits.
+2021-04-06 01:14:15	INFO	imsmooth::::	
+2021-04-06 01:14:15	INFO	imsmooth::::+	##########################################
+2021-04-06 01:14:15	INFO	imsmooth::::+	##### Begin Task: imsmooth           #####
+2021-04-06 01:14:15	INFO	imsmooth::::	imsmooth(imagename="../data/abcd_006_lpf_new.fits",kernel="gauss",major="2.724arcsec",minor="2.523arcsec",pa="-81.685deg",
+2021-04-06 01:14:15	INFO	imsmooth::::+	        targetres=True,kimage="",scale=-1.0,region="",box="",
+2021-04-06 01:14:15	INFO	imsmooth::::+	        chans="",stokes="",mask="",outfile="../data/DCsm_abcd_006_lpf_new.im",stretch=False,
+2021-04-06 01:14:15	INFO	imsmooth::::+	        overwrite=False,beam="")
+2021-04-06 01:14:15	INFO	imsmooth::FITSCoordinateUtil::fromFITSHeader	passing empty or nonexistant spectral Coordinate axis
+2021-04-06 01:14:15	INFO	imsmooth::CasacRegionManager::fromBCS	No directional region specified. Using full positional plane.
+2021-04-06 01:14:15	INFO	imsmooth::FITSCoordinateUtil::fromFITSHeader	passing empty or nonexistant spectral Coordinate axis
+2021-04-06 01:14:15	INFO	imsmooth::Image2DConvolver<T>::_doSingleBeam	Convolving image that has a beam of major: 0.616727 arcsec, minor: 0.280534 arcsec, pa: 7.27463 deg with a Gaussian of major: 2.7095 arcsec, minor: 2.44648 arcsec, pa: -81.9164 deg to reach a target resolution of major: 2.724 arcsec, minor: 2.523 arcsec, pa: -81.685 deg
+2021-04-06 01:14:15	INFO	imsmooth::Image2DConvolver::_dealWithRestoringBeam	You are convolving the sky
+2021-04-06 01:14:15	INFO	imsmooth::Image2DConvolver::_dealWithRestoringBeam	Scaling pixel values by inverse of area of convolution kernel in pixels (0.000332847) times the ratio of the beam areas (39.7234) = 0.0132218
+2021-04-06 01:14:27	INFO	imsmooth::Image2DConvolver::_dealWithRestoringBeam	Original /Users/meng/Dropbox/astro/chiirs/data/abcd_006_lpf_new.fits resolution major: 0.616727 arcsec, minor: 0.280534 arcsec, pa: 7.27463 deg
+2021-04-06 01:14:27	INFO	imsmooth::Image2DConvolver::_dealWithRestoringBeam	Output ../data/DCsm_abcd_006_lpf_new.im resolution major: 2.724 arcsec, minor: 2.523 arcsec, pa: -81.685 deg
+2021-04-06 01:14:27	INFO	imsmooth::SubImageFactory::createImage	Creating image '../data/DCsm_abcd_006_lpf_new.im' of shape [9600, 9600]
+2021-04-06 01:14:27	INFO	imsmooth::::	##### End Task: imsmooth             #####
+2021-04-06 01:14:27	INFO	imsmooth::::+	##########################################
+2021-04-06 01:14:27	INFO	exportfits::::	
+2021-04-06 01:14:27	INFO	exportfits::::+	##########################################
+2021-04-06 01:14:27	INFO	exportfits::::+	##### Begin Task: exportfits         #####
+2021-04-06 01:14:27	INFO	exportfits::::	exportfits(imagename="../data/DCsm_abcd_006_lpf_new.im",fitsimage="../data/DCsm_abcd_006_lpf_new.fits",velocity=False,optical=False,bitpix=-32,
+2021-04-06 01:14:27	INFO	exportfits::::+	        minpix=0,maxpix=-1,overwrite=False,dropstokes=False,stokeslast=True,
+2021-04-06 01:14:27	INFO	exportfits::::+	        history=True,dropdeg=True)
+2021-04-06 01:14:27	INFO	exportfits::ImageRegion::fromRecord	Selected bounding box : 
+2021-04-06 01:14:27	INFO	exportfits::ImageRegion::fromRecord+	    [0, 0] to [9599, 9599]  (17:47:37.948, -28.27.06.925 to 17:47:01.579, -28.19.06.975)
+2021-04-06 01:14:29	INFO	exportfits::::	##### End Task: exportfits           #####
+2021-04-06 01:14:29	INFO	exportfits::::+	##########################################

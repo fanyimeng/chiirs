@@ -1,0 +1,19 @@
+taskname           = "imsmooth"
+imagename          =  "../data/abcd_006_lpf_new.fits"
+kernel             =  "gauss"
+major              =  "2.724arcsec"
+minor              =  "2.523arcsec"
+pa                 =  "-81.685deg"
+targetres          =  True
+kimage             =  ""
+scale              =  -1.0
+region             =  ""
+box                =  ""
+chans              =  ""
+stokes             =  ""
+mask               =  ""
+outfile            =  "../data/DCsm_abcd_006_lpf_new.im"
+stretch            =  False
+overwrite          =  False
+beam               =  ""
+#imsmooth(imagename="../data/abcd_006_lpf_new.fits",kernel="gauss",major="2.724arcsec",minor="2.523arcsec",pa="-81.685deg",targetres=True,kimage="",scale=-1.0,region="",box="",chans="",stokes="",mask="",outfile="../data/DCsm_abcd_006_lpf_new.im",stretch=False,overwrite=False,beam="")

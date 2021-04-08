@@ -1,0 +1,19 @@
+2021-04-05 23:28:08	INFO	::casa	
+2021-04-05 23:28:08	INFO	::casa	CASA Version 5.4.0-68  
+2021-04-05 23:28:09	INFO	imsmooth::::	
+2021-04-05 23:28:09	INFO	imsmooth::::+	##########################################
+2021-04-05 23:28:09	INFO	imsmooth::::+	##### Begin Task: imsmooth           #####
+2021-04-05 23:28:09	INFO	imsmooth::::	imsmooth(imagename="../data/rg_022.4.fits",kernel="gauss",major="0.65arcsec",minor="0.65arcsec",pa="0deg",
+2021-04-05 23:28:09	INFO	imsmooth::::+	        targetres=True,kimage="",scale=-1.0,region="",box="",
+2021-04-05 23:28:09	INFO	imsmooth::::+	        chans="",stokes="",mask="",outfile="sm_../data/rg_022.4.im",stretch=False,
+2021-04-05 23:28:09	INFO	imsmooth::::+	        overwrite=False,beam="")
+2021-04-05 23:28:09	INFO	imsmooth::FITSCoordinateUtil::fromFITSHeader	passing empty or nonexistant spectral Coordinate axis
+2021-04-05 23:28:09	INFO	imsmooth::CasacRegionManager::fromBCS	No directional region specified. Using full positional plane.
+2021-04-05 23:28:09	INFO	imsmooth::FITSCoordinateUtil::fromFITSHeader	passing empty or nonexistant spectral Coordinate axis
+2021-04-05 23:28:09	SEVERE	imsmooth::ImageInputProcessor::_process	Requested output image sm_../data/rg_022.4.im cannot be created so will not be written
+2021-04-05 23:28:09	SEVERE	imsmooth::image::_convolve2d (file ../../tools/images/image_cmpt.cc, line 1112)	Exception Reported: 2021-04-05 23:28:09	SEVERE	imsmooth::ImageInputProcessor::_process	Requested output image sm_../data/rg_022.4.im cannot be created so will not be written
+2021-04-05 23:28:09	SEVERE	imsmooth::::	Exception: 2021-04-05 23:28:09	SEVERE	imsmooth::ImageInputProcessor::_process	Requested output image sm_../data/rg_022.4.im cannot be created so will not be written
+2021-04-05 23:28:09	SEVERE	imsmooth::::	An error occurred running task imsmooth.
+2021-04-05 23:28:09	INFO	exportfits::utils::verify	Verifying arguments....File existence checking failed for imagename sm_../data/rg_022.4.im
+2021-04-05 23:28:09	WARN	exportfits::utils::verify	Argument imagename failed to verify.
+2021-04-05 23:28:09	SEVERE	exportfits::::	An error occurred running task exportfits.

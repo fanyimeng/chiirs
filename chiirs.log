@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.12.3)  3 APR 2021 02:31
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.12.3)  8 APR 2021 14:51
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2706,12 +2706,12 @@ Package hyperref Warning: Suppressing link with empty target on input line 146.
 
 
 ]
-<./plot/abcdC_map.pdf, id=156, 315.07541pt x 358.71703pt>
+<./plot/abcdC_map.pdf, id=155, 315.07541pt x 358.71703pt>
 File: ./plot/abcdC_map.pdf Graphic file (type pdf)
 <use ./plot/abcdC_map.pdf>
 Package pdftex.def Info: ./plot/abcdC_map.pdf  used on input line 194.
 (pdftex.def)             Requested size: 235.5872pt x 268.227pt.
-<./plot/abcdX_map.pdf, id=157, 315.07541pt x 358.71703pt>
+<./plot/abcdX_map.pdf, id=156, 315.07541pt x 358.71703pt>
 File: ./plot/abcdX_map.pdf Graphic file (type pdf)
 <use ./plot/abcdX_map.pdf>
 Package pdftex.def Info: ./plot/abcdX_map.pdf  used on input line 195.
@@ -2728,7 +2728,7 @@ Package hyperref Warning: Suppressing link with empty target on input line 212.
 
 
 [2]
-<./plot/cores_006.pdf, id=198, 561.8376pt x 570.93298pt>
+<./plot/cores_006.pdf, id=197, 561.8376pt x 570.93298pt>
 File: ./plot/cores_006.pdf Graphic file (type pdf)
 <use ./plot/cores_006.pdf>
 Package pdftex.def Info: ./plot/cores_006.pdf  used on input line 215.
@@ -2749,22 +2749,22 @@ LaTeX Warning: Reference `f:r-flx' on page 3 undefined on input line 240.
 
 LaTeX Warning: Reference `f:r-flx' on page 3 undefined on input line 242.
 
-<./plot/em_dist.pdf, id=206, 289.08pt x 289.08pt>
+<./plot/em_dist.pdf, id=205, 289.08pt x 289.08pt>
 File: ./plot/em_dist.pdf Graphic file (type pdf)
 <use ./plot/em_dist.pdf>
 Package pdftex.def Info: ./plot/em_dist.pdf  used on input line 263.
 (pdftex.def)             Requested size: 209.40907pt x 209.40779pt.
-<./plot/overall_cores_096.pdf, id=207, 561.8376pt x 570.93298pt>
+<./plot/overall_cores_096.pdf, id=206, 561.8376pt x 570.93298pt>
 File: ./plot/overall_cores_096.pdf Graphic file (type pdf)
 <use ./plot/overall_cores_096.pdf>
 Package pdftex.def Info: ./plot/overall_cores_096.pdf  used on input line 276.
 (pdftex.def)             Requested size: 445.00429pt x 452.22562pt.
-<./plot/006-096-flx.pdf, id=208, 433.62pt x 433.62pt>
+<./plot/006-096-flx.pdf, id=207, 433.62pt x 433.62pt>
 File: ./plot/006-096-flx.pdf Graphic file (type pdf)
 <use ./plot/006-096-flx.pdf>
 Package pdftex.def Info: ./plot/006-096-flx.pdf  used on input line 286.
 (pdftex.def)             Requested size: 251.2925pt x 251.29466pt.
-<./plot/006-096-flx_2.pdf, id=209, 433.62pt x 433.62pt>
+<./plot/006-096-flx_2.pdf, id=208, 433.62pt x 433.62pt>
 File: ./plot/006-096-flx_2.pdf Graphic file (type pdf)
 <use ./plot/006-096-flx_2.pdf>
 Package pdftex.def Info: ./plot/006-096-flx_2.pdf  used on input line 287.
@@ -2808,17 +2808,17 @@ le pdfs with page group included in a single page
 Package natbib Warning: Citation `2020SciPy-NMeth' on page 8 undefined on input
  line 315.
 
-<./plot/abcd_006_rms.pdf, id=583, 309.31952pt x 358.71703pt>
+<./plot/abcd_006_rms.pdf, id=581, 309.31952pt x 358.71703pt>
 File: ./plot/abcd_006_rms.pdf Graphic file (type pdf)
 <use ./plot/abcd_006_rms.pdf>
 Package pdftex.def Info: ./plot/abcd_006_rms.pdf  used on input line 322.
 (pdftex.def)             Requested size: 209.40907pt x 242.85152pt.
-<./plot/010_rms.pdf, id=584, 309.31952pt x 358.71703pt>
+<./plot/010_rms.pdf, id=582, 309.31952pt x 358.71703pt>
 File: ./plot/010_rms.pdf Graphic file (type pdf)
 <use ./plot/010_rms.pdf>
 Package pdftex.def Info: ./plot/010_rms.pdf  used on input line 331.
 (pdftex.def)             Requested size: 209.40907pt x 242.85152pt.
-<./plot/096_rms.pdf, id=585, 309.31952pt x 358.71703pt>
+<./plot/096_rms.pdf, id=583, 309.31952pt x 358.71703pt>
 File: ./plot/096_rms.pdf Graphic file (type pdf)
 <use ./plot/096_rms.pdf>
 Package pdftex.def Info: ./plot/096_rms.pdf  used on input line 340.
@@ -2887,10 +2887,10 @@ local/texlive/2018/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texl
 ive/2018/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2018/t
 exmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2018/texmf-dist/
 fonts/type1/urw/times/utmri8a.pfb>
-Output written on chiirs.pdf (9 pages, 11434383 bytes).
+Output written on chiirs.pdf (9 pages, 11409192 bytes).
 PDF statistics:
- 807 PDF objects out of 1000 (max. 8388607)
- 375 compressed objects within 4 object streams
+ 805 PDF objects out of 1000 (max. 8388607)
+ 374 compressed objects within 4 object streams
  64 named destinations out of 1000 (max. 500000)
  123 words of extra memory for PDF output out of 10000 (max. 10000000)
 

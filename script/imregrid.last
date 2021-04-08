@@ -1,0 +1,12 @@
+taskname           = "imregrid"
+imagename          =  "../data/022.4im"
+template           =  "../data/rg_096.im"
+output             =  "../data/rg_022.4.im"
+asvelocity         =  True
+axes               =  [-1]
+shape              =  [-1]
+interpolation      =  "linear"
+decimate           =  10
+replicate          =  False
+overwrite          =  False
+#imregrid(imagename="../data/022.4im",template="../data/rg_096.im",output="../data/rg_022.4.im",asvelocity=True,axes=[-1],shape=[-1],interpolation="linear",decimate=10,replicate=False,overwrite=False)

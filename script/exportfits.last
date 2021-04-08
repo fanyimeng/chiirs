@@ -1,0 +1,14 @@
+taskname           = "exportfits"
+imagename          =  "../data/DCsm_abcd_006_lpf_new.im"
+fitsimage          =  "../data/DCsm_abcd_006_lpf_new.fits"
+velocity           =  False
+optical            =  False
+bitpix             =  -32
+minpix             =  0
+maxpix             =  -1
+overwrite          =  False
+dropstokes         =  False
+stokeslast         =  True
+history            =  True
+dropdeg            =  True
+#exportfits(imagename="../data/DCsm_abcd_006_lpf_new.im",fitsimage="../data/DCsm_abcd_006_lpf_new.fits",velocity=False,optical=False,bitpix=-32,minpix=0,maxpix=-1,overwrite=False,dropstokes=False,stokeslast=True,history=True,dropdeg=True)
