@@ -7,36 +7,36 @@ Warning--I didn't find a database entry for "2020SciPy-NMeth"
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
 You've used 26 entries,
             3039 wiz_defined-function locations,
-            868 strings with 13297 characters,
-and the built_in function-call counts, 20568 in all, are:
-= -- 1559
-> -- 2464
-< -- 8
-+ -- 821
-- -- 794
-* -- 1930
-:= -- 3840
+            867 strings with 13349 characters,
+and the built_in function-call counts, 20665 in all, are:
+= -- 1563
+> -- 2482
+< -- 7
++ -- 827
+- -- 800
+* -- 1945
+:= -- 3859
 add.period$ -- 26
 call.type$ -- 26
-change.case$ -- 366
+change.case$ -- 368
 chr.to.int$ -- 25
 cite$ -- 26
 duplicate$ -- 509
-empty$ -- 715
-format.name$ -- 866
-if$ -- 4014
+empty$ -- 716
+format.name$ -- 870
+if$ -- 4031
 int.to.chr$ -- 2
 int.to.str$ -- 1
 missing$ -- 23
 newline$ -- 82
 num.names$ -- 107
-pop$ -- 374
+pop$ -- 375
 preamble$ -- 1
-purify$ -- 366
+purify$ -- 368
 quote$ -- 0
 skip$ -- 435
 stack$ -- 0
-substring$ -- 554
+substring$ -- 557
 swap$ -- 26
 text.length$ -- 3
 text.prefix$ -- 0

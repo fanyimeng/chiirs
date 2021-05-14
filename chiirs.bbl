@@ -1,9 +1,6 @@
 \begin{thebibliography}{26}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 
-\bibitem[{{Bertin} \& {Arnouts}(1996)}]{Bertin:1996aa}
-{Bertin}, E. \& {Arnouts}, S. 1996, \aaps, 117, 393
-
 \bibitem[{{Breen} {et~al.}(2010){Breen}, {Ellingsen}, {Caswell}, \&
   {Lewis}}]{Breen:2010aa}
 {Breen}, S.~L., {Ellingsen}, S.~P., {Caswell}, J.~L., \& {Lewis}, B.~E. 2010,
@@ -147,5 +144,10 @@
   {Qin}, \& {Rolffs}}]{Schmiedeke:2016aa}
 {Schmiedeke}, A., {Schilke}, P., {M{\"o}ller}, T., {et~al.} 2016, \aap, 588,
   A143
+
+\bibitem[{{Xie} {et~al.}(1996){Xie}, {Mundy}, {Vogel}, \&
+  {Hofner}}]{Xie:1996aa}
+{Xie}, T., {Mundy}, L.~G., {Vogel}, S.~N., \& {Hofner}, P. 1996, \apjl, 473,
+  L131
 
 \end{thebibliography}

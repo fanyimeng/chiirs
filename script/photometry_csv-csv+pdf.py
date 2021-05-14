@@ -376,15 +376,15 @@ plt.savefig('../plot/time_test.pdf')
 plt.clf()
 
 
-fig = plt.figure(figsize=(4, 16 / 3))
+fig = plt.figure(figsize=(4.5, 4.5))
 plt.clf()
 ax2 = plt.subplot(1, 1, 1)
 ax2.set_xscale("log", nonposx='clip')
-ax2.xaxis.set_major_formatter(LogFormatter())
-ax2.xaxis.set_minor_formatter(LogFormatter())
+# ax2.xaxis.set_major_formatter(LogFormatter())
+# ax2.xaxis.set_minor_formatter(LogFormatter())
 ax2.set_yscale("log", nonposy='clip')
-ax2.yaxis.set_major_formatter(LogFormatter())
-ax2.yaxis.set_minor_formatter(LogFormatter())
+# ax2.yaxis.set_major_formatter(LogFormatter())
+# ax2.yaxis.set_minor_formatter(LogFormatter())
 
 df = pd.read_csv('006.csv')
 
@@ -428,7 +428,10 @@ im = ax2.scatter(x, y, color='r')
 xx = np.arange(1e6, 1e11, 1e6)
 yy = xx / 100 / 4.
 
-ax2.plot(xx, yy)
+ax2.plot(xx, yy, label = 'Equilibrium')
+ax2.legend()
+ax2.set_xlabel('$n_{\\rm H_2}$ [$\\rm cm^{-3}$]')
+ax2.set_ylabel('$n_{\\rm e}$ [$\\rm cm^{-3}$]')
 
 # xx = np.arange(-6, 0, 0.01)
 # for i in range(df.shape[0]):
