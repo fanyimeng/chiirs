@@ -940,6 +940,17 @@ dec.set_ticklabel_visible(False)
 ra.set_ticks_visible(False)
 dec.set_ticks_visible(False)
 
+patchcenx = 4236
+patchceny = 5128
+subsize = 2700/2
+
+ax0.add_patch(patches.Rectangle((patchcenx - subsize, patchceny - subsize),
+                                subsize * 2, subsize * 2,
+                                fill=False,
+                                linestyle='--',
+                                linewidth=1.2,
+                                edgecolor='#8888FF'))
+
 
 plt.savefig('../plot/cores_006.pdf', bbox_inches='tight')
 plt.clf()

@@ -160,32 +160,43 @@ the most massive region with ongoing high-mass star formation in the Galaxy. Dus
 \section{Observations and data reduction} % (fold)
 \label{sec:observations_and_data_reduction}
 
-  We \moda{used} the VLA in \moda{its} A, CnB, and D configurations to observe the entire Sgr\,B2 complex in the frequency bands C (4--8~GHz). 
+  We \moda{used} the VLA in \moda{its} A, CnB, and D configurations to observe the entire Sgr\,B2 complex in the frequency bands C (4--8~GHz). In the following text, we call this band as `6\,GHz'.
   The observations with the CnB and D configurations were described in \citep{Meng:2019aa}. 
   The observations with the A configuration were conducted from October 1 to 12, 2016 (project 16B-031, PI: F.\  Meng).
   We used 64 spectral windows with a bandwidth of 128~MHz each. 
-  Mosaic mode was used, with 10 and 18 pointings for each band, respectively. 
+  Mosaic mode was used, with 10 and 18 pointings. 
   The primary beam of each pointing is 7.5\arcmin\ and 4.5\arcmin\ respectively. 
   Quasar 3C286 was used as the flux and bandpass calibrator, the SED of which is $S_\nu = 5.059\pm0.021\ {\rm Jy} \times (S/8.435\ {\rm GHz})^{-0.46}$ from 0.5 to 50~GHz \citep{Perley:2013aa}.
   Quasar J1820-2528, flux of which is 1.3~Jy in the C and X bands, was used as phase calibrator.
   The calibration was done using the standard VLA pipelines provided by the NRAO\footnote{The National Radio Astronomy Observatory is a facility of the National Science Foundation operated under cooperative agreement by Associated Universities, Inc.}. 
 
   Calibration and imaging were done in Common Astronomy Software Applications (CASA) 4.7.2 \citep{McMullin:2007aa}.
-  The details of data processing of data from CnB and D configurations are described in \citep{Meng:2019aa}, which results in two images in C and X band, respectively.
+  The details of data processing of data from CnB and D configurations are described in \citep{Meng:2019aa}.
   The A configuration data were originally taken every 2\,s. To shorten the time of processing, we applied \texttt{timebin} in CASA to the measurement sets, which averaged the data taken within 10\,s into one data point.
   All the pointings of the mosaic in each band were primary beam corrected and the mosaic was imaged using the CASA task \texttt{tclean}.
-  With a robust factor of 0, the images of the C and X bands have \moda{synthesized beams} of 0.62\arcsec$\times$0.28\arcsec, with a position angle ${\rm (PA)}$ of $7.27^\circ$ and 0.36\arcsec$\times$0.15\arcsec (${\rm PA}=3.12^\circ$), respectively.
+  With a robust factor of 0, the image of C band has a synthesized beam of 0.62\arcsec$\times$0.28\arcsec, with a position angle ${\rm (PA)}$ of $7.27^\circ$.
   The PA is defined positive north to east.
   To suppress the spatial filtering effect of the A configuration image, we applied the \texttt{feather} algorithm to combine the images from A configuration and the images from CnB and D configuration.
-  The combined images have resolutions identical to that of A configuration images, while are sensitive to spatial scales up to $\sim240$\arcsec and $\sim145$\arcsec in C and X Band, respectively.
+  The combined image have a resolution identical to that of A configuration images, while are sensitive to spatial scales up to $\sim240$\arcsec.
   The sensitivities of the observations are described in Sect.~\ref{sec:results}. 
 
-  Ancillary data include the 3\,mm continuum and \ce{SiO}\,(5--4) data. 
-  The 3\,mm continuum data covers frequency range from 89.5 too 103.3\,GHz. 
-  The image in 3\,mm has a resolution of 0.54\arcsec$\times$0.46\arcsec (${\rm PA}=68.31^\circ$), the observational details of which are described by \citet{Ginsburg:2018aa}. 
+  Ancillary data include the 22.4 GHz data, the 3\,mm continuum and \ce{SiO}\,(5--4) data. 
+  The observations of the 22.4 GHz data are described in \citep{Gaume:1995aa}, with a resolution of 0.27\arcsec$\times$0.23\arcsec (${\rm (PA)} = 70^\circ$). The rms noise is 0.38 mJy/beam. The spatial coverage of the 22.4\,GHz is marked as the blue dashed box in Fig.\,\ref{f:coresoverallvla}.
+  The 96\,GHz continuum data covers frequency range from 89.5 too 103.3\,GHz. 
+  The image in 96\,GHz has a resolution of 0.54\arcsec$\times$0.46\arcsec (${\rm PA}=68.31^\circ$), the observational details of which are described by \citet{Ginsburg:2018aa}. Unlike the 22.4\,GHz image, the 96\,GHz image covers the entire area shown in Fig.\,\ref{f:coresoverallvla}.
   The SiO~(5--4) emission was observed with ALMA (Project 18A-229, P.I. A. Ginsburg) and have resolution of 0.35\arcsec $\times$ 0.24\arcsec, with P.A. of $-80^{\circ}$, and spectral resolution is 1.35~km~s$^{-1}$. 
   For the details of the observation and data reduction, see Ginsburg et. al. (in prep.). 
   The typical RMS of the SiO image is 0.9~mJy/beam. The observation covers SgrB2(S) and the eastern part of SgrB2(DS). 
+
+  \begin{figure*}[ht]
+          \begin{center}
+          \includegraphics[width=0.85\textwidth]{./plot/cores_006.pdf}
+          \caption[Cores in 6\,cm image]{Sources  identified in 6\,cm image, which are marked as  white circles that with radii of $r_{\rm obs6}$.  Notable \hii regions are marked. The \hii regions that are masked out for core identification are marked as white contours. 
+           Beam sizes are marked on the lower left corner of each panel, in format $(\theta_{\rm maj}, \theta_{\rm min}, {\rm PA})$. The spatial coverage of the 22.4\,GHz image is marked as blue dashed box.
+           }
+          \label{f:coresoverallvla}
+          \end{center}
+  \end{figure*}
 
 
  \section{Results} % (fold)
@@ -203,34 +214,65 @@ the most massive region with ongoing high-mass star formation in the Galaxy. Dus
   %         \end{center}
   % \end{figure*}
 
-  In this section, we present the image of SgrB2 in 6\,cm and the UCH{\sc ii} regions identified in it. We also compared between these ionized cores with dust cores idetified in 96~GHz. Statistics of the properties of these UCH{\sc ii} regions are shown. 
+  In this section, we present the image of SgrB2 in 6\,GHz and the UCH{\sc ii} regions identified in it. 
+  For the \hii regions, we calculated their actual sizes and physical properties using the observations in both of 6\,GHz and 22.4\,GHz. 
+  Additionally, we present statistical properties of these UCH{\sc ii} regions. Also, we attempt to constrain the expansion time of these UC\hii regions and therefore characterize their evolutionary stages. 
 
-  We show the images in C and X bands in Fig.~\ref{f:abcdcxmap}, in which the known large scale \hii regions `N', `M', `S', `AA', `DS', and `V' are denoted, following the nomenclature of \citet{Mehringer:1992aa,Mehringer:1993aa,Ginsburg:2018aa,Meng:2019aa}. For indicating the actually wavelength/frequency, we call the C and X band images/sources as `6\,cm' and `3\,cm', respectively. Although that deep CLEAN and self calibration were preformed in data processing, the high dynamic range of the images ($\sim 10^3$) hinders the elimination of artifacts. As shown in Fig.~\ref{f:abcdcxmap}, the X band image is contaminated by the artifacts that puts obstacles for core identification. Therefore, we employ only the 3\,cm image for source identification and use the 6\,cm image for calculating parameters. Due to the non-homogeneity of the artifacts over the map, we evaluate the spatial varying RMS instead of giving an RMS (root-mean-square) value to represent the noise value of the entire images. The procedures of generation the RMS maps are described in Sect.~\ref{sec:rms_maps}. As shown in Fig.~\ref{f:rmsmap_a}, the RMS of the 6\,cm image varies from $\sim$0.02\,mJy/beam to $\sim$0.2\,mJy/beam. The RMS of the 3\,mm map, as shown in Fig.~\ref{f:rmsmap_b}, ranges from $\sim$0.1\,mJy/beam to $\sim$0.4\,mJy/beam. 
+  \subsection{Observed parameters of the 6 GHz cores} % (fold)
+  \label{sub:observed_parameters_of_the_6_ghz_cores}
+  
+  % subsection observed_parameters_of_the_6_ghz_cores (end)
 
-        \begin{figure*}[ht]
+  Figure\,\ref{f:coresoverallvla} displays the image of Sgr\,B2 in 6\,GHz, in which the known large scale \hii regions `N', `M', `S', `AA', `DS', and `V' are denoted, following the nomenclature of \citet{Mehringer:1992aa,Mehringer:1993aa,Ginsburg:2018aa,Meng:2019aa}. 
+  The maps in 22.4\,GHz and 96\,GHz are presented by \cite{Gaume:1995aa} and \cite{Ginsburg:2018aa}, respectively. 
+  Since that we aim to study UC\hii regions and 22.4\,GHz image has non-complete spatial coverage, we perform compact source identification in the 6\,GHz image only. 
+  Similar as \cite{Ginsburg:2018aa}, we identified the compact sources by eyes, due to the contamination of strong artifacts produced by SgrB2(N) and SgrB2(M), as well as the extended \hii regions throughout the image. 
+  In total, 54 compact sources are identified throughout the entire SgrB2, among which eight are identified in SgrB2(N), 40 in SgrB2(M), two in SgrB2(S), and one in SgrB2(DS), respectively. 
+  The positions of the compact sources are listed in Tab.\,\ref{t:coreparams}. 
+  All the 54 compact sources, except core \#1, are covered by the 22.4\,GHz image.
+
+  For each of the 54 6\,GHz compact sources, we define a minimal circle that can include almost all the pixels that have flux density above three times of the rms at the position of the core. 
+  The `observed radius' of the core and the flux density within the core are denoted as $r_{\rm obs6}$ and $S_{\rm obs6}$, respectively. 
+  In the images of 22.4\,GHz and 96\,GHz, we also performed the same photometry procedure at the positions of the 54 6\,GHz compact sources, and obtained $r_{\rm obs22}$, $S_{\rm obs22}$, $r_{\rm obs96}$, $S_{\rm obs96}$, representing the observed radius and flux density of the compact sources in 22.4 and 96\,GHz, respectively. For all the compact sources, emission in 96\,GHz band are detected. While some of the compact sources are without reliable 22.4\,GHz detection (signal $<3{\rm rms}$). 
+  The observed radius and flux density in three bands of all the 54 compact sources are listed in Tab.\,\ref{t:coreparams}.
+
+  \begin{figure}[ht]
           \begin{center}
-          \includegraphics[width=0.85\textwidth]{./plot/cores_006.pdf}
-          \caption[Cores in 6\,cm image]{Sources  identified in 6\,cm image, which are marked as  white circles that with radii of $r_{\rm obs6}$.  Notable \hii regions are marked. The \hii regions that are masked out for core identification are marked as white contours. 
-           Beam sizes are marked on the lower left corner of each panel, in format $(\theta_{\rm maj}, \theta_{\rm min}, {\rm PA})$. 
+          \includegraphics[width=0.4\textwidth]{./plot/s6_dist.pdf}
+          \caption[Distribution of $S_{\rm obs6}$]{Probability distribution of $S_{\rm obs6}$. Mean and median values are marked.
            }
-          \label{f:coresoverallvla}
+          \label{f:s_cband_distribution}
           \end{center}
-  \end{figure*}
+  \end{figure}
+
+  Most of the compact sources have $r_{\rm obs6}$ from 0.5\arcsec to 1\arcsec, which is comparable to the beam size at 6\,GHz.  
+  Even though  the 22.4\,GHz has higher resolution, the measured $r_{\rm obs22}$ are still not significantly larger than the beam size at 22.4\,GHz. 
+  Therefore most of the compact sources are not well resolved, i.e. $r_{\rm obs6}$ or $r_{\rm obs22}$ cannot correctly represent the actual radius of most of the compact sources.
+  The flux density of the compact sources are distributed in a wide range.  As shown in Fig.\,\ref{f:s_cband_distribution}, $S_{\rm obs6}$ ranges from $\sim 3$\,mJy to $\sim 300$\,mJy at 6\,GHz. The mean and median of $S_{\rm obs6}$ are 37.3\,mJy and 16.2\,mJy, respectively. 
+  
+
+
+
+
+  % We show the image in C and X bands in Fig.~\ref{f:abcdcxmap}, in which the known large scale \hii regions `N', `M', `S', `AA', `DS', and `V' are denoted, following the nomenclature of \citet{Mehringer:1992aa,Mehringer:1993aa,Ginsburg:2018aa,Meng:2019aa}. For indicating the actually wavelength/frequency, we call the C and X band images/sources as `6\,cm' and `3\,cm', respectively. Although that deep CLEAN and self calibration were preformed in data processing, the high dynamic range of the images ($\sim 10^3$) hinders the elimination of artifacts. As shown in Fig.~\ref{f:abcdcxmap}, the X band image is contaminated by the artifacts that puts obstacles for compact source identification. Therefore, we employ only the 3\,cm image for source identification and use the 6\,cm image for calculating parameters. Due to the non-homogeneity of the artifacts over the map, we evaluate the spatial varying RMS instead of giving an RMS (root-mean-square) value to represent the noise value of the entire images. The procedures of generation the RMS maps are described in Sect.~\ref{sec:rms_maps}. As shown in Fig.~\ref{f:rmsmap_a}, the RMS of the 6\,cm image varies from $\sim$0.02\,mJy/beam to $\sim$0.2\,mJy/beam. The RMS of the 96\,GHz map, as shown in Fig.~\ref{f:rmsmap_b}, ranges from $\sim$0.1\,mJy/beam to $\sim$0.4\,mJy/beam. 
+
 
 
 
 % \clearpage
-  \subsection{Core size and emission measure} % (fold)
+  \subsection{Physical parameters of the 6 GHz compact sources} % (fold)
   \label{sub:cores_in_vla}
 
+  As we presented in Sect.\,\ref{sub:observed_parameters_of_the_6_ghz_cores}, majority of the compact sources at 6 and 22.4\,GHz are not well resolved. Therefore we need to firstly determine there actual sizes. The observed flex density ($S_{\rm 6}$ and $S_{\rm 22}$) of an \hii region is determined by its actual size, which is denoted as `calculated radius', $r_{\rm calc}$, in this paper, the electron temperature ($T_{\rm e}$), and emission measure (EM):
   \begin{equation}
   \label{eq:s-tau}
     \frac{S_\nu}{\rm mJy}= 8.183\times10^{-4} 
     \left(\frac{r_{\rm calc}}{\rm arcsec^2}\right)^{2}
     \left(\frac{\nu}{\rm GHz}\right)^{2}
     \times
-    T_{\rm e} (1-e^{-\tau_{\nu}}) 
+    T_{\rm e} (1-e^{-\tau_{\nu}}),
   \end{equation}
+  in which the optical depth $\tau$ is
   \begin{equation}
   \label{eq:tau-em}
     \tau_\nu = 8.235\times10^{-2}
@@ -238,12 +280,14 @@ the most massive region with ongoing high-mass star formation in the Galaxy. Dus
     \left(\frac{T_{\rm e}}{\rm K}\right)^{-1.35} 
     \left(\frac{\rm EM}{\rm pc\,cm^{-6}}\right).
   \end{equation}
-  Using $S_{6}$ and $S_{22}$ to solve Eq.~\ref{eq:s-tau} and Eq.~\ref{eq:tau-em}.
+  In our case, the frequency $\nu$ is 6\,GHz or 22.4\,GHz.
+
+  We assume that the $T_{\rm e}$ is $10^4$, following the values given by \cite{Mehringer:1993aa} for SgrB2(N) and SgrB2(M), considering that most of the compact sources are in these two regions. Thus, with the two independent flux density measurements, $S_{6}$ and $S_{22}$, we solve Eq.~\ref{eq:s-tau} and Eq.~\ref{eq:tau-em} to obtain $r_{\rm calc}$ and EM simultaneously. The $r_{\rm calc}$ and EM of all the compact sources are listed in Tab.\,\ref{t:coreparams_derived}. Among all the 54 compact sources, two are not covered by the 22.4\,GHz image. For 13 sources, $S_{22}<S_{6}(22.4/6)^{-0.1}$, which makes the solution of Eq.~\ref{eq:s-tau} and Eq.~\ref{eq:tau-em} not feasible. Therefore, for these 15 compact sources, we deconvolve the beam size from $r_{\rm obs}$ to estimate $r_{\rm calc}$, as $r_{\rm calc}^2 + r_{\rm beam}^2 = r_{\rm obs}^2$, and $r_{\rm beam}^2 = 0.62^{\prime\prime}\times0.28^{\prime\prime}$ for 6\,GHz. Then we calculated EM using the estimated $r_{\rm calc}$. The $r_{\rm calc}$ and EM calculated using such a method are marked with `*' in Tab.\,\ref{t:coreparams_derived}.
 
     \begin{figure}[ht]
           \begin{center}
           \includegraphics[width=0.4\textwidth]{./plot/R.pdf}
-          \caption[RMS map of 6\,cm image.]{$r_{\rm calc}$ vs $r_{\rm obs}$ 
+          \caption[RMS map of 6\,cm image.]{Relation between $r_{\rm obs}$ and $r_{\rm cal}$ of the 39 compact sources with 22.4\,GHz detection. Dashed curve indicates the deconvolution relationship $r_{\rm calc}^2 + r_{\rm beam}^2 = r_{\rm obs}^2$, where $r_{\rm beam}$ is the effective radius of the beam. 
            }
           \label{f:r_calc_r_obs}
           \end{center}
@@ -252,78 +296,101 @@ the most massive region with ongoing high-mass star formation in the Galaxy. Dus
   \begin{figure}[ht]
           \begin{center}
           \includegraphics[width=0.4\textwidth]{./plot/em_dist.pdf}
-          \caption[RMS map of 6\,cm image.]{Distribution of EM.
+          \caption[RMS map of 6\,cm image.]{Distribution of EM. The mean and median values are marked.
            }
           \label{f:em_dist}
           \end{center}
   \end{figure}
 
-    \begin{figure}[ht]
+
+  For all the compact sources that are associated with the 22.4\,GHz detection, we plot the $r_{\rm obs}-r_{\rm calc}$ diagram, see Fig.\,\ref{f:r_calc_r_obs}. We can see that in general $r_{\rm calc}$ follows the trend of deconvolution, i.e. $r_{\rm calc}^2 =  r_{\rm obs}^2 - 0.62^{\prime\prime}\times0.28^{\prime\prime}$, which suggests that the method we calculate  $r_{\rm calc}$, although without measuring the compact source size in the image, is consistent in general with the size we observed. On the other hand, the deviation of $r_{\rm calc}$ from the dashed curve in Fig.\,\ref{f:r_calc_r_obs} can be as large as a factor of two. Such a deviation can be cause by the following factors: 
+  \emph{a)} We neglected the possible inhomogeneity of the \hii regions, which will result in a modified SED other than that described by Eq.~\ref{eq:s-tau} and Eq.~\ref{eq:tau-em}, \citep[see e.g.][]{Keto:2003ud}. 
+  \emph{b)} The actual $T_{\rm e}$ may deviates from $10^4$\,K. 
+  \emph{c)} Since that $r_{\rm calc}$ is related to the measured flux density of the compact sources by Eq.~\ref{eq:s-tau}, the uncertainties of $S_{6}$ and $S_{22}$ affect the calculated radius of the compact sources. 
+  \emph{d)} The determination of $r_{\rm obs}$ is for including as much of the flux as possible, which might be larger than the actual observed size. Also, due to the artifacts in the image, we cannot ideally define the boundaries of the compact sources, but only approximate the compact source as a circle with $r = r_{\rm obs}$. If the observed compact source boundary could be described as an ellipse, the deconvolution of two ellipses, i.e. the compact source and the beam, will follow the method introduced by \cite{1217270}. 
+
+      \begin{figure}[ht]
           \begin{center}
           \includegraphics[width=0.4\textwidth]{./plot/nly_dist.pdf}
-          \caption[RMS map of 6\,cm image.]{Distribution of $\dot{N}_{\rm Ly}$.
+          \caption[RMS map of 6\,cm image.]{Distribution of $\dot{N}_{\rm Ly}$. The mean and median values are marked.
            }
           \label{f:nly_dist}
           \end{center}
   \end{figure}
 
 
+  The probability distribution of EM of all the 54 compact sources is shown in Fig.\,\ref{f:em_dist}. The EM of these compact sources ranges from $\sim 2\times10^6\,{\rm pc\,cm^{-6}}$ to $\sim 3\times10^9\,{\rm pc\,cm^{-6}}$. Only eight compact sources have ${\rm EM}<10^7\,{\rm pc\,cm^{-6}}$, i.e. most of the compact sources are UC\hii regions \citep[see][]{Kurtz:2002aa}. Knowing EM, we calculated the flux of Lyman continuum photons ($\dot{N}_{\rm Ly}$) that needed to ionize these UC\hii regions following Eq.\,C.19 in \citep{Schmiedeke:2016aa}. The derived $\dot{N}_{\rm Ly}$ ranges from $10^{46}\,{\rm s^{-1}}$ to $10^{49}\,{\rm s^{-1}}$ (see Fig.\,\ref{f:nly_dist}). If we assume that these cores are ionized by single stars, these UC\hii regions are ionized by stars from spectral type B1 to O6 \citep{Panagia:1973aa}.  
 
-  \subsection{Neutral gas density} % (fold)
+
+  \subsection{Neutral gas environment} % (fold)
   \label{sub:dustdensity}
 
-  Extrapolate \hii SED to subtract free-free from $S_{96}$ to get $S_{\rm dust}$. Then:
+  Using the flux at 96\,GHz ($S_{96}$, see Tab.\,\ref{t:coreparams}), we evaluated the dust properties in the vicinity of the 54 UC\hii regions. We extrapolated the \hii SED (Eq.\,\ref{eq:s-tau}) to subtract the free-free contribution from $S_{96}$ to get the emission from dust, $S_{\rm dust}$. Twelve UC\hii regions that have $S_{\rm dust}$ below $3\times$rms, while the other 42 UC\hii regions are associated with dust emission.
+
+
+  Following \citep{Ossenkopf:1994aa}, we calculated the dust column density using:
     \begin{equation}
     \label{eq:dust_sed}
     S_{\rm dust} = \frac{2h\nu^3}{c^2}
     \frac{1}{e^{\frac{h\nu}{k_{\rm B}T_{\rm d}}}-1}
     % \left(\frac{\nu}{\rm 100\ GHz}\right)^3
-    \left[
+    \left(
     1-e^{
     -\kappa_{0}\left(\frac{\nu}{\nu_0}\right)^{\beta}N_{\rm d}
     }
-    \right]
-    \frac{\pi r^2}{D^2}.
+    \right)
+    \frac{\pi r^2}{D^2},
     \end{equation}
+    in which $T_{\rm d}$ is the dust temperature, $N_{\rm d}$ is the column density of dust, $r$ is the radius of the dust core, here we us $r_{\rm obs96}$, and $D$ is the distance of SgrB2. The dust parameters $\kappa_{0}$ and $\beta$ depends on the dust grain property. Due to the general high temperature and high density of neutral gas revealed by previous studies \citep[see e.g.][]{Huttemeister:1993tr,Schmiedeke:2016aa}, we assume that $T_{\rm d} = 100$, $\kappa_{0} = 2.631$, and $\beta = 1.05$ for $\nu_0 = 100\,{\rm GHz}$. The assumption of $\kappa_{0}$ and $\beta$ corresponds to dust grains without ice mantle and have a volume density of $10^8\,{\rm cm^{-3}}$. 
+
+    We assume a gas to gas-to-dust mass ratio of 100 and obtain the volume density of \ce{H2} :
     \begin{equation}
-      n_{\rm H_2} = 100\times\frac{3}{4}\frac{N_{\rm d}}{r}
+      n_{\rm H_2} = 100\frac{N_{\rm d}}{r}.
     \end{equation}
+    For the $n_{\rm H_2}$ at the position of the 42 UC\hii regions associated with dust emission, see Tab.\,\ref{t:coreparams_derived}. The $n_{\rm H_2}$ ranges from $\sim 10^6$ to $\sim 10^8\,{\rm cm^{-3}}$. Due to the artifacts and possible small size of the dust core, even a dust core with enough volume density might not be detected by the sensitivity of our data set. For the detection limit of the dust emission, see \citep{Ginsburg:2018aa}. Compare to the typical $n_{\rm H_2}$ of the molecular clouds surrounding UC\hii regions, e.g. $10^5\,{\rm cm^{-3}}$ by \citep[][]{Wood:1989aa}, our UC\hii regions reside in denser neutral gas. Previous measurements of the molecular density in the central region of SgrB2(M), $2\times10^7\,{\rm cm^{-3}}$ is in consistent with the values calculated in this work.
 
-      \begin{figure}[ht]
-          \begin{center}
-          \includegraphics[width=0.4\textwidth]{./plot/pressure_qual_test.pdf}
-          \caption[RMS map of 6\,cm image.]{Pressure equilibrium.
-           }
-          \label{f:qual_pressure}
-          \end{center}
-  \end{figure}
 
+
+  %     \begin{figure}[ht]
+  %         \begin{center}
+  %         \includegraphics[width=0.4\textwidth]{./plot/pressure_qual_test.pdf}
+  %         \caption[RMS map of 6\,cm image.]{Pressure equilibrium.
+  %          }
+  %         \label{f:qual_pressure}
+  %         \end{center}
+  % \end{figure}
+
+\section{Analysis and Discussion} % (fold)
+\label{sec:analysis_and_discussion}
+
+In this section, we compare the parameters of the UC\hii regions obtained in this paper with that presented by previous studies. Also, we discuss the evolutionary stages of the UC\hii regions by estimating their expansion time scales.
+
+    \subsection{Comparison with previous studies}
+
+    With the 22.4\,GHz data used in this paper, \citet{Gaume:1995aa} calculated the peak EM of 49 compact sources in SgrB2. Due to the different source identification, we do not make one-to-one comparison here, but discuss several examples. In SgrB2, our compact sources 46, 47, and 48 corresponds to K1, K2, and K3, respectively. 
+    Since for most of the sources we calculate the EM independently from the observed size of the source, and also that the un-resolved sources will have $r_{\rm obs}$ larger than their $r_{\rm calc}$
 
     \subsection{Expansion Time} % (fold)
     \label{sub:expansion_time}
 
-    % \begin{equation}
-    %   \frac{\dot{N}_{\rm Ly}}{\rm s^{-1}} = \frac{4}{3}
-    % \end{equation}
-    Calculate the initial Str\"{o}mgren radius $r_{\rm i}$.
+    Knowing the physical parameters of the UC\hii regions and its associated molecular cores we derived in Sect.\,\ref{sec:results}, we estimated the expansion time of the UC\hii regions. The density of the molecular cloud that UC\hii regions expand into significantly affect the expansion rate \citep[e.g.][]{Wood:1989aa,De-Pree:1998aa}. For the simple case that a spherical UC\hii region ionized by Lyman continuum flux of $\dot{N}_{\rm Ly}$ and expanding in molecular gas with volume density ${n}_{\rm H_2}$ and electron temperature of $10^4\,{\rm K}$, following \citep{De-Pree:1998aa}, we calculate the initial Str\"{o}mgren radius $r_{\rm i}$ as:
     \begin{equation}
       \frac{r_{\rm i}}{\rm pc} = 1.99\times10^{-2}
       \left(\frac{\dot{N}_{\rm Ly}}{\rm 10^{49}\,s^{-1}}\right)^{1/3}
-      \left(\frac{{n}_{\rm H_2}}{\rm 10^{5}\,cm^{-3}}\right)^{-2/3}
+      \left(\frac{{n}_{\rm H_2}}{\rm 10^{5}\,cm^{-3}}\right)^{-2/3}.
     \end{equation}
-
-    Expansion equation:
+    For the twelve UC\hii region without associated dust emission detected, we assume a uniform dust density of $2\times10^7$, following \citep{De-Pree:2015ve}. 
+    Then applying the expansion equation by \cite{Spitzer:1968wl,Dyson:1980tp}:
     \begin{equation}
       r_{\rm calc} = r_{\rm i}
       \left(1 + \frac{7c_{\rm i}t}{4r_{\rm i}}\right)^{4/7},
     \end{equation}
-    where $c_{\rm i}$ is the sound speed ($\sim 10\, {\rm km\,s^{-1}}$).
+    where $c_{\rm i}$ is the sound speed ($\sim 10\, {\rm km\,s^{-1}}$), we calculated the expansion time scales of all the 54 cores (see Tab.\,\ref{t:coreparams_derived}). In Fig.\,\ref{f:cores_time}, we color the cores corresponding to their $t$. Most of the cores have expansion time between $10^4$\,yr and $10^5$\,yr. 
 
-
-
+    
       \begin{figure*}[ht]
           \begin{center}
-          \includegraphics[width=0.85\textwidth]{./plot/time_distribution.pdf}
+          \includegraphics[width=0.85\textwidth]{./plot/time_distribution_connected.pdf}
           \caption[Time distribution]{The evolution sequence of the \hii regions. Circles are calculated with dust density derived from 96\,GHz image. Triangles are calculated with dust density of $2\times10^7\,{cm^{-3}}$
            }
           \label{f:cores_time}
@@ -332,22 +399,30 @@ the most massive region with ongoing high-mass star formation in the Galaxy. Dus
 
     % subsection expansion_time (end)
 
-    \subsection{Uncertainty} % (fold)
-    \label{sub:uncertainty}
+    \subsection{Evolutionary Stages} % (fold)
+    \label{sub:evolutionary_stages}
 
-    \begin{itemize}
-       \item Morphology: \hii regions are not always spherical.
-       \item Dust density may be wrong. At which time?
-       \item $T_{\rm e}$ can be lower.
-       \item More than one star/core?
-       \item Turbulence \citep{Xie:1996aa}
-       \item Dust absorption of Lyman photons (Wood \& Churchwell, 1989).
-       \item Error of flux.
-       \item Bandwidth of $S_6$
-     \end{itemize} 
     
-    % subsection uncertainty (end)
+    
+    % subsection evolutionary_stages (end)
 
+\section{Summary} % (fold)
+\label{sec:summary}
+TO BE WRITTEN.
+% section summary (end)
+
+    % \begin{itemize}
+    %    \item Morphology: \hii regions are not always spherical.
+    %    \item Dust density may be wrong. At which time?
+    %    \item $T_{\rm e}$ can be lower.
+    %    \item More than one star/core?
+    %    \item Turbulence \citep{Xie:1996aa}
+    %    \item Dust absorption of Lyman photons (Wood \& Churchwell, 1989).
+    %    \item Error of flux.
+    %    \item Bandwidth of $S_6$
+    %  \end{itemize} 
+    
+% section analysis_and_discussion (end)
 
   \iffalse
 
@@ -429,10 +504,10 @@ the most massive region with ongoing high-mass star formation in the Galaxy. Dus
   % \end{figure*}
   % subsection dust_cores (end)
 
-  \subsection{Associated Objects} % (fold)
-  \label{sub:associated_objects}
+  % \subsection{Associated Objects} % (fold)
+  % \label{sub:associated_objects}
   
-  % subsection associated_objects (end)
+  % % subsection associated_objects (end)
 
 
 
@@ -449,37 +524,22 @@ the most massive region with ongoing high-mass star formation in the Galaxy. Dus
 \section{RMS maps} % (fold)
 \label{sec:rms_maps}
 
-  In this section we introduce the production of the RMS maps of the 6\,cm and 3\,mm data used in this paper.  Firstly, we masked out the image at where the signal is above a certain threshold to create a `masked image'. In this paper, the threshold for both of 6\,cm and 3\,mm images were 1\,mJy/beam. In SciPy \citep{2020SciPy-NMeth}, we applied the algorithm \texttt{ndimage.generic\_filter}, to the masked image. The filter function was defined as a standard deviation function. A parameter called \texttt{size} controls the subregion of the masked image that is given as input to the filter algorithm each time. For both of 6\,cm and 3\,mm images, \texttt{size} was set to 100\,pixels, which corresponds to 5\arcsec. Thus, an masked RMS map was generated, in which where the signal was above the threshold is empty.  To fill the masked regions, we used cubic interpolation over the whole image. In the interpolation, patches of the size of $100\times100$\,pixels (5\arcsec$\times$5\arcsec) were treated as one data point, which reduces the complexity of the computation. Thus we obtain rms maps as shown in Fig.~\ref{f:rmsmap_a} and \ref{f:rmsmap_b}
+  % In this section we introduce the production of the RMS maps of the 6\,cm and 3\,mm data used in this paper.  Firstly, we masked out the image at where the signal is above a certain threshold to create a `masked image'. In this paper, the threshold for both of 6\,cm and 3\,mm images were 1\,mJy/beam. In SciPy \citep{2020SciPy-NMeth}, we applied the algorithm \texttt{ndimage.generic\_filter}, to the masked image. The filter function was defined as a standard deviation function. A parameter called \texttt{size} controls the subregion of the masked image that is given as input to the filter algorithm each time. For both of 6\,cm and 3\,mm images, \texttt{size} was set to 100\,pixels, which corresponds to 5\arcsec. Thus, an masked RMS map was generated, in which where the signal was above the threshold is empty.  To fill the masked regions, we used cubic interpolation over the whole image. In the interpolation, patches of the size of $100\times100$\,pixels (5\arcsec$\times$5\arcsec) were treated as one data point, which reduces the complexity of the computation. Thus we obtain rms maps as shown in Fig.~\ref{f:rmsmap_a} and \ref{f:rmsmap_b}
 
-
+The rms maps are generated using SExtractor \citep{Bertin:1996aa}. Although the core identification is by eye, SExtractor produces rms maps as side-products of automated core identification. The rms maps are shown in Fig.\,\ref{f:rmsmaps}. 
   
 
   \begin{figure}[ht]
           \begin{center}
-          \includegraphics[width=0.4\textwidth]{./plot/abcd_006_rms.pdf}
-          \caption[RMS map of 6\,cm image.]{RMS map of 6\,cm  image. The image has two profile cuts, in blue and red. The offset of each profile increase from left to right and from bottom to top. The profile is below each image.
+          \includegraphics[width=0.32\textwidth]{./plot/rms_006.pdf}
+          \includegraphics[width=0.32\textwidth]{./plot/rms_022.pdf}
+          \includegraphics[width=0.32\textwidth]{./plot/rms_096.pdf}
+          \caption[RMS maps]{RMS maps of 6\,GHz, 22.4\,GHz, and 96\,GHz, respectively. The resolutions are stated in Sect.\,\ref{sec:observations_and_data_reduction}. The image has two profile cuts, in blue and red. The offset of each profile increase from left to right and from bottom to top. The profile is below each image.
            }
-          \label{f:rmsmap_a}
+          \label{f:rmsmaps}
           \end{center}
   \end{figure}
 
-    \begin{figure}[ht]
-          \begin{center}
-          \includegraphics[width=0.4\textwidth]{./plot/010_rms.pdf}
-          \caption[RMS map of 3\,cm image.]{RMS map of 3\,cm  image. The image has two profile cuts, in blue and red. The offset of each profile increase from left to right and from bottom to top. The profile is below each image.
-           }
-          \label{f:rmsmap_xband}
-          \end{center}
-  \end{figure}
-
-  \begin{figure}[ht]
-          \begin{center}
-          \includegraphics[width=0.4\textwidth]{./plot/096_rms.pdf}     
-          \caption[RMS map of  3\,mm image.]{RMS map of 3\,mm image. The image has two profile cuts, in blue and red. The offset of each profile increase from left to right and from bottom to top. The profile is below each image.
-           }
-          \label{f:rmsmap_b}
-          \end{center}
-  \end{figure}
 
 
 \section{Core identification} % (fold)

@@ -79,7 +79,7 @@ def plotcores(ax, coresa, coresb, linewidth=1):
                                      angle=0,
                                      linewidth=linewidth,
                                      fill=False, zorder=30,
-                                     edgecolor=(0.5, 0.5, 1.0, 1.0),
+                                     edgecolor=(1, 1, 1.0, 1.0),
                                      # facecolor=(1, 1, 0.0, 0.8),
                                      path_effects=[PathEffects.withStroke(linewidth=linewidth * 1.5,
                                                                           foreground="b")])
@@ -140,7 +140,7 @@ def plotcores_G95(ax, coresa, coresb, linewidth=1):
                                      angle=coresa['G95_T'][i],
                                      linewidth=linewidth,
                                      fill=False, zorder=30,
-                                     edgecolor=(0.5, 0.5, 1.0, 1.0),
+                                     edgecolor=(1, 1, 1.0, 1.0),
                                      # facecolor=(1, 1, 0.0, 0.8),
                                      path_effects=[PathEffects.withStroke(linewidth=linewidth * 1.5,
                                                                           foreground="b")])
@@ -170,7 +170,7 @@ def plotcores_G95(ax, coresa, coresb, linewidth=1):
 
 fitsfile = '../data/img_006.fits'
 maintext = 'SgrB2 @ 6 GHz'
-textcolor = (0.5, 0.5, 0.5, 1)
+textcolor = (1, 1, 1, 1)
 texta = ' Sources'
 typetext = " UCHii"
 
@@ -282,7 +282,7 @@ ax0.text((zx2 - zx1) * 0.95 + zx1,
          str(corenum) + texta,
          fontsize=9,
          ha='right',
-         color=(0.5, 0.5, 1.0, 1.0))
+         color=(1, 1, 1.0, 1.0))
 
 # ax0.text((zx2 - zx1) * 0.95 + zx1,
 #          (zy2 - zy1) * 0.03 + zy1,
@@ -548,7 +548,7 @@ ax1.text((zx2 - zx1) * 0.95 + zx1,
          str(corenum) + texta,
          fontsize=9,
          ha='right',
-         color=(0.5, 0.5, 1.0, 1.0))
+         color=(1, 1, 1.0, 1.0))
 
 # ax1.text((zx2 - zx1) * 0.95 + zx1,
 #          (zy2 - zy1) * 0.03 + zy1,
@@ -572,7 +572,7 @@ ax0.add_patch(patches.Rectangle(((zx1+zx2)/2 - subsize, (zy1+zy2)/2 - subsize),
                                 fill=False,
                                 linestyle='--',
                                 linewidth=1.2,
-                                edgecolor='#CCCCCC'))
+                                edgecolor='#FFFFFF'))
 
 # con = ConnectionPatch(xyA=(4780 - subsize, 5780 - subsize),
 #                       xyB=(4780 - subsize, 5780 - subsize),
@@ -580,7 +580,7 @@ ax0.add_patch(patches.Rectangle(((zx1+zx2)/2 - subsize, (zy1+zy2)/2 - subsize),
 #                       coordsB="data",
 #                       axesA=ax0,
 #                       axesB=ax1,
-#                       color='#CCCCCC',
+#                       color='#FFFFFF',
 #                       zorder=1000,
 #                       linewidth=1.0)
 # ax0.add_artist(con)
@@ -591,7 +591,7 @@ ax0.add_patch(patches.Rectangle(((zx1+zx2)/2 - subsize, (zy1+zy2)/2 - subsize),
 #                       coordsB="data",
 #                       axesA=ax0,
 #                       axesB=ax1,
-#                       color='#CCCCCC',
+#                       color='#FFFFFF',
 #                       zorder=1000,
 #                       linewidth=1.0)
 # ax0.add_artist(con)
@@ -639,6 +639,18 @@ zy2 = 5000 + 400
 ax2.set_xlim(zx1, zx2)
 ax2.set_ylim(zy1, zy2)
 
+ax3x1 = 4400 + 300 - 120
+ax3x2 = 4400 + 300 + 120
+ax3y1 = 4560 + 270 - 120
+ax3y2 = 4560 + 270 + 120
+
+ax2.add_patch(patches.Rectangle(((ax3x1+ax3x2)/2 - 120, (ax3y1+ax3y2)/2 - 120),
+                                120 * 2, 120 * 2,
+                                fill=False,
+                                linestyle='--',
+                                linewidth=1.2,
+                                edgecolor='#FFFFFF'))
+
 
 ax2.imshow(hdu.data * 1e3,
            transform=ax2.get_transform(mywcs),
@@ -683,7 +695,7 @@ ax2.text((zx2 - zx1) * 0.95 + zx1,
          str(corenum) + texta,
          fontsize=9,
          ha='right',
-         color=(0.5, 0.5, 1.0, 1.0))
+         color=(1, 1, 1.0, 1.0))
 
 # ax2.text((zx2 - zx1) * 0.95 + zx1,
 #          (zy2 - zy1) * 0.03 + zy1,
@@ -707,7 +719,7 @@ ax0.add_patch(patches.Rectangle(((zx1 + zx2)/2, (zy1 + zy2)/2),
                                 fill=False,
                                 linestyle='--',
                                 linewidth=1.2,
-                                edgecolor='#CCCCCC'))
+                                edgecolor='#FFFFFF'))
 
 # con = ConnectionPatch(xyA=(4700 - subsize, 4860 - subsize),
 #                       xyB=(4700 - subsize, 4860 - subsize),
@@ -715,7 +727,7 @@ ax0.add_patch(patches.Rectangle(((zx1 + zx2)/2, (zy1 + zy2)/2),
 #                       coordsB="data",
 #                       axesA=ax0,
 #                       axesB=ax2,
-#                       color='#CCCCCC',
+#                       color='#FFFFFF',
 #                       zorder=1000,
 #                       linewidth=1.0)
 # ax0.add_artist(con)
@@ -726,7 +738,7 @@ ax0.add_patch(patches.Rectangle(((zx1 + zx2)/2, (zy1 + zy2)/2),
 #                       coordsB="data",
 #                       axesA=ax0,
 #                       axesB=ax2,
-#                       color='#CCCCCC',
+#                       color='#FFFFFF',
 #                       zorder=1000,
 #                       linewidth=1.0)
 # ax0.add_artist(con)
@@ -780,7 +792,7 @@ ax0.add_patch(patches.Rectangle(((zx1 + zx2)/2, (zy1 + zy2)/2),
                                 fill=False,
                                 linestyle='--',
                                 linewidth=1.2,
-                                edgecolor='#CCCCCC'))
+                                edgecolor='#FFFFFF'))
 
 ax3.imshow(hdu.data * 1e3,
            transform=ax3.get_transform(mywcs),
@@ -825,7 +837,7 @@ ax3.text((zx2 - zx1) * 0.95 + zx1,
          str(corenum) + texta,
          fontsize=9,
          ha='right',
-         color=(0.5, 0.5, 1.0, 1.0))
+         color=(1, 1, 1.0, 1.0))
 
 # ax3.text((zx2 - zx1) * 0.95 + zx1,
 #          (zy2 - zy1) * 0.03 + zy1,
@@ -849,7 +861,7 @@ ax3.set_yticklabels('')
 #                                 fill=False,
 #                                 linestyle='--',
 #                                 linewidth=1.2,
-#                                 edgecolor='#CCCCCC'))
+#                                 edgecolor='#FFFFFF'))
 
 # con = ConnectionPatch(xyA=(4700 - subsize, 4860 - subsize),
 #                       xyB=(4700 - subsize, 4860 - subsize),
@@ -857,7 +869,7 @@ ax3.set_yticklabels('')
 #                       coordsB="data",
 #                       axesA=ax0,
 #                       axesB=ax3,
-#                       color='#CCCCCC',
+#                       color='#FFFFFF',
 #                       zorder=1000,
 #                       linewidth=1.0)
 # ax0.add_artist(con)
@@ -868,7 +880,7 @@ ax3.set_yticklabels('')
 #                       coordsB="data",
 #                       axesA=ax0,
 #                       axesB=ax3,
-#                       color='#CCCCCC',
+#                       color='#FFFFFF',
 #                       zorder=1000,
 #                       linewidth=1.0)
 # ax0.add_artist(con)

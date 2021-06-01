@@ -1,0 +1,56 @@
+# Region file format: DS9 version 4.1
+global color=green dashlist=8 3 width=1 font="helvetica 10 normal roman" select=1 highlite=1 dash=0 fixed=0 edit=1 move=1 delete=1 include=1 source=1
+physical
+circle(3849.0018,1860.9993,13.46) # color=white width=2
+circle(4870.6398,2945.3709,28.9) # color=white width=2
+circle(4621.3606,4055.7459,41.32) # color=white width=2
+circle(4723.3664,4580.0372,32.5) # color=white width=2
+circle(4721.8387,4688.354,23.78) # color=white width=2
+circle(4796.3865,4742.772,14.42) # color=white width=2
+circle(4787.132,4806.1896,15.02) # color=white width=2
+circle(4815.6746,4826.9976,12.34) # color=white width=2
+circle(4736.3488,4887.6285,8.22) # color=white width=2
+circle(4701.2301,4940.9297,13.2) # color=white width=2
+circle(4840.538,5015.0471,14.06) # color=white width=2
+circle(5096.1187,5054.1159,24.3) # color=white width=2
+circle(4726.0005,5317.166,9.04) # color=white width=2
+circle(4786.8136,5726.4864,21.66) # color=white width=2
+circle(4768.0487,5774.1143,8.4) # color=white width=2
+circle(4761.7198,5800.2791,12.34) # color=white width=2
+circle(5235.5584,6003.8828,9.2) # color=white width=2
+circle(4735.414,6047.5773,23.86) # color=white width=2
+circle(5437.2558,6067.9991,14.74) # color=white width=2
+circle(3929.0256,6229.983,16.22) # color=white width=2
+circle(3458.9974,6452.9996,38.78) # color=white width=2
+circle(4869.6569,5612.7549,12.5) # color=white width=2
+circle(4888.7521,5745.2779,11.3) # color=white width=2
+circle(4734.1988,5191.2957,13.76) # color=white width=2
+circle(4859.7444,5034.3502,12.2) # color=white width=2
+circle(4862.5378,5017.6102,11.52) # color=white width=2
+circle(4685.1267,5015.4207,7.62) # color=white width=2
+circle(4711.2505,4999.0123,7.62) # color=white width=2
+circle(4750.0935,5030.491,9.1) # color=white width=2
+circle(4660.7919,4882.0907,9.64) # color=white width=2
+circle(4667.5382,4876.9356,5.2) # color=white width=2
+circle(4663.4901,4899.1188,8.94) # color=white width=2
+circle(4701.1356,4900.4657,18) # color=white width=2
+circle(4706.7481,4882.041,5.68) # color=white width=2
+circle(4771.967,4914.9599,9) # color=white width=2 text={f1a}
+circle(4760.4334,4884.5199,16.2432) # color=white width=2 text={f1c}
+circle(4760.1428,4900.1399,8.1432) # color=white width=2 text={f1b}
+circle(4702.8337,4863.2274,9.84) # color=white width=2
+circle(4685.775,4870.9023,10.02) # color=white width=2
+circle(4692.9712,4847.452,13.22) # color=white width=2
+circle(4673.7399,4856.8117,11.76) # color=white width=2
+circle(4706.5836,4869.549,7.44) # color=white width=2
+circle(4715.7435,4838.7475,8.64) # color=white width=2
+circle(4654.5341,4852.2466,10.84) # color=white width=2
+circle(4699.8951,4819.4369,6.1) # color=white width=2
+circle(4695.0241,4808.2697,6.22) # color=white width=2
+circle(4688.7085,4824.7072,7.22) # color=white width=2
+circle(4683.9073,4809.1047,5.54) # color=white width=2
+circle(4669.8829,4818.5725,12.68) # color=white width=2
+circle(4652.3818,4779.541,8.74) # color=white width=2
+circle(4730.2879,4763.0613,10.68) # color=white width=2
+circle(4706.3187,4771.2114,17.52) # color=white width=2
+circle(4672.2651,4041.3469,11.26) # color=white width=2

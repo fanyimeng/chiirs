@@ -1,5 +1,8 @@
-\begin{thebibliography}{26}
+\begin{thebibliography}{35}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
+
+\bibitem[{{Bertin} \& {Arnouts}(1996)}]{Bertin:1996aa}
+{Bertin}, E. \& {Arnouts}, S. 1996, \aaps, 117, 393
 
 \bibitem[{{Breen} {et~al.}(2010){Breen}, {Ellingsen}, {Caswell}, \&
   {Lewis}}]{Breen:2010aa}
@@ -16,6 +19,14 @@
 {De Pree}, C.~G., {Peters}, T., {Mac Low}, M.~M., {et~al.} 2014, \apjl, 781,
   L36
 
+\bibitem[{{De Pree} {et~al.}(2015){De Pree}, {Peters}, {Mac Low}, {Wilner},
+  {Goss}, {Galv{\'a}n-Madrid}, {Keto}, {Klessen}, \&
+  {Monsrud}}]{De-Pree:2015ve}
+{De Pree}, C.~G., {Peters}, T., {Mac Low}, M.~M., {et~al.} 2015, \apj, 815, 123
+
+\bibitem[{{Dyson} \& {Williams}(1980)}]{Dyson:1980tp}
+{Dyson}, J.~E. \& {Williams}, D.~A. 1980, {Physics of the interstellar medium}
+
 \bibitem[{{Gaume} \& {Claussen}(1990)}]{Gaume:1990aa}
 {Gaume}, R.~A. \& {Claussen}, M.~J. 1990, \apj, 351, 538
 
@@ -23,6 +34,11 @@
   {Mehringer}}]{Gaume:1995aa}
 {Gaume}, R.~A., {Claussen}, M.~J., {de Pree}, C.~G., {Goss}, W.~M., \&
   {Mehringer}, D.~M. 1995, \apj, 449, 663
+
+\bibitem[{Geusebroek {et~al.}(2003)Geusebroek, Smeulders, \& van~de
+  Weijer}]{1217270}
+Geusebroek, J.-M., Smeulders, A., \& van~de Weijer, J. 2003, IEEE Transactions
+  on Image Processing, 12, 938
 
 \bibitem[{{Ginsburg} {et~al.}(2018){Ginsburg}, {Bally}, {Barnes}, {Bastian},
   {Battersby}, {Beuther}, {Brogan}, {Contreras}, {Corby}, {Darling}, {De Pree},
@@ -66,6 +82,14 @@
   {Zins}}]{Gravity-Collaboration:2018aa}
 {Gravity Collaboration}, {Abuter}, R., {Amorim}, A., {et~al.} 2018, \aap, 615,
   L15
+
+\bibitem[{{Huttemeister} {et~al.}(1993){Huttemeister}, {Wilson}, {Henkel}, \&
+  {Mauersberger}}]{Huttemeister:1993tr}
+{Huttemeister}, S., {Wilson}, T.~L., {Henkel}, C., \& {Mauersberger}, R. 1993,
+  \aap, 276, 445
+
+\bibitem[{{Keto}(2003)}]{Keto:2003ud}
+{Keto}, E. 2003, \apj, 599, 1196
 
 \bibitem[{{Kurtz}(2002)}]{Kurtz:2002aa}
 {Kurtz}, S. 2002, in Astronomical Society of the Pacific Conference Series,
@@ -115,6 +139,12 @@
 {Meng}, F., {S{\'a}nchez-Monge}, {\'A}., {Schilke}, P., {et~al.} 2019, \aap,
   630, A73
 
+\bibitem[{{Ossenkopf} \& {Henning}(1994)}]{Ossenkopf:1994aa}
+{Ossenkopf}, V. \& {Henning}, T. 1994, \aap, 291, 943
+
+\bibitem[{{Panagia}(1973)}]{Panagia:1973aa}
+{Panagia}, N. 1973, \aj, 78, 929
+
 \bibitem[{{Perley} \& {Butler}(2013)}]{Perley:2013aa}
 {Perley}, R.~A. \& {Butler}, B.~J. 2013, \apjs, 204, 19
 
@@ -145,9 +175,10 @@
 {Schmiedeke}, A., {Schilke}, P., {M{\"o}ller}, T., {et~al.} 2016, \aap, 588,
   A143
 
-\bibitem[{{Xie} {et~al.}(1996){Xie}, {Mundy}, {Vogel}, \&
-  {Hofner}}]{Xie:1996aa}
-{Xie}, T., {Mundy}, L.~G., {Vogel}, S.~N., \& {Hofner}, P. 1996, \apjl, 473,
-  L131
+\bibitem[{{Spitzer}(1968)}]{Spitzer:1968wl}
+{Spitzer}, L., J. 1968, Interscience Tracts on Physics and Astronomy, 28
+
+\bibitem[{{Wood} \& {Churchwell}(1989)}]{Wood:1989aa}
+{Wood}, D.~O.~S. \& {Churchwell}, E. 1989, \apjs, 69, 831
 
 \end{thebibliography}

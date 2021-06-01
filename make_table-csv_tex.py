@@ -61,7 +61,7 @@ header = fits.open('./data/img_006.fits')[0].header
 f = open('./obspara.tex', "w")
 for i in range(df.shape[0]):
     row = df.iloc[i, :]
-    num_str = '%i' % (row['006_idx'])
+    num_str = '%i' % (row['006_idx']+1)
 
     ra_str = '%07.4f' % (getRADEC(header,
                                   [row['x_img'], row['y_img']])[0][-1])
@@ -133,7 +133,7 @@ f = open('./derivedpara.tex', "w")
 '''
 for i in range(df.shape[0]):
     row = df.iloc[i, :]
-    num_str = '%i' % (row['006_idx'])
+    num_str = '%i' % (row['006_idx']+1)
     r_calc = '%.2f' % (row['R'] / 25. / 1e-3)
     em_calc = '%.2f' % (row['EM'] / 1e7)
     nly = '%.2f' % (row['NLY'])

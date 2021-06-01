@@ -3,47 +3,47 @@ Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
 The top-level auxiliary file: chiirs.aux
 The style file: aa.bst
 Database file #1: ref.bib
-Warning--I didn't find a database entry for "2020SciPy-NMeth"
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
-You've used 26 entries,
+Warning--empty publisher in Dyson:1980tp
+You've used 35 entries,
             3039 wiz_defined-function locations,
-            867 strings with 13349 characters,
-and the built_in function-call counts, 20665 in all, are:
-= -- 1563
-> -- 2482
-< -- 7
-+ -- 827
-- -- 800
-* -- 1945
-:= -- 3859
-add.period$ -- 26
-call.type$ -- 26
-change.case$ -- 368
-chr.to.int$ -- 25
-cite$ -- 26
-duplicate$ -- 509
-empty$ -- 716
-format.name$ -- 870
-if$ -- 4031
+            928 strings with 14677 characters,
+and the built_in function-call counts, 24388 in all, are:
+= -- 1883
+> -- 2717
+< -- 14
++ -- 905
+- -- 869
+* -- 2226
+:= -- 4550
+add.period$ -- 35
+call.type$ -- 35
+change.case$ -- 427
+chr.to.int$ -- 34
+cite$ -- 36
+duplicate$ -- 673
+empty$ -- 952
+format.name$ -- 967
+if$ -- 4770
 int.to.chr$ -- 2
 int.to.str$ -- 1
-missing$ -- 23
-newline$ -- 82
-num.names$ -- 107
-pop$ -- 375
+missing$ -- 32
+newline$ -- 109
+num.names$ -- 143
+pop$ -- 438
 preamble$ -- 1
-purify$ -- 368
+purify$ -- 427
 quote$ -- 0
-skip$ -- 435
+skip$ -- 580
 stack$ -- 0
-substring$ -- 557
+substring$ -- 726
 swap$ -- 26
 text.length$ -- 3
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 234
-warning$ -- 0
-while$ -- 108
+type$ -- 312
+warning$ -- 1
+while$ -- 142
 width$ -- 0
-write$ -- 263
+write$ -- 352
 (There was 1 warning)

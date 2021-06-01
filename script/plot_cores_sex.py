@@ -274,7 +274,7 @@ beamstr = '$(%4.2f^{\\prime\\prime},\\ %4.2f^{\\prime\\prime},\\ %4.1f^{\\circ})
                                                                                       hdu.header['BMIN'] *
                                                                                       3600,
                                                                                       hdu.header['BPA'])
-beamstr = '(%4.2f", %4.2f", %4.1f°)' % (hdu.header['BMAJ'] * 3600,
+beamstr = '(%4.2f", %4.2f", %4.1f")' % (hdu.header['BMAJ'] * 3600,
                                         hdu.header['BMIN'] * 3600,
                                         hdu.header['BPA'])
 ax0.text((zx2 - zx1) * 0.03 + zx1,

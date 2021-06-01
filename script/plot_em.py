@@ -78,9 +78,17 @@ def kdeplot(data, kdecolor, kdeorder, kdeax, text):
     #           linestyle='--', color=vlinecolor)
     # ax.vlines(x=np.nanmean(data), ymax=1.0, ymin=0, lw=1,
     #           linestyle='--', color=vlinecolor)
-    ax.text(np.power(10, xx)[np.argmax(kde(xx))], 0.52,
-            '$\\leftarrow 10^{%.2f}$' % (np.log10(np.power(10, xx)[np.argmax(kde(xx))])),
-            size=8, rotation=90.,
+    # ax.text(np.power(10, xx)[np.argmax(kde(xx))], 0.52,
+    #         '$\\leftarrow 10^{%.2f}$' % (np.log10(np.power(10, xx)[np.argmax(kde(xx))])),
+    #         size=8, rotation=90.,
+    #         ha="center", va="bottom", color = kdecolor)
+    ax.text(np.nanmean(data), 0.5,
+            '$\\leftarrow \\rm mean=10^{%.2f}$' % (np.log10(np.nanmean(data))),
+            size=9, rotation=90.,
+            ha="center", va="bottom", color = kdecolor)
+    ax.text(np.nanmedian(data), 0.5,
+            '$\\leftarrow \\rm med=10^{%.2f}$' % (np.log10(np.nanmedian(data))),
+            size=9, rotation=90.,
             ha="center", va="bottom", color = kdecolor)
     # ax.text(0.004, 0.9 - 0.05 * kdeorder, text, size=10, rotation=0.,
     #         ha="left", va="top",
